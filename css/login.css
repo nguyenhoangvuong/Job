@@ -1,0 +1,148 @@
+:root {
+    /* font-family */
+    --font-Inter: 'Inter';
+    --font-SF-Pro-Rounded: 'SF Pro Rounded';
+
+    /* color */
+    --color-black: #000000;
+    --color-primary: #FBBF24;
+    --color-secondary: #000000B3;
+    --color-purple: #9333EA;
+
+    /* font-size */
+    --font-size-36: 36px;
+    --font-size-24: 24px;
+    --font-size-18: 18px;
+    --font-size-16: 16px;
+    --font-size-14: 14px;
+    --font-size-12: 12px;
+    --font-size-10: 10px;
+    --font-size-8: 8px;
+
+    /* width */
+    --paneleft-width: 8rem;
+}
+
+.login-container {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay {
+    background-color: #EAECEF;
+    opacity: 0.99;
+    visibility: hidden;
+    opacity: 0.4;
+}
+
+.login-container.open {
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.3s linear;
+}
+
+.login-content {
+    border-radius: 0.5rem;
+    max-width: 36rem;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    background-image: url(../assets/image/hero-2.png);
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.login-banner {
+    overflow: hidden;
+    background: linear-gradient(to bottom right, #6d28d9, #8b5cf6, rgba(109, 40, 217, 0.6));
+    opacity: 0.8;
+    padding: 2rem 1.5rem;
+}
+
+.login-banner a {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    opacity: 0.8;
+}
+
+.login-banner a:hover {
+    opacity: 1;
+}
+
+.login-banner a:hover>i {
+    transform: translateX(-2px);
+    transition: all 0.5s linear;
+}
+
+.login-banner a i {
+    font-size: 0.9rem;
+}
+
+.login-banner h2 {
+    margin-top: 0.75rem;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    color: #fff;
+}
+
+.login-banner span {
+    color: rgba(255, 255, 255, 1);
+    font-size: 1.1rem;
+}
+
+.login-banner span>strong {
+    color: #fff;
+}
+
+.login-option {
+    padding: 2rem 1.5rem;
+    background: #F9FAFB;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.login-option--details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 1rem 2rem;
+    border-radius: 0.25rem;
+}
+
+.login-option--details:hover {
+    outline: 1px solid var(--color-purple);
+    cursor: pointer;
+}
+
+.login-option--details:hover>i {
+    transform: translateX(3px);
+    transition: all 0.3s ease-in-out;
+}
+
+.login-option--details>div {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: var(--font-Inter);
+    font-weight: 500;
+}
+
+.login-option--details>div>i {
+    color: rgb(1, 64, 255);
+    font-size: 1.25rem;
+}
