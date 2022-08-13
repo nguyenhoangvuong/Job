@@ -1,13 +1,4 @@
-:root {
-    /* font-family */
-    --font-Inter: 'Inter';
-
-    /* color */
-    --color-black: #000000;
-    --color-primary: #005978;
-}
 .mySwiper{
-    width: 66%;
     background-color:#fff;
 }
 ol{
@@ -247,6 +238,9 @@ ol{
     -webkit-transition: height 0.4s;
     -moz-transition: height 0.4s;
     transition: height 0.4s;
+    height: calc(100vh - 100px) !important;
+    overflow-x: hidden;
+    overflow-y:auto;
 }
 
 .cd-horizontal-timeline .events-content li {

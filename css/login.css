@@ -29,7 +29,7 @@
     border-radius: 0.5rem;
     max-width: 36rem;
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 34% 66%;
     background-image: url(../assets/image/hero-2.png);
     border-radius: 0.5rem;
     overflow: hidden;

@@ -25,15 +25,10 @@ window.addEventListener('click', (e) => {
         overlay.classList.remove('open');
     } else if (!e.target.classList.contains('check-Open')){
         optionSwitchLang.classList.remove('open')
+    } else if (e.target.classList.contains('btn-login--text')) {
+        overlay.classList.add('open')
     }
 })
-
-// event font sidebar
-// listNavItem.forEach(item => {
-//     item.addEventListener('click', () => {
-//         item.classList.add("nav-item-active");
-//     })
-// })
 
 
 

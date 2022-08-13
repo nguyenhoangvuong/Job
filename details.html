@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EMA</title>
+    <title>RADA</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
         integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous" />
 
@@ -18,23 +18,18 @@
 
     <!-- css -->
     <link rel="stylesheet" href="./css/index.css" />
-    <link rel="stylesheet" href="./css/login.css" />
-    <link rel="stylesheet" href="./css/nghiencuu.css" />
-    <link rel="stylesheet" href="./css/nghiencuu_sub.css" />
-    <link rel="stylesheet" href="./css/swiper.css">
-    <link rel="stylesheet" href="./css/postDetails.css">
 </head>
 
 <body>
     <div class="body-decor"></div>
     <div class="main-layout--wrapper">
         <div class="main-layout">
+            <!-- pane left -->
             <div class="pane-left">
                 <div class="nav-bar">
                     <div class="logo">
-                        <a href="./index.html" class="d-flex flex-column
-                                w-100
-                                justify-content-center align-items-center">
+                        <a href="./index.html" class="d-flex flex-column w-100
+                            justify-content-center align-items-center">
                             <div class="logo-wrapper">
                                 <img src="./assets/image/rada-animate.svg" alt="">
                             </div>
@@ -47,7 +42,7 @@
                         </a>
                     </div>
                     <div class="nav-main">
-                        <a href="./index.html" class="nav-item">
+                        <a href="./index.html" class="nav-item nav-item-active">
                             <span class="icon">
                                 <i class="fas fa-rocket"></i>
                             </span>
@@ -55,8 +50,7 @@
                                 LaunchVerse
                             </span>
                         </a>
-                        <a href="./nghiencuu.html" class="nav-item
-                                nav-item-active">
+                        <a href="./research.html" class="nav-item">
                             <span class="icon">
                                 <i class="fas fa-rocket"></i>
                             </span>
@@ -64,7 +58,7 @@
                                 Nghiên cứu
                             </span>
                         </a>
-                        <a href="#" class="nav-item">
+                        <a href="/post.html" class="nav-item">
                             <span class="icon">
                                 <i class="fas fa-rocket"></i>
                             </span>
@@ -72,7 +66,7 @@
                                 Bài viết
                             </span>
                         </a>
-                        <a href="#" class="nav-item">
+                        <a href="./about-rada.html" class="nav-item">
                             <span class="icon">
                                 <i class="fas fa-rocket"></i>
                             </span>
@@ -92,19 +86,16 @@
                     <div class="pane-left--bottom-section">
                         <div class="relative">
                             <button class="btn-default btn-switch-lang">
-                                <div>
-                                    <span class="icon"><i class="fa-solid
-                                                fa-user-circle
-                                                btn-switch-lange--name"></i></span>
-                                    <span class="btn--text
-                                            btn-switch-lange--name">VI</span>
+                                <div class="check-Open d-flex">
+                                    <span class="icon"><i class="fa-solid fa-user-circle check-Open"></i></span>
+                                    <span class="btn--text check-Open">VI</span>
                                 </div>
                                 <div class="btn-switch-lang--option">
                                     <span>Tiếng Việt</span><span>English</span>
                                 </div>
                             </button>
                         </div>
-                        <button class="btn-default btn-switch-theme">
+                        <button class="btn-default btn-switch-theme d-flex">
                             <span class="icon icon-mode">
                                 <i class="fa-solid fa-moon"></i>
                             </span>
@@ -118,367 +109,1517 @@
                     </div>
                 </div>
             </div>
-            <div class="pane-center scroll-bar">
-                <div class="pane-center scroll-bar">
-                    <div class="pane-content--main">
-                        <div class="pane-content--main--top">
-                            <div class="search-wrapper">
-                                <div class="navbar-search">
-                                    <span class="icon navbar-search--icon">
-                                        <i class="fa fa-search"></i>
-                                    </span>
-                                    <input type="text" class="navbar-search--input" placeholder="Bạn đang tìm gì?"
-                                        value="">
-                                </div>
+            <!-- pane center -->
+            <div class="pane-center splitter">
+                <div class="pane-content--main" id="first">
+                    <div class="pane-content--main--top">
+                        <div class="search-wrapper">
+                            <div class="navbar-search">
+                                <span class="icon navbar-search--icon">
+                                    <i class="fa fa-search"></i>
+                                </span>
+                                <input type="text" class="navbar-search--input" placeholder="Bạn đang tìm gì?" value="">
                             </div>
-                            <div class="cta-wrapper">
-                                <div class="btn-group btn-group-filter"><a class="btn btn-filter">
-                                        <span class="btn--text">Phổ biến</span></a>
-                                    <a class="btn btn-filter-active">
-                                        <span class="btn--text">Mới nhất</span></a>
-                                </div>
+                        </div>
+                        <div class="cta-wrapper">
+                            <div class="btn-group btn-group-filter"><a class="btn btn-filter">
+                                    <span class="btn--text">Phổ biến</span></a>
+                                <a class="btn btn-filter-active">
+                                    <span class="btn--text">Mới nhất</span></a>
                             </div>
                         </div>
                     </div>
-                    <!-- Swiper -->
-                    <div class="swiper mySwiper">
-                        <section class="cd-horizontal-timeline">
-                            <div class="timeline">
-                                <div class="events-wrapper">
-                                    <div class="events">
-                                        <ol>
-                                            <li><a href="#0" data-date="16/01/2014" class="selected">16 Jan</a></li>
-                                            <li><a href="#0" data-date="28/02/2014">28
-                                                    Feb</a></li>
-                                            <li><a href="#0" data-date="20/04/2014">20
-                                                    Mar</a></li>
-                                            <li><a href="#0" data-date="20/05/2014">20
-                                                    May</a></li>
-                                            <li><a href="#0" data-date="09/07/2014">09
-                                                    Jul</a></li>
-                                            <li><a href="#0" data-date="30/08/2014">30
-                                                    Aug</a></li>
-                                            <li><a href="#0" data-date="15/09/2014">15
-                                                    Sep</a></li>
-                                            <li><a href="#0" data-date="01/11/2014">01
-                                                    Nov</a></li>
-                                            <li><a href="#0" data-date="10/12/2014">10
-                                                    Dec</a></li>
-                                            <li><a href="#0" data-date="19/01/2015">29
-                                                    Jan</a></li>
-                                            <li><a href="#0" data-date="03/03/2015">3
-                                                    Mar</a></li>
-                                        </ol>
-
-                                        <span class="filling-line" aria-hidden="true"></span>
-                                    </div> <!-- .events -->
-                                </div> <!-- .events-wrapper -->
-
-                                <ul class="cd-timeline-navigation">
-                                    <li><a href="#0" class="prev inactive">Prev</a></li>
-                                    <li><a href="#0" class="next">Next</a></li>
-                                </ul> <!-- .cd-timeline-navigation -->
-                            </div> <!-- .timeline -->
-
-                            <div class="events-content">
-                                <ol>
-                                    <li class="selected" data-date="16/01/2014">
-                                        <div class="post-content">
-                                            <h2 class="post-heading">Cuộc chiến giữa Gods và Demons, chiến lược xoay
-                                                vòng mới trong #play2earn</h2>
-                                            <span class="post-info">
-                                                <div class="d-flex align-items-center">
-                                                    <div class="post-auth-img rounded-circle overflow-hidden mr-2">
-                                                        <img class="rounded-circle"
-                                                            src="./assets/image/93db9957-4223-44a6-baf4-69118baa918a.png"
-                                                            alt="avt">
-                                                    </div>
-                                                    <span class="post-auth mr-3">Ronni</span>
-                                                    <span>8 Month</span>
-                                                </div>
-                                                <button class="btn-post-vote">
-                                                    <i class="fa-solid fa-caret-up"></i>
-                                                    Upvote <span>2</span>
-                                                </button>
-                                            </span>
-                                            <div class="post-main">
-                                                <p>Nhìn về phía các vì sao, anh ta nhận ra cuối cùng ước mơ đi vào vũ
-                                                    trụ của mình đã trở thành sự thật… trong MetaVerse,
-                                                    nơi các thuyền trưởng có thể đạt được mong muốn sâu sắc nhất của
-                                                    mình về cuộc chiến tranh giữa các thiên hà.</p>
-                                                <p>Bài viết là ý kiến ​​của tác giả Ronni K. Gothard Christiansen - một
-                                                    thành viên của cộng đồng RADA.</p>
-                                                <img class="rounded-lg"
-                                                    src="./assets/image/56235f7b-0765-4739-b879-4e571acd6426.png"
-                                                    alt="">
-                                                <h4>1. Giới thiệu dự án</h4>
-                                                <p>
-                                                    Space Crypto là một Space Metaverse, nơi bất kỳ ai cũng có thể kiếm
-                                                    được token nhờ vai trò space guardian và chiến lược
-                                                    riêng khi thực hiện nhiệm vụ khắc phục những hành động xấu của những
-                                                    tên trùm độc ác và bảo vệ Space Metaverse.
-                                                </p>
-                                                <p>
-                                                    Với vũ trụ MetaVerse và hình thức #free2play, Space Crypto sẽ mang
-                                                    đến cho các thế hệ người hâm mộ Trekkies và Star Wars
-                                                    cơ hội khám phá không gian chiến tranh toàn diện và tuyệt vời. Bất
-                                                    kỳ ai cũng có thể sử dụng trình duyệt web của họ hoặc
-                                                    tải xuống các phiên bản IOS và Android để chơi mà không cần bỏ tiền
-                                                    để tham gia.
-                                                </p>
-                                                <p>Gameplay sẽ tập trung vào trải nghiệm dễ dàng và thú vị, nơi những
-                                                    người chơi bình thường có thể kiếm tiền trong thời
-                                                    gian rảnh. Điều này giúp cho việc những người hâm mộ trò chơi Chiến
-                                                    lược không gian truyền thống thích ứng với MetaVerse
-                                                    dễ dàng hơn vì game có cùng một cơ chế chơi.</p>
-                                                <h4>2. Đánh giá thị trường</h4>
-                                                <p>Trò chơi không gian và các nhánh phụ đã thu hút hàng triệu người trên
-                                                    toàn cầu - nhiều trong số đó là fan của những bộ
-                                                    phim truyền hình lớn nhất thế giới trong hơn 50 năm qua. Khoa học
-                                                    viễn tưởng và Không gian vẫn là đề tài nóng bỏng hơn
-                                                    bao giờ hết và sẽ vẫn giữ nguyên vị trí như “biên giới cuối cùng”
-                                                    như cách mà Star Trek đã gây dựng nên tên tuổi.</p>
-                                                <p>Nhân loại khao khát tìm hiểu và vượt ra bên ngoài không gian. Sứ mệnh
-                                                    này liên tục được thực hiện trong nhiều thế hệ và
-                                                    bất chấp các chuyến bay có người lái lên mặt trăng cùng nhiều thành
-                                                    tựu kỳ diệu khác, về cơ bản, hành trình tiến tới
-                                                    biên giới cuối cùng vẫn còn rất xa.</p>
-                                                <p>Điểm đến tiếp theo là MetaVerse. Thành thật mà nói, đây là nơi mà
-                                                    việc khám phá không gian sẽ diễn ra đầu tiên, có thể
-                                                    không phải trong thực tế, nhưng xét về bối cảnh xã hội, điều này
-                                                    giúp thiết lập sự cân bằng kinh tế - xã hội và đặt một
-                                                    nền tảng cho cuộc sống phi tập trung của con người.</p>
-                                                <img src="https://media.rada.network/assets/79e6fe1e-0269-446a-b0af-381d9fd4e38f?format=webp&width=1080"
-                                                    alt="">
-                                                <h4>Gamefi và MetaVerse</h4>
-                                                <p>Nhiều tựa #gamefi và #metaverse">#gamefi và #metaverse mới sắp ra mắt
-                                                    vào Quý 1 năm 2022, và một vài trong số chúng cũng
-                                                    lấy Không gian làm chủ đề. Những game thú vị cũng sẽ xuất hiện trên
-                                                    BSc nhưng Space Crypto nổi bật lên tất cả với hình
-                                                    thức Chiến tranh chiến lược không gian thay vì những tựa game chỉ
-                                                    tập trung chủ yếu vào việc sở hữu đất đai và farming.</p>
+                    <div class="pane-content--main--main scrollbar" id="style-2">
+                        <div class="cards-list">
+                            <div class="cards cards-post hasComment
+                                                hasVote">
+                                <div class="cards-media">
+                                    <div class="cards-media-img">
+                                        <a href="#">
+                                            <div style="display: block;
+                                                                overflow: hidden; position:
+                                                                absolute; inset: 0px;
+                                                                box-sizing: border-box;
+                                                                margin: 0px;">
+                                                <img alt="Cuộc chiến giữa
+                                                                    Gods và Demons, chiến
+                                                                    lược xoay vòng mới trong
+                                                                    #play2earn" sizes="100vw"
+                                                    src="https://rada.network/_next/image?url=https%3A%2F%2Fmedia.rada.network%2Fassets%2Fd48edb1f-297c-4fae-b7e9-06ffef7e38a9%3Fformat%3Djpg%26width%3D500&w=1920&q=75"
+                                                    decoding="async" data-nimg="fill" class="cards-img" style="position:
+                                                                    absolute; inset: 0px;
+                                                                    box-sizing: border-box;
+                                                                    padding: 0px; border:
+                                                                    none; margin: auto;
+                                                                    display: block; width:
+                                                                    0px; height: 0px;
+                                                                    min-width: 100%;
+                                                                    max-width: 100%;
+                                                                    min-height: 100%;
+                                                                    max-height: 100%;">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="cards-body">
+                                    <div class="cards-body-header">
+                                        <div class="cards-title"><a class="text-color-title" href="./details.html?id=">Cuộc
+                                                chiến giữa Gods và Demons,
+                                                chiến lược xoay vòng mới
+                                                trong #play2earn</a>
+                                        </div>
+                                        <div class="cards-badges"><a href="#"><span class="badge
+                                                                    badge-coin">TAUM</span></a></div>
+                                    </div>
+                                    <div class="metadata-wrapper
+                                                        justify-content-between">
+                                        <div class="d-flex flex-shrink-0">
+                                            <div class="metadata
+                                                                metadata-source d-flex
+                                                                align-items-center">
+                                                <span><svg width="1em" class="rada-svg" viewBox="4 4 32 32"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path class="inline-rec" d="M18
+                                                                            11.1547C19.2376
+                                                                            10.4402 20.7624
+                                                                            10.4402 22
+                                                                            11.1547L26.6603
+                                                                            13.8453C27.8979
+                                                                            14.5598 28.6603
+                                                                            15.8803 28.6603
+                                                                            17.3094V22.6906C28.6603
+                                                                            24.1197 27.8979
+                                                                            25.4402 26.6603
+                                                                            26.1547L22
+                                                                            28.8453C20.7624
+                                                                            29.5598 19.2376
+                                                                            29.5598 18
+                                                                            28.8453L13.3397
+                                                                            26.1547C12.1021
+                                                                            25.4402 11.3397
+                                                                            24.1197 11.3397
+                                                                            22.6906V17.3094C11.3397
+                                                                            15.8803 12.1021
+                                                                            14.5598 13.3397
+                                                                            13.8453L18
+                                                                            11.1547Z" fill="#9CA3AF"></path>
+                                                        <path class="inline-stroke" d="M20 2L20.8806
+                                                                            15.1519C20.9757
+                                                                            16.5717 22.4811
+                                                                            17.4409 23.7582
+                                                                            16.8133L35.5885
+                                                                            11L24.6389
+                                                                            18.3386C23.4568
+                                                                            19.1308 23.4568
+                                                                            20.8692 24.6389
+                                                                            21.6614L35.5885
+                                                                            29L23.7582
+                                                                            23.1867C22.4811
+                                                                            22.5591 20.9757
+                                                                            23.4283 20.8806
+                                                                            24.848L20
+                                                                            38L19.1194
+                                                                            24.8481C19.0243
+                                                                            23.4283 17.5189
+                                                                            22.5591 16.2418
+                                                                            23.1867L4.41154
+                                                                            29L15.3611
+                                                                            21.6614C16.5432
+                                                                            20.8692 16.5432
+                                                                            19.1308 15.3611
+                                                                            18.3386L4.41154
+                                                                            11L16.2418
+                                                                            16.8133C17.5189
+                                                                            17.4409 19.0243
+                                                                            16.5717 19.1194
+                                                                            15.152L20 2Z" fill="#fff"></path>
+                                                        <circle class="inline-circle" cx="20" cy="7" r="3" fill="#374151"></circle>
+                                                        <circle class="inline-circle" cx="20" cy="33" r="3" fill="#374151"></circle>
+                                                        <circle class="inline-circle" cx="31.2583" cy="13.5" r="3" transform="rotate(60
+                                                                            31.2583 13.5)" fill="#374151"></circle>
+                                                        <circle class="inline-circle" cx="8.74167" cy="26.5" r="3" transform="rotate(60
+                                                                            8.74167 26.5)" fill="#374151"></circle>
+                                                        <circle class="inline-circle" cx="8.74167" cy="13.5" r="3" transform="rotate(-60
+                                                                            8.74167 13.5)" fill="#374151"></circle>
+                                                        <circle class="inline-circle" cx="31.2583" cy="26.5" r="3" transform="rotate(-60
+                                                                            31.2583 26.5)" fill="#374151"></circle>
+                                                    </svg></span>
+                                                <span class="metadata-value
+                                                                    ml-1 " title="Fiona">Fiona</span>
+                                            </div>
+                                            <div class="metadata
+                                                                metadata-date">
+                                                <span class="metadata-value" title="2:34 PM - Dec 23,
+                                                                    2021">8 months</span>
                                             </div>
                                         </div>
-                                    </li>
-
-                                    <li data-date="28/02/2014">
-                                        <h2>Event title here</h2>
-                                        <em>February 28th, 2014</em>
-                                        <p>
-                                            Lorem ipsum dolor sit amet,
-                                            consectetur adipisicing elit.
-                                            Illum praesentium officia, fugit
-                                            recusandae ipsa, quia velit
-                                            nulla adipisci? Consequuntur
-                                            aspernatur at, eaque hic
-                                            repellendus sit
-                                            dicta consequatur quae, ut harum
-                                            ipsam molestias maxime non nisi
-                                            reiciendis eligendi! Doloremque
-                                            quia pariatur harum ea amet
-                                            quibusdam quisquam, quae,
-                                            temporibus dolores porro
-                                            doloribus.
-                                        </p>
-                                    </li>
-
-                                    <li data-date="20/04/2014">
-                                        <h2>Event title here</h2>
-                                        <em>March 20th, 2014</em>
-                                        <p>
-                                            Lorem ipsum dolor sit amet,
-                                            consectetur adipisicing elit.
-                                            Illum praesentium officia, fugit
-                                            recusandae ipsa, quia velit
-                                            nulla adipisci? Consequuntur
-                                            aspernatur at, eaque hic
-                                            repellendus sit
-                                            dicta consequatur quae, ut harum
-                                            ipsam molestias maxime non nisi
-                                            reiciendis eligendi! Doloremque
-                                            quia pariatur harum ea amet
-                                            quibusdam quisquam, quae,
-                                            temporibus dolores porro
-                                            doloribus.
-                                        </p>
-                                    </li>
-
-                                    <li data-date="20/05/2014">
-                                        <h2>Event title here</h2>
-                                        <em>May 20th, 2014</em>
-                                        <p>
-                                            Lorem ipsum dolor sit amet,
-                                            consectetur adipisicing elit.
-                                            Illum praesentium officia, fugit
-                                            recusandae ipsa, quia velit
-                                            nulla adipisci? Consequuntur
-                                            aspernatur at, eaque hic
-                                            repellendus sit
-                                            dicta consequatur quae, ut harum
-                                            ipsam molestias maxime non nisi
-                                            reiciendis eligendi! Doloremque
-                                            quia pariatur harum ea amet
-                                            quibusdam quisquam, quae,
-                                            temporibus dolores porro
-                                            doloribus.
-                                        </p>
-                                    </li>
-
-                                    <li data-date="09/07/2014">
-                                        <h2>Event title here</h2>
-                                        <em>July 9th, 2014</em>
-                                        <p>
-                                            Lorem ipsum dolor sit amet,
-                                            consectetur adipisicing elit.
-                                            Illum praesentium officia, fugit
-                                            recusandae ipsa, quia velit
-                                            nulla adipisci? Consequuntur
-                                            aspernatur at, eaque hic
-                                            repellendus sit
-                                            dicta consequatur quae, ut harum
-                                            ipsam molestias maxime non nisi
-                                            reiciendis eligendi! Doloremque
-                                            quia pariatur harum ea amet
-                                            quibusdam quisquam, quae,
-                                            temporibus dolores porro
-                                            doloribus.
-                                        </p>
-                                    </li>
-
-                                    <li data-date="30/08/2014">
-                                        <h2>Event title here</h2>
-                                        <em>August 30th, 2014</em>
-                                        <p>
-                                            Lorem ipsum dolor sit amet,
-                                            consectetur adipisicing elit.
-                                            Illum praesentium officia, fugit
-                                            recusandae ipsa, quia velit
-                                            nulla adipisci? Consequuntur
-                                            aspernatur at, eaque hic
-                                            repellendus sit
-                                            dicta consequatur quae, ut harum
-                                            ipsam molestias maxime non nisi
-                                            reiciendis eligendi! Doloremque
-                                            quia pariatur harum ea amet
-                                            quibusdam quisquam, quae,
-                                            temporibus dolores porro
-                                            doloribus.
-                                        </p>
-                                    </li>
-
-                                    <li data-date="15/09/2014">
-                                        <h2>Event title here</h2>
-                                        <em>September 15th, 2014</em>
-                                        <p>
-                                            Lorem ipsum dolor sit amet,
-                                            consectetur adipisicing elit.
-                                            Illum praesentium officia, fugit
-                                            recusandae ipsa, quia velit
-                                            nulla adipisci? Consequuntur
-                                            aspernatur at, eaque hic
-                                            repellendus sit
-                                            dicta consequatur quae, ut harum
-                                            ipsam molestias maxime non nisi
-                                            reiciendis eligendi! Doloremque
-                                            quia pariatur harum ea amet
-                                            quibusdam quisquam, quae,
-                                            temporibus dolores porro
-                                            doloribus.
-                                        </p>
-                                    </li>
-
-                                    <li data-date="01/11/2014">
-                                        <h2>Event title here</h2>
-                                        <em>November 1st, 2014</em>
-                                        <p>
-                                            Lorem ipsum dolor sit amet,
-                                            consectetur adipisicing elit.
-                                            Illum praesentium officia, fugit
-                                            recusandae ipsa, quia velit
-                                            nulla adipisci? Consequuntur
-                                            aspernatur at, eaque hic
-                                            repellendus sit
-                                            dicta consequatur quae, ut harum
-                                            ipsam molestias maxime non nisi
-                                            reiciendis eligendi! Doloremque
-                                            quia pariatur harum ea amet
-                                            quibusdam quisquam, quae,
-                                            temporibus dolores porro
-                                            doloribus.
-                                        </p>
-                                    </li>
-
-                                    <li data-date="10/12/2014">
-                                        <h2>Event title here</h2>
-                                        <em>December 10th, 2014</em>
-                                        <p>
-                                            Lorem ipsum dolor sit amet,
-                                            consectetur adipisicing elit.
-                                            Illum praesentium officia, fugit
-                                            recusandae ipsa, quia velit
-                                            nulla adipisci? Consequuntur
-                                            aspernatur at, eaque hic
-                                            repellendus sit
-                                            dicta consequatur quae, ut harum
-                                            ipsam molestias maxime non nisi
-                                            reiciendis eligendi! Doloremque
-                                            quia pariatur harum ea amet
-                                            quibusdam quisquam, quae,
-                                            temporibus dolores porro
-                                            doloribus.
-                                        </p>
-                                    </li>
-
-                                    <li data-date="19/01/2015">
-                                        <h2>Event title here</h2>
-                                        <em>January 19th, 2015</em>
-                                        <p>
-                                            Lorem ipsum dolor sit amet,
-                                            consectetur adipisicing elit.
-                                            Illum praesentium officia, fugit
-                                            recusandae ipsa, quia velit
-                                            nulla adipisci? Consequuntur
-                                            aspernatur at, eaque hic
-                                            repellendus sit
-                                            dicta consequatur quae, ut harum
-                                            ipsam molestias maxime non nisi
-                                            reiciendis eligendi! Doloremque
-                                            quia pariatur harum ea amet
-                                            quibusdam quisquam, quae,
-                                            temporibus dolores porro
-                                            doloribus.
-                                        </p>
-                                    </li>
-
-                                    <li data-date="03/03/2015">
-                                        <h2>Event title here</h2>
-                                        <em>March 3rd, 2015</em>
-                                        <p>
-                                            Lorem ipsum dolor sit amet,
-                                            consectetur adipisicing elit.
-                                            Illum praesentium officia, fugit
-                                            recusandae ipsa, quia velit
-                                            nulla adipisci? Consequuntur
-                                            aspernatur at, eaque hic
-                                            repellendus sit
-                                            dicta consequatur quae, ut harum
-                                            ipsam molestias maxime non nisi
-                                            reiciendis eligendi! Doloremque
-                                            quia pariatur harum ea amet
-                                            quibusdam quisquam, quae,
-                                            temporibus dolores porro
-                                            doloribus.
-                                        </p>
-                                    </li>
-                                </ol>
-                            </div> <!-- .events-content -->
-
-                            <!-- social -->
-
-                        </section>
+                                        <div class="d-flex flex-shrink-0
+                                                            metadata-wrapper_nodivide">
+                                            <div class="metadata
+                                                                metadata-commentcount"><span class="icon mr-1.5"><i class="fa
+                                                                        fa-comment"></i></span><span class="">1</span></div>
+                                            <div class="metadata
+                                                                metadata-votecount"><span class="icon mr-1.5"><i class="fa-solid
+                                                                        fa-caret-up fa-lg"></i></span><span>4</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <a class="cards-link--overlay"
+                                                href="./details.html?id=">
+                                                <div class="cards-link--overlay">
+            
+                                                </div>
+                                            </a> -->
+                            </div>
+                            <div class="cards cards-post hasComment
+                                                hasVote">
+                                <div class="cards-media">
+                                    <div class="cards-media-img">
+                                        <a href="#">
+                                            <div style="display: block;
+                                                                overflow: hidden; position:
+                                                                absolute; inset: 0px;
+                                                                box-sizing: border-box;
+                                                                margin: 0px;">
+                                                <img alt="Cuộc chiến giữa
+                                                                    Gods và Demons, chiến
+                                                                    lược xoay vòng mới trong
+                                                                    #play2earn" sizes="100vw"
+                                                    src="https://rada.network/_next/image?url=https%3A%2F%2Fmedia.rada.network%2Fassets%2Fd48edb1f-297c-4fae-b7e9-06ffef7e38a9%3Fformat%3Djpg%26width%3D500&w=1920&q=75"
+                                                    decoding="async" data-nimg="fill" class="cards-img" style="position:
+                                                                    absolute; inset: 0px;
+                                                                    box-sizing: border-box;
+                                                                    padding: 0px; border:
+                                                                    none; margin: auto;
+                                                                    display: block; width:
+                                                                    0px; height: 0px;
+                                                                    min-width: 100%;
+                                                                    max-width: 100%;
+                                                                    min-height: 100%;
+                                                                    max-height: 100%;">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="cards-body">
+                                    <div class="cards-body-header">
+                                        <div class="cards-title"><a class="text-color-title"
+                                                href="./details.html?id=">Cuộc
+                                                chiến giữa Gods và Demons,
+                                                chiến lược xoay vòng mới
+                                                trong #play2earn</a>
+                                        </div>
+                                        <div class="cards-badges"><a href="#"><span class="badge
+                                                                    badge-coin">TAUM</span></a></div>
+                                    </div>
+                                    <div class="metadata-wrapper
+                                                        justify-content-between">
+                                        <div class="d-flex flex-shrink-0">
+                                            <div class="metadata
+                                                                metadata-source d-flex
+                                                                align-items-center">
+                                                <span class="avatar-2xs">
+                                                    <div style="overflow:
+                                                                        hidden; box-sizing:
+                                                                        border-box; display:
+                                                                        inline-block;
+                                                                        position: relative;
+                                                                        width: 16px; height:
+                                                                        16px;"><img alt="Ronni"
+                                                            src="https://rada.network/_next/image?url=https%3A%2F%2Fmedia.rada.network%2Fassets%2F93db9957-4223-44a6-baf4-69118baa918a%3Fformat%3Dwebp%26width%3D256&w=16&q=75"
+                                                            decoding="async" data-nimg="fixed" style="position:
+                                                                            absolute; inset:
+                                                                            0px; box-sizing:
+                                                                            border-box;
+                                                                            padding: 0px;
+                                                                            border: none;
+                                                                            margin: auto;
+                                                                            display: block;
+                                                                            width: 0px;
+                                                                            height: 0px;
+                                                                            min-width: 100%;
+                                                                            max-width: 100%;
+                                                                            min-height:
+                                                                            100%;
+                                                                            max-height:
+                                                                            100%;"></div>
+                                                </span>
+                                                <span class="metadata-value
+                                                                    ml-1 " title="Fiona">Fiona</span>
+                                            </div>
+                                            <div class="metadata
+                                                                metadata-date">
+                                                <span class="metadata-value" title="2:34 PM - Dec 23,
+                                                                    2021">8 months</span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-shrink-0
+                                                            metadata-wrapper_nodivide">
+                                            <div class="metadata
+                                                                metadata-commentcount"><span class="icon mr-1.5"><i class="fa
+                                                                        fa-comment"></i></span><span class="">1</span></div>
+                                            <div class="metadata
+                                                                metadata-votecount"><span class="icon mr-1.5"><i class="fa-solid
+                                                                        fa-caret-up fa-lg"></i></span><span>4</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <a class="cards-link--overlay"
+                                                href="./details.html?id=">
+                                                <div class="cards-link--overlay">
+            
+                                                </div>
+                                            </a> -->
+                            </div>
+                            <div class="cards cards-post hasComment
+                                                hasVote">
+                                <div class="cards-media">
+                                    <div class="cards-media-img">
+                                        <a href="#">
+                                            <div style="display: block;
+                                                                overflow: hidden; position:
+                                                                absolute; inset: 0px;
+                                                                box-sizing: border-box;
+                                                                margin: 0px;">
+                                                <img alt="Cuộc chiến giữa
+                                                                    Gods và Demons, chiến
+                                                                    lược xoay vòng mới trong
+                                                                    #play2earn" sizes="100vw"
+                                                    src="https://rada.network/_next/image?url=https%3A%2F%2Fmedia.rada.network%2Fassets%2Fd48edb1f-297c-4fae-b7e9-06ffef7e38a9%3Fformat%3Djpg%26width%3D500&w=1920&q=75"
+                                                    decoding="async" data-nimg="fill" class="cards-img" style="position:
+                                                                    absolute; inset: 0px;
+                                                                    box-sizing: border-box;
+                                                                    padding: 0px; border:
+                                                                    none; margin: auto;
+                                                                    display: block; width:
+                                                                    0px; height: 0px;
+                                                                    min-width: 100%;
+                                                                    max-width: 100%;
+                                                                    min-height: 100%;
+                                                                    max-height: 100%;">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="cards-body">
+                                    <div class="cards-body-header">
+                                        <div class="cards-title"><a class="text-color-title"
+                                                href="./details.html?id=">Cuộc
+                                                chiến giữa Gods và Demons,
+                                                chiến lược xoay vòng mới
+                                                trong #play2earn</a>
+                                        </div>
+                                        <div class="cards-badges"><a href="#"><span class="badge
+                                                                    badge-coin">TAUM</span></a></div>
+                                    </div>
+                                    <div class="metadata-wrapper
+                                                        justify-content-between">
+                                        <div class="d-flex flex-shrink-0">
+                                            <div class="metadata
+                                                                metadata-source d-flex
+                                                                align-items-center">
+                                                <span class="avatar-2xs">
+                                                    <div style="overflow:
+                                                                        hidden; box-sizing:
+                                                                        border-box; display:
+                                                                        inline-block;
+                                                                        position: relative;
+                                                                        width: 16px; height:
+                                                                        16px;"><img alt="Ronni"
+                                                            src="https://rada.network/_next/image?url=https%3A%2F%2Fmedia.rada.network%2Fassets%2F93db9957-4223-44a6-baf4-69118baa918a%3Fformat%3Dwebp%26width%3D256&w=16&q=75"
+                                                            decoding="async" data-nimg="fixed" style="position:
+                                                                            absolute; inset:
+                                                                            0px; box-sizing:
+                                                                            border-box;
+                                                                            padding: 0px;
+                                                                            border: none;
+                                                                            margin: auto;
+                                                                            display: block;
+                                                                            width: 0px;
+                                                                            height: 0px;
+                                                                            min-width: 100%;
+                                                                            max-width: 100%;
+                                                                            min-height:
+                                                                            100%;
+                                                                            max-height:
+                                                                            100%;"></div>
+                                                </span>
+                                                <span class="metadata-value
+                                                                    ml-1 " title="Fiona">Fiona</span>
+                                            </div>
+                                            <div class="metadata
+                                                                metadata-date">
+                                                <span class="metadata-value" title="2:34 PM - Dec 23,
+                                                                    2021">8 months</span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-shrink-0
+                                                            metadata-wrapper_nodivide">
+                                            <div class="metadata
+                                                                metadata-commentcount"><span class="icon mr-1.5"><i class="fa
+                                                                        fa-comment"></i></span><span class="">1</span></div>
+                                            <div class="metadata
+                                                                metadata-votecount"><span class="icon mr-1.5"><i class="fa-solid
+                                                                        fa-caret-up fa-lg"></i></span><span>4</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <a class="cards-link--overlay"
+                                                href="./details.html?id=">
+                                                <div class="cards-link--overlay">
+            
+                                                </div>
+                                            </a> -->
+                            </div>
+                            <div class="cards cards-post hasComment
+                                                hasVote">
+                                <div class="cards-media">
+                                    <div class="cards-media-img">
+                                        <a href="#">
+                                            <div style="display: block;
+                                                                overflow: hidden; position:
+                                                                absolute; inset: 0px;
+                                                                box-sizing: border-box;
+                                                                margin: 0px;">
+                                                <img alt="Cuộc chiến giữa
+                                                                    Gods và Demons, chiến
+                                                                    lược xoay vòng mới trong
+                                                                    #play2earn" sizes="100vw"
+                                                    src="https://rada.network/_next/image?url=https%3A%2F%2Fmedia.rada.network%2Fassets%2Fd48edb1f-297c-4fae-b7e9-06ffef7e38a9%3Fformat%3Djpg%26width%3D500&w=1920&q=75"
+                                                    decoding="async" data-nimg="fill" class="cards-img" style="position:
+                                                                    absolute; inset: 0px;
+                                                                    box-sizing: border-box;
+                                                                    padding: 0px; border:
+                                                                    none; margin: auto;
+                                                                    display: block; width:
+                                                                    0px; height: 0px;
+                                                                    min-width: 100%;
+                                                                    max-width: 100%;
+                                                                    min-height: 100%;
+                                                                    max-height: 100%;">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="cards-body">
+                                    <div class="cards-body-header">
+                                        <div class="cards-title"><a class="text-color-title"
+                                                href="./details.html?id=">Cuộc
+                                                chiến giữa Gods và Demons,
+                                                chiến lược xoay vòng mới
+                                                trong #play2earn</a>
+                                        </div>
+                                        <div class="cards-badges"><a href="#"><span class="badge
+                                                                    badge-coin">TAUM</span></a></div>
+                                    </div>
+                                    <div class="metadata-wrapper
+                                                        justify-content-between">
+                                        <div class="d-flex flex-shrink-0">
+                                            <div class="metadata
+                                                                metadata-source d-flex
+                                                                align-items-center">
+                                                <span class="avatar-2xs">
+                                                    <div style="overflow:
+                                                                        hidden; box-sizing:
+                                                                        border-box; display:
+                                                                        inline-block;
+                                                                        position: relative;
+                                                                        width: 16px; height:
+                                                                        16px;"><img alt="Ronni"
+                                                            src="https://rada.network/_next/image?url=https%3A%2F%2Fmedia.rada.network%2Fassets%2F93db9957-4223-44a6-baf4-69118baa918a%3Fformat%3Dwebp%26width%3D256&w=16&q=75"
+                                                            decoding="async" data-nimg="fixed" style="position:
+                                                                            absolute; inset:
+                                                                            0px; box-sizing:
+                                                                            border-box;
+                                                                            padding: 0px;
+                                                                            border: none;
+                                                                            margin: auto;
+                                                                            display: block;
+                                                                            width: 0px;
+                                                                            height: 0px;
+                                                                            min-width: 100%;
+                                                                            max-width: 100%;
+                                                                            min-height:
+                                                                            100%;
+                                                                            max-height:
+                                                                            100%;"></div>
+                                                </span>
+                                                <span class="metadata-value
+                                                                    ml-1 " title="Fiona">Fiona</span>
+                                            </div>
+                                            <div class="metadata
+                                                                metadata-date">
+                                                <span class="metadata-value" title="2:34 PM - Dec 23,
+                                                                    2021">8 months</span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-shrink-0
+                                                            metadata-wrapper_nodivide">
+                                            <div class="metadata
+                                                                metadata-commentcount"><span class="icon mr-1.5"><i class="fa
+                                                                        fa-comment"></i></span><span class="">1</span></div>
+                                            <div class="metadata
+                                                                metadata-votecount"><span class="icon mr-1.5"><i class="fa-solid
+                                                                        fa-caret-up fa-lg"></i></span><span>4</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <a class="cards-link--overlay"
+                                                href="./details.html?id=">
+                                                <div class="cards-link--overlay">
+            
+                                                </div>
+                                            </a> -->
+                            </div>
+                            <div class="cards cards-post hasComment
+                                                hasVote">
+                                <div class="cards-media">
+                                    <div class="cards-media-img">
+                                        <a href="#">
+                                            <div style="display: block;
+                                                                overflow: hidden; position:
+                                                                absolute; inset: 0px;
+                                                                box-sizing: border-box;
+                                                                margin: 0px;">
+                                                <img alt="Cuộc chiến giữa
+                                                                    Gods và Demons, chiến
+                                                                    lược xoay vòng mới trong
+                                                                    #play2earn" sizes="100vw"
+                                                    src="https://rada.network/_next/image?url=https%3A%2F%2Fmedia.rada.network%2Fassets%2Fd48edb1f-297c-4fae-b7e9-06ffef7e38a9%3Fformat%3Djpg%26width%3D500&w=1920&q=75"
+                                                    decoding="async" data-nimg="fill" class="cards-img" style="position:
+                                                                    absolute; inset: 0px;
+                                                                    box-sizing: border-box;
+                                                                    padding: 0px; border:
+                                                                    none; margin: auto;
+                                                                    display: block; width:
+                                                                    0px; height: 0px;
+                                                                    min-width: 100%;
+                                                                    max-width: 100%;
+                                                                    min-height: 100%;
+                                                                    max-height: 100%;">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="cards-body">
+                                    <div class="cards-body-header">
+                                        <div class="cards-title"><a class="text-color-title"
+                                                href="./details.html?id=">Cuộc
+                                                chiến giữa Gods và Demons,
+                                                chiến lược xoay vòng mới
+                                                trong #play2earn</a>
+                                        </div>
+                                        <div class="cards-badges"><a href="#"><span class="badge
+                                                                    badge-coin">TAUM</span></a></div>
+                                    </div>
+                                    <div class="metadata-wrapper
+                                                        justify-content-between">
+                                        <div class="d-flex flex-shrink-0">
+                                            <div class="metadata
+                                                                metadata-source d-flex
+                                                                align-items-center">
+                                                <span><svg width="1em" class="rada-svg" viewBox="4 4 32 32"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path class="inline-rec" d="M18
+                                                                            11.1547C19.2376
+                                                                            10.4402 20.7624
+                                                                            10.4402 22
+                                                                            11.1547L26.6603
+                                                                            13.8453C27.8979
+                                                                            14.5598 28.6603
+                                                                            15.8803 28.6603
+                                                                            17.3094V22.6906C28.6603
+                                                                            24.1197 27.8979
+                                                                            25.4402 26.6603
+                                                                            26.1547L22
+                                                                            28.8453C20.7624
+                                                                            29.5598 19.2376
+                                                                            29.5598 18
+                                                                            28.8453L13.3397
+                                                                            26.1547C12.1021
+                                                                            25.4402 11.3397
+                                                                            24.1197 11.3397
+                                                                            22.6906V17.3094C11.3397
+                                                                            15.8803 12.1021
+                                                                            14.5598 13.3397
+                                                                            13.8453L18
+                                                                            11.1547Z" fill="#9CA3AF"></path>
+                                                        <path class="inline-stroke" d="M20 2L20.8806
+                                                                            15.1519C20.9757
+                                                                            16.5717 22.4811
+                                                                            17.4409 23.7582
+                                                                            16.8133L35.5885
+                                                                            11L24.6389
+                                                                            18.3386C23.4568
+                                                                            19.1308 23.4568
+                                                                            20.8692 24.6389
+                                                                            21.6614L35.5885
+                                                                            29L23.7582
+                                                                            23.1867C22.4811
+                                                                            22.5591 20.9757
+                                                                            23.4283 20.8806
+                                                                            24.848L20
+                                                                            38L19.1194
+                                                                            24.8481C19.0243
+                                                                            23.4283 17.5189
+                                                                            22.5591 16.2418
+                                                                            23.1867L4.41154
+                                                                            29L15.3611
+                                                                            21.6614C16.5432
+                                                                            20.8692 16.5432
+                                                                            19.1308 15.3611
+                                                                            18.3386L4.41154
+                                                                            11L16.2418
+                                                                            16.8133C17.5189
+                                                                            17.4409 19.0243
+                                                                            16.5717 19.1194
+                                                                            15.152L20 2Z" fill="#fff"></path>
+                                                        <circle class="inline-circle" cx="20" cy="7" r="3" fill="#374151"></circle>
+                                                        <circle class="inline-circle" cx="20" cy="33" r="3" fill="#374151"></circle>
+                                                        <circle class="inline-circle" cx="31.2583" cy="13.5" r="3" transform="rotate(60
+                                                                            31.2583 13.5)" fill="#374151"></circle>
+                                                        <circle class="inline-circle" cx="8.74167" cy="26.5" r="3" transform="rotate(60
+                                                                            8.74167 26.5)" fill="#374151"></circle>
+                                                        <circle class="inline-circle" cx="8.74167" cy="13.5" r="3" transform="rotate(-60
+                                                                            8.74167 13.5)" fill="#374151"></circle>
+                                                        <circle class="inline-circle" cx="31.2583" cy="26.5" r="3" transform="rotate(-60
+                                                                            31.2583 26.5)" fill="#374151"></circle>
+                                                    </svg></span>
+                                                <span class="metadata-value
+                                                                    ml-1 " title="Fiona">Fiona</span>
+                                            </div>
+                                            <div class="metadata
+                                                                metadata-date">
+                                                <span class="metadata-value" title="2:34 PM - Dec 23,
+                                                                    2021">8 months</span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-shrink-0
+                                                            metadata-wrapper_nodivide">
+                                            <div class="metadata
+                                                                metadata-commentcount"><span class="icon mr-1.5"><i class="fa
+                                                                        fa-comment"></i></span><span class="">1</span></div>
+                                            <div class="metadata
+                                                                metadata-votecount"><span class="icon mr-1.5"><i class="fa-solid
+                                                                        fa-caret-up fa-lg"></i></span><span>4</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <a class="cards-link--overlay"
+                                                href="./details.html?id=">
+                                                <div class="cards-link--overlay">
+            
+                                                </div>
+                                            </a> -->
+                            </div>
+                            <div class="cards cards-post hasComment
+                                                hasVote">
+                                <div class="cards-media">
+                                    <div class="cards-media-img">
+                                        <a href="#">
+                                            <div style="display: block;
+                                                                overflow: hidden; position:
+                                                                absolute; inset: 0px;
+                                                                box-sizing: border-box;
+                                                                margin: 0px;">
+                                                <img alt="Cuộc chiến giữa
+                                                                    Gods và Demons, chiến
+                                                                    lược xoay vòng mới trong
+                                                                    #play2earn" sizes="100vw"
+                                                    src="https://rada.network/_next/image?url=https%3A%2F%2Fmedia.rada.network%2Fassets%2Fd48edb1f-297c-4fae-b7e9-06ffef7e38a9%3Fformat%3Djpg%26width%3D500&w=1920&q=75"
+                                                    decoding="async" data-nimg="fill" class="cards-img" style="position:
+                                                                    absolute; inset: 0px;
+                                                                    box-sizing: border-box;
+                                                                    padding: 0px; border:
+                                                                    none; margin: auto;
+                                                                    display: block; width:
+                                                                    0px; height: 0px;
+                                                                    min-width: 100%;
+                                                                    max-width: 100%;
+                                                                    min-height: 100%;
+                                                                    max-height: 100%;">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="cards-body">
+                                    <div class="cards-body-header">
+                                        <div class="cards-title"><a class="text-color-title"
+                                                href="./details.html?id=">Cuộc
+                                                chiến giữa Gods và Demons,
+                                                chiến lược xoay vòng mới
+                                                trong #play2earn</a>
+                                        </div>
+                                        <div class="cards-badges"><a href="#"><span class="badge
+                                                                    badge-coin">TAUM</span></a></div>
+                                    </div>
+                                    <div class="metadata-wrapper
+                                                        justify-content-between">
+                                        <div class="d-flex flex-shrink-0">
+                                            <div class="metadata
+                                                                metadata-source d-flex
+                                                                align-items-center">
+                                                <span><svg width="1em" class="rada-svg" viewBox="4 4 32 32"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path class="inline-rec" d="M18
+                                                                            11.1547C19.2376
+                                                                            10.4402 20.7624
+                                                                            10.4402 22
+                                                                            11.1547L26.6603
+                                                                            13.8453C27.8979
+                                                                            14.5598 28.6603
+                                                                            15.8803 28.6603
+                                                                            17.3094V22.6906C28.6603
+                                                                            24.1197 27.8979
+                                                                            25.4402 26.6603
+                                                                            26.1547L22
+                                                                            28.8453C20.7624
+                                                                            29.5598 19.2376
+                                                                            29.5598 18
+                                                                            28.8453L13.3397
+                                                                            26.1547C12.1021
+                                                                            25.4402 11.3397
+                                                                            24.1197 11.3397
+                                                                            22.6906V17.3094C11.3397
+                                                                            15.8803 12.1021
+                                                                            14.5598 13.3397
+                                                                            13.8453L18
+                                                                            11.1547Z" fill="#9CA3AF"></path>
+                                                        <path class="inline-stroke" d="M20 2L20.8806
+                                                                            15.1519C20.9757
+                                                                            16.5717 22.4811
+                                                                            17.4409 23.7582
+                                                                            16.8133L35.5885
+                                                                            11L24.6389
+                                                                            18.3386C23.4568
+                                                                            19.1308 23.4568
+                                                                            20.8692 24.6389
+                                                                            21.6614L35.5885
+                                                                            29L23.7582
+                                                                            23.1867C22.4811
+                                                                            22.5591 20.9757
+                                                                            23.4283 20.8806
+                                                                            24.848L20
+                                                                            38L19.1194
+                                                                            24.8481C19.0243
+                                                                            23.4283 17.5189
+                                                                            22.5591 16.2418
+                                                                            23.1867L4.41154
+                                                                            29L15.3611
+                                                                            21.6614C16.5432
+                                                                            20.8692 16.5432
+                                                                            19.1308 15.3611
+                                                                            18.3386L4.41154
+                                                                            11L16.2418
+                                                                            16.8133C17.5189
+                                                                            17.4409 19.0243
+                                                                            16.5717 19.1194
+                                                                            15.152L20 2Z" fill="#fff"></path>
+                                                        <circle class="inline-circle" cx="20" cy="7" r="3" fill="#374151"></circle>
+                                                        <circle class="inline-circle" cx="20" cy="33" r="3" fill="#374151"></circle>
+                                                        <circle class="inline-circle" cx="31.2583" cy="13.5" r="3" transform="rotate(60
+                                                                            31.2583 13.5)" fill="#374151"></circle>
+                                                        <circle class="inline-circle" cx="8.74167" cy="26.5" r="3" transform="rotate(60
+                                                                            8.74167 26.5)" fill="#374151"></circle>
+                                                        <circle class="inline-circle" cx="8.74167" cy="13.5" r="3" transform="rotate(-60
+                                                                            8.74167 13.5)" fill="#374151"></circle>
+                                                        <circle class="inline-circle" cx="31.2583" cy="26.5" r="3" transform="rotate(-60
+                                                                            31.2583 26.5)" fill="#374151"></circle>
+                                                    </svg></span>
+                                                <span class="metadata-value
+                                                                    ml-1 " title="Fiona">Fiona</span>
+                                            </div>
+                                            <div class="metadata
+                                                                metadata-date">
+                                                <span class="metadata-value" title="2:34 PM - Dec 23,
+                                                                    2021">8 months</span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-shrink-0
+                                                            metadata-wrapper_nodivide">
+                                            <div class="metadata
+                                                                metadata-commentcount"><span class="icon mr-1.5"><i class="fa
+                                                                        fa-comment"></i></span><span class="">1</span></div>
+                                            <div class="metadata
+                                                                metadata-votecount"><span class="icon mr-1.5"><i class="fa-solid
+                                                                        fa-caret-up fa-lg"></i></span><span>4</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <a class="cards-link--overlay"
+                                                href="./details.html?id=">
+                                                <div class="cards-link--overlay">
+            
+                                                </div>
+                                            </a> -->
+                            </div>
+                            <div class="cards cards-post hasComment
+                                                hasVote">
+                                <div class="cards-media">
+                                    <div class="cards-media-img">
+                                        <a href="#">
+                                            <div style="display: block;
+                                                                overflow: hidden; position:
+                                                                absolute; inset: 0px;
+                                                                box-sizing: border-box;
+                                                                margin: 0px;">
+                                                <img alt="Cuộc chiến giữa
+                                                                    Gods và Demons, chiến
+                                                                    lược xoay vòng mới trong
+                                                                    #play2earn" sizes="100vw"
+                                                    src="https://rada.network/_next/image?url=https%3A%2F%2Fmedia.rada.network%2Fassets%2Fd48edb1f-297c-4fae-b7e9-06ffef7e38a9%3Fformat%3Djpg%26width%3D500&w=1920&q=75"
+                                                    decoding="async" data-nimg="fill" class="cards-img" style="position:
+                                                                    absolute; inset: 0px;
+                                                                    box-sizing: border-box;
+                                                                    padding: 0px; border:
+                                                                    none; margin: auto;
+                                                                    display: block; width:
+                                                                    0px; height: 0px;
+                                                                    min-width: 100%;
+                                                                    max-width: 100%;
+                                                                    min-height: 100%;
+                                                                    max-height: 100%;">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="cards-body">
+                                    <div class="cards-body-header">
+                                        <div class="cards-title"><a class="text-color-title"
+                                                href="./details.html?id=">Cuộc
+                                                chiến giữa Gods và Demons,
+                                                chiến lược xoay vòng mới
+                                                trong #play2earn</a>
+                                        </div>
+                                        <div class="cards-badges"><a href="#"><span class="badge
+                                                                    badge-coin">TAUM</span></a></div>
+                                    </div>
+                                    <div class="metadata-wrapper
+                                                        justify-content-between">
+                                        <div class="d-flex flex-shrink-0">
+                                            <div class="metadata
+                                                                metadata-source d-flex
+                                                                align-items-center">
+                                                <span><svg width="1em" class="rada-svg" viewBox="4 4 32 32"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path class="inline-rec" d="M18
+                                                                            11.1547C19.2376
+                                                                            10.4402 20.7624
+                                                                            10.4402 22
+                                                                            11.1547L26.6603
+                                                                            13.8453C27.8979
+                                                                            14.5598 28.6603
+                                                                            15.8803 28.6603
+                                                                            17.3094V22.6906C28.6603
+                                                                            24.1197 27.8979
+                                                                            25.4402 26.6603
+                                                                            26.1547L22
+                                                                            28.8453C20.7624
+                                                                            29.5598 19.2376
+                                                                            29.5598 18
+                                                                            28.8453L13.3397
+                                                                            26.1547C12.1021
+                                                                            25.4402 11.3397
+                                                                            24.1197 11.3397
+                                                                            22.6906V17.3094C11.3397
+                                                                            15.8803 12.1021
+                                                                            14.5598 13.3397
+                                                                            13.8453L18
+                                                                            11.1547Z" fill="#9CA3AF"></path>
+                                                        <path class="inline-stroke" d="M20 2L20.8806
+                                                                            15.1519C20.9757
+                                                                            16.5717 22.4811
+                                                                            17.4409 23.7582
+                                                                            16.8133L35.5885
+                                                                            11L24.6389
+                                                                            18.3386C23.4568
+                                                                            19.1308 23.4568
+                                                                            20.8692 24.6389
+                                                                            21.6614L35.5885
+                                                                            29L23.7582
+                                                                            23.1867C22.4811
+                                                                            22.5591 20.9757
+                                                                            23.4283 20.8806
+                                                                            24.848L20
+                                                                            38L19.1194
+                                                                            24.8481C19.0243
+                                                                            23.4283 17.5189
+                                                                            22.5591 16.2418
+                                                                            23.1867L4.41154
+                                                                            29L15.3611
+                                                                            21.6614C16.5432
+                                                                            20.8692 16.5432
+                                                                            19.1308 15.3611
+                                                                            18.3386L4.41154
+                                                                            11L16.2418
+                                                                            16.8133C17.5189
+                                                                            17.4409 19.0243
+                                                                            16.5717 19.1194
+                                                                            15.152L20 2Z" fill="#fff"></path>
+                                                        <circle class="inline-circle" cx="20" cy="7" r="3" fill="#374151"></circle>
+                                                        <circle class="inline-circle" cx="20" cy="33" r="3" fill="#374151"></circle>
+                                                        <circle class="inline-circle" cx="31.2583" cy="13.5" r="3" transform="rotate(60
+                                                                            31.2583 13.5)" fill="#374151"></circle>
+                                                        <circle class="inline-circle" cx="8.74167" cy="26.5" r="3" transform="rotate(60
+                                                                            8.74167 26.5)" fill="#374151"></circle>
+                                                        <circle class="inline-circle" cx="8.74167" cy="13.5" r="3" transform="rotate(-60
+                                                                            8.74167 13.5)" fill="#374151"></circle>
+                                                        <circle class="inline-circle" cx="31.2583" cy="26.5" r="3" transform="rotate(-60
+                                                                            31.2583 26.5)" fill="#374151"></circle>
+                                                    </svg></span>
+                                                <span class="metadata-value
+                                                                    ml-1 " title="Fiona">Fiona</span>
+                                            </div>
+                                            <div class="metadata
+                                                                metadata-date">
+                                                <span class="metadata-value" title="2:34 PM - Dec 23,
+                                                                    2021">8 months</span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-shrink-0
+                                                            metadata-wrapper_nodivide">
+                                            <div class="metadata
+                                                                metadata-commentcount"><span class="icon mr-1.5"><i class="fa
+                                                                        fa-comment"></i></span><span class="">1</span></div>
+                                            <div class="metadata
+                                                                metadata-votecount"><span class="icon mr-1.5"><i class="fa-solid
+                                                                        fa-caret-up fa-lg"></i></span><span>4</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <a class="cards-link--overlay"
+                                                href="./details.html?id=">
+                                                <div class="cards-link--overlay">
+            
+                                                </div>
+                                            </a> -->
+                            </div>
+                            <div class="cards cards-post hasComment
+                                                hasVote">
+                                <div class="cards-media">
+                                    <div class="cards-media-img">
+                                        <a href="#">
+                                            <div style="display: block;
+                                                                overflow: hidden; position:
+                                                                absolute; inset: 0px;
+                                                                box-sizing: border-box;
+                                                                margin: 0px;">
+                                                <img alt="Cuộc chiến giữa
+                                                                    Gods và Demons, chiến
+                                                                    lược xoay vòng mới trong
+                                                                    #play2earn" sizes="100vw"
+                                                    src="https://rada.network/_next/image?url=https%3A%2F%2Fmedia.rada.network%2Fassets%2Fd48edb1f-297c-4fae-b7e9-06ffef7e38a9%3Fformat%3Djpg%26width%3D500&w=1920&q=75"
+                                                    decoding="async" data-nimg="fill" class="cards-img" style="position:
+                                                                    absolute; inset: 0px;
+                                                                    box-sizing: border-box;
+                                                                    padding: 0px; border:
+                                                                    none; margin: auto;
+                                                                    display: block; width:
+                                                                    0px; height: 0px;
+                                                                    min-width: 100%;
+                                                                    max-width: 100%;
+                                                                    min-height: 100%;
+                                                                    max-height: 100%;">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="cards-body">
+                                    <div class="cards-body-header">
+                                        <div class="cards-title"><a class="text-color-title"
+                                                href="./details.html?id=">Cuộc
+                                                chiến giữa Gods và Demons,
+                                                chiến lược xoay vòng mới
+                                                trong #play2earn</a>
+                                        </div>
+                                        <div class="cards-badges"><a href="#"><span class="badge
+                                                                    badge-coin">TAUM</span></a></div>
+                                    </div>
+                                    <div class="metadata-wrapper
+                                                        justify-content-between">
+                                        <div class="d-flex flex-shrink-0">
+                                            <div class="metadata
+                                                                metadata-source d-flex
+                                                                align-items-center">
+                                                <span><svg width="1em" class="rada-svg" viewBox="4 4 32 32"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path class="inline-rec" d="M18
+                                                                            11.1547C19.2376
+                                                                            10.4402 20.7624
+                                                                            10.4402 22
+                                                                            11.1547L26.6603
+                                                                            13.8453C27.8979
+                                                                            14.5598 28.6603
+                                                                            15.8803 28.6603
+                                                                            17.3094V22.6906C28.6603
+                                                                            24.1197 27.8979
+                                                                            25.4402 26.6603
+                                                                            26.1547L22
+                                                                            28.8453C20.7624
+                                                                            29.5598 19.2376
+                                                                            29.5598 18
+                                                                            28.8453L13.3397
+                                                                            26.1547C12.1021
+                                                                            25.4402 11.3397
+                                                                            24.1197 11.3397
+                                                                            22.6906V17.3094C11.3397
+                                                                            15.8803 12.1021
+                                                                            14.5598 13.3397
+                                                                            13.8453L18
+                                                                            11.1547Z" fill="#9CA3AF"></path>
+                                                        <path class="inline-stroke" d="M20 2L20.8806
+                                                                            15.1519C20.9757
+                                                                            16.5717 22.4811
+                                                                            17.4409 23.7582
+                                                                            16.8133L35.5885
+                                                                            11L24.6389
+                                                                            18.3386C23.4568
+                                                                            19.1308 23.4568
+                                                                            20.8692 24.6389
+                                                                            21.6614L35.5885
+                                                                            29L23.7582
+                                                                            23.1867C22.4811
+                                                                            22.5591 20.9757
+                                                                            23.4283 20.8806
+                                                                            24.848L20
+                                                                            38L19.1194
+                                                                            24.8481C19.0243
+                                                                            23.4283 17.5189
+                                                                            22.5591 16.2418
+                                                                            23.1867L4.41154
+                                                                            29L15.3611
+                                                                            21.6614C16.5432
+                                                                            20.8692 16.5432
+                                                                            19.1308 15.3611
+                                                                            18.3386L4.41154
+                                                                            11L16.2418
+                                                                            16.8133C17.5189
+                                                                            17.4409 19.0243
+                                                                            16.5717 19.1194
+                                                                            15.152L20 2Z" fill="#fff"></path>
+                                                        <circle class="inline-circle" cx="20" cy="7" r="3" fill="#374151"></circle>
+                                                        <circle class="inline-circle" cx="20" cy="33" r="3" fill="#374151"></circle>
+                                                        <circle class="inline-circle" cx="31.2583" cy="13.5" r="3" transform="rotate(60
+                                                                            31.2583 13.5)" fill="#374151"></circle>
+                                                        <circle class="inline-circle" cx="8.74167" cy="26.5" r="3" transform="rotate(60
+                                                                            8.74167 26.5)" fill="#374151"></circle>
+                                                        <circle class="inline-circle" cx="8.74167" cy="13.5" r="3" transform="rotate(-60
+                                                                            8.74167 13.5)" fill="#374151"></circle>
+                                                        <circle class="inline-circle" cx="31.2583" cy="26.5" r="3" transform="rotate(-60
+                                                                            31.2583 26.5)" fill="#374151"></circle>
+                                                    </svg></span>
+                                                <span class="metadata-value
+                                                                    ml-1 " title="Fiona">Fiona</span>
+                                            </div>
+                                            <div class="metadata
+                                                                metadata-date">
+                                                <span class="metadata-value" title="2:34 PM - Dec 23,
+                                                                    2021">8 months</span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-shrink-0
+                                                            metadata-wrapper_nodivide">
+                                            <div class="metadata
+                                                                metadata-commentcount"><span class="icon mr-1.5"><i class="fa
+                                                                        fa-comment"></i></span><span class="">1</span></div>
+                                            <div class="metadata
+                                                                metadata-votecount"><span class="icon mr-1.5"><i class="fa-solid
+                                                                        fa-caret-up fa-lg"></i></span><span>4</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <a class="cards-link--overlay"
+                                                href="./details.html?id=">
+                                                <div class="cards-link--overlay">
+            
+                                                </div>
+                                            </a> -->
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <div id="separator"></div>
+                <div class="pane-content--sec article" id="second" cls="list-top-away">
+                    <div class="pane-content--sec--main">
+                        <!-- <div class="page-about">
+                            <div class="page-about-content">
+                                <div class="page-about-content--section
+                                                    content-section--1">
+                                    <h4>RADA là gì?</h4>
+                                    <p>RADA là cộng đồng đầu tư Blockchain
+                                        vận hành trên mô hình DAO.
+                                        Rada.Network là nền tảng để vận hành
+                                        các hoạt động của
+                                        các Raders. Rada.Network 1.0 sẽ là
+                                        phiên bản Beta đầu tiên của Rada.</p>
+                                    <h4>Rada Investment Platform bao gồm?</h4>
+                                    <span>
+                                        <p><strong>LaunchVerse:</strong> Sản
+                                            phẩm mới nhất của RADA - một
+                                            Launchpad dựa trên DAO cho các
+                                            dự án
+                                            GameFi & Metaverse Blockchain.</p>
+                                        <p><strong>Nghiên cứu:</strong> Các
+                                            Rader có thể tìm
+                                            thấy "Bài báo Đánh giá Dự án"
+                                            được
+                                            Đối tác của RADA trong phần này.
+                                            Điều này sẽ giúp họ
+                                            KHẮC PHỤC trước khi đưa ra bất
+                                            kỳ
+                                            quyết định đầu tư nào.</p>
+            
+                                        <p><strong>Bài viết:</strong> Nội
+                                            dung
+                                            do Raders gửi về tin tức, kiến
+                                            ​​thức, quan điểm về Blockchain,
+                                            ...</p>
+                                        <p><strong>Về RADA:</strong> Phần
+                                            này
+                                            bao gồm mọi thứ bạn cần biết về
+                                            RADA<br>
+                                        </p>
+                                        Rader Profile & Investment:
+                                        https://rada.network/vi/dashboard
+                                        nơi quản lý hồ sơ Contribute và
+                                        Investment Opporturnity
+                                        của các Raders
+            
+                                    </span>
+                                    <h4>Đa ngôn ngữ: 🇻🇳 🇺🇸</h4>
+                                </div>
+                                <div class="page-about-content--section
+                                                    content-section--2">
+                                    <div class="about-social">
+                                        <div>
+                                            <i class="fab fa-facebook"></i>
+                                        </div>
+                                        <div><i class="fab fa-telegram"></i></div>
+                                        <div>
+                                            <i class="fab fa-discord"></i>
+                                        </div>
+                                        <div><i class="fab fa-twitter"></i></div>
+                                        <div><i class="fas fa-ad"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
 
+                        <!-- Swiper -->
+                        <div class="swiper mySwiper">
+                            <section class="cd-horizontal-timeline">
+                                <div class="timeline">
+                                    <div class="events-wrapper">
+                                        <div class="events">
+                                            <ol>
+                                                <li><a href="#0" data-date="16/01/2014" class="selected">16 Jan</a></li>
+                                                <li><a href="#0" data-date="28/02/2014">28
+                                                        Feb</a></li>
+                                                <li><a href="#0" data-date="20/04/2014">20
+                                                        Mar</a></li>
+                                                <li><a href="#0" data-date="20/05/2014">20
+                                                        May</a></li>
+                                                <li><a href="#0" data-date="09/07/2014">09
+                                                        Jul</a></li>
+                                                <li><a href="#0" data-date="30/08/2014">30
+                                                        Aug</a></li>
+                                                <li><a href="#0" data-date="15/09/2014">15
+                                                        Sep</a></li>
+                                                <li><a href="#0" data-date="01/11/2014">01
+                                                        Nov</a></li>
+                                                <li><a href="#0" data-date="10/12/2014">10
+                                                        Dec</a></li>
+                                                <li><a href="#0" data-date="19/01/2015">29
+                                                        Jan</a></li>
+                                                <li><a href="#0" data-date="03/03/2015">3
+                                                        Mar</a></li>
+                                            </ol>
+                        
+                                            <span class="filling-line" aria-hidden="true"></span>
+                                        </div> <!-- .events -->
+                                    </div> <!-- .events-wrapper -->
+                        
+                                    <ul class="cd-timeline-navigation">
+                                        <li><a href="#0" class="prev inactive">Prev</a></li>
+                                        <li><a href="#0" class="next">Next</a></li>
+                                    </ul> <!-- .cd-timeline-navigation -->
+                                </div> <!-- .timeline -->
+                        
+                                <div class="events-content  scroll-bar">
+                                    <ol>
+                                        <li class="selected" data-date="16/01/2014">
+                                            <div class="post-content">
+                                                <h2 class="post-heading">Cuộc chiến giữa Gods và Demons, chiến lược xoay
+                                                    vòng mới trong #play2earn</h2>
+                                                <span class="post-info">
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="post-auth-img rounded-circle overflow-hidden mr-2">
+                                                            <img class="rounded-circle"
+                                                                src="./assets/image/93db9957-4223-44a6-baf4-69118baa918a.png" alt="avt">
+                                                        </div>
+                                                        <span class="post-auth mr-3">Ronni</span>
+                                                        <span>8 Month</span>
+                                                    </div>
+                                                    <button class="btn-post-vote">
+                                                        <i class="fa-solid fa-caret-up"></i>
+                                                        Upvote <span>2</span>
+                                                    </button>
+                                                </span>
+                                                <div class="post-main">
+                                                    <p>Nhìn về phía các vì sao, anh ta nhận ra cuối cùng ước mơ đi vào vũ
+                                                        trụ của mình đã trở thành sự thật… trong MetaVerse,
+                                                        nơi các thuyền trưởng có thể đạt được mong muốn sâu sắc nhất của
+                                                        mình về cuộc chiến tranh giữa các thiên hà.</p>
+                                                    <p>Bài viết là ý kiến ​​của tác giả Ronni K. Gothard Christiansen - một
+                                                        thành viên của cộng đồng RADA.</p>
+                                                    <img class="rounded-lg" src="./assets/image/56235f7b-0765-4739-b879-4e571acd6426.png"
+                                                        alt="">
+                                                    <h4>1. Giới thiệu dự án</h4>
+                                                    <p>
+                                                        Space Crypto là một Space Metaverse, nơi bất kỳ ai cũng có thể kiếm
+                                                        được token nhờ vai trò space guardian và chiến lược
+                                                        riêng khi thực hiện nhiệm vụ khắc phục những hành động xấu của những
+                                                        tên trùm độc ác và bảo vệ Space Metaverse.
+                                                    </p>
+                                                    <p>
+                                                        Với vũ trụ MetaVerse và hình thức #free2play, Space Crypto sẽ mang
+                                                        đến cho các thế hệ người hâm mộ Trekkies và Star Wars
+                                                        cơ hội khám phá không gian chiến tranh toàn diện và tuyệt vời. Bất
+                                                        kỳ ai cũng có thể sử dụng trình duyệt web của họ hoặc
+                                                        tải xuống các phiên bản IOS và Android để chơi mà không cần bỏ tiền
+                                                        để tham gia.
+                                                    </p>
+                                                    <p>Gameplay sẽ tập trung vào trải nghiệm dễ dàng và thú vị, nơi những
+                                                        người chơi bình thường có thể kiếm tiền trong thời
+                                                        gian rảnh. Điều này giúp cho việc những người hâm mộ trò chơi Chiến
+                                                        lược không gian truyền thống thích ứng với MetaVerse
+                                                        dễ dàng hơn vì game có cùng một cơ chế chơi.</p>
+                                                    <h4>2. Đánh giá thị trường</h4>
+                                                    <p>Trò chơi không gian và các nhánh phụ đã thu hút hàng triệu người trên
+                                                        toàn cầu - nhiều trong số đó là fan của những bộ
+                                                        phim truyền hình lớn nhất thế giới trong hơn 50 năm qua. Khoa học
+                                                        viễn tưởng và Không gian vẫn là đề tài nóng bỏng hơn
+                                                        bao giờ hết và sẽ vẫn giữ nguyên vị trí như “biên giới cuối cùng”
+                                                        như cách mà Star Trek đã gây dựng nên tên tuổi.</p>
+                                                    <p>Nhân loại khao khát tìm hiểu và vượt ra bên ngoài không gian. Sứ mệnh
+                                                        này liên tục được thực hiện trong nhiều thế hệ và
+                                                        bất chấp các chuyến bay có người lái lên mặt trăng cùng nhiều thành
+                                                        tựu kỳ diệu khác, về cơ bản, hành trình tiến tới
+                                                        biên giới cuối cùng vẫn còn rất xa.</p>
+                                                    <p>Điểm đến tiếp theo là MetaVerse. Thành thật mà nói, đây là nơi mà
+                                                        việc khám phá không gian sẽ diễn ra đầu tiên, có thể
+                                                        không phải trong thực tế, nhưng xét về bối cảnh xã hội, điều này
+                                                        giúp thiết lập sự cân bằng kinh tế - xã hội và đặt một
+                                                        nền tảng cho cuộc sống phi tập trung của con người.</p>
+                                                    <img src="https://media.rada.network/assets/79e6fe1e-0269-446a-b0af-381d9fd4e38f?format=webp&width=1080"
+                                                        alt="">
+                                                    <h4>Gamefi và MetaVerse</h4>
+                                                    <p>Nhiều tựa #gamefi và #metaverse">#gamefi và #metaverse mới sắp ra mắt
+                                                        vào Quý 1 năm 2022, và một vài trong số chúng cũng
+                                                        lấy Không gian làm chủ đề. Những game thú vị cũng sẽ xuất hiện trên
+                                                        BSc nhưng Space Crypto nổi bật lên tất cả với hình
+                                                        thức Chiến tranh chiến lược không gian thay vì những tựa game chỉ
+                                                        tập trung chủ yếu vào việc sở hữu đất đai và farming.</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                        
+                                        <li data-date="28/02/2014">
+                                            <h2>Event title here</h2>
+                                            <em>February 28th, 2014</em>
+                                            <p>
+                                                Lorem ipsum dolor sit amet,
+                                                consectetur adipisicing elit.
+                                                Illum praesentium officia, fugit
+                                                recusandae ipsa, quia velit
+                                                nulla adipisci? Consequuntur
+                                                aspernatur at, eaque hic
+                                                repellendus sit
+                                                dicta consequatur quae, ut harum
+                                                ipsam molestias maxime non nisi
+                                                reiciendis eligendi! Doloremque
+                                                quia pariatur harum ea amet
+                                                quibusdam quisquam, quae,
+                                                temporibus dolores porro
+                                                doloribus.
+                                            </p>
+                                        </li>
+                        
+                                        <li data-date="20/04/2014">
+                                            <h2>Event title here</h2>
+                                            <em>March 20th, 2014</em>
+                                            <p>
+                                                Lorem ipsum dolor sit amet,
+                                                consectetur adipisicing elit.
+                                                Illum praesentium officia, fugit
+                                                recusandae ipsa, quia velit
+                                                nulla adipisci? Consequuntur
+                                                aspernatur at, eaque hic
+                                                repellendus sit
+                                                dicta consequatur quae, ut harum
+                                                ipsam molestias maxime non nisi
+                                                reiciendis eligendi! Doloremque
+                                                quia pariatur harum ea amet
+                                                quibusdam quisquam, quae,
+                                                temporibus dolores porro
+                                                doloribus.
+                                            </p>
+                                        </li>
+                        
+                                        <li data-date="20/05/2014">
+                                            <h2>Event title here</h2>
+                                            <em>May 20th, 2014</em>
+                                            <p>
+                                                Lorem ipsum dolor sit amet,
+                                                consectetur adipisicing elit.
+                                                Illum praesentium officia, fugit
+                                                recusandae ipsa, quia velit
+                                                nulla adipisci? Consequuntur
+                                                aspernatur at, eaque hic
+                                                repellendus sit
+                                                dicta consequatur quae, ut harum
+                                                ipsam molestias maxime non nisi
+                                                reiciendis eligendi! Doloremque
+                                                quia pariatur harum ea amet
+                                                quibusdam quisquam, quae,
+                                                temporibus dolores porro
+                                                doloribus.
+                                            </p>
+                                        </li>
+                        
+                                        <li data-date="09/07/2014">
+                                            <h2>Event title here</h2>
+                                            <em>July 9th, 2014</em>
+                                            <p>
+                                                Lorem ipsum dolor sit amet,
+                                                consectetur adipisicing elit.
+                                                Illum praesentium officia, fugit
+                                                recusandae ipsa, quia velit
+                                                nulla adipisci? Consequuntur
+                                                aspernatur at, eaque hic
+                                                repellendus sit
+                                                dicta consequatur quae, ut harum
+                                                ipsam molestias maxime non nisi
+                                                reiciendis eligendi! Doloremque
+                                                quia pariatur harum ea amet
+                                                quibusdam quisquam, quae,
+                                                temporibus dolores porro
+                                                doloribus.
+                                            </p>
+                                        </li>
+                        
+                                        <li data-date="30/08/2014">
+                                            <h2>Event title here</h2>
+                                            <em>August 30th, 2014</em>
+                                            <p>
+                                                Lorem ipsum dolor sit amet,
+                                                consectetur adipisicing elit.
+                                                Illum praesentium officia, fugit
+                                                recusandae ipsa, quia velit
+                                                nulla adipisci? Consequuntur
+                                                aspernatur at, eaque hic
+                                                repellendus sit
+                                                dicta consequatur quae, ut harum
+                                                ipsam molestias maxime non nisi
+                                                reiciendis eligendi! Doloremque
+                                                quia pariatur harum ea amet
+                                                quibusdam quisquam, quae,
+                                                temporibus dolores porro
+                                                doloribus.
+                                            </p>
+                                        </li>
+                        
+                                        <li data-date="15/09/2014">
+                                            <h2>Event title here</h2>
+                                            <em>September 15th, 2014</em>
+                                            <p>
+                                                Lorem ipsum dolor sit amet,
+                                                consectetur adipisicing elit.
+                                                Illum praesentium officia, fugit
+                                                recusandae ipsa, quia velit
+                                                nulla adipisci? Consequuntur
+                                                aspernatur at, eaque hic
+                                                repellendus sit
+                                                dicta consequatur quae, ut harum
+                                                ipsam molestias maxime non nisi
+                                                reiciendis eligendi! Doloremque
+                                                quia pariatur harum ea amet
+                                                quibusdam quisquam, quae,
+                                                temporibus dolores porro
+                                                doloribus.
+                                            </p>
+                                        </li>
+                        
+                                        <li data-date="01/11/2014">
+                                            <h2>Event title here</h2>
+                                            <em>November 1st, 2014</em>
+                                            <p>
+                                                Lorem ipsum dolor sit amet,
+                                                consectetur adipisicing elit.
+                                                Illum praesentium officia, fugit
+                                                recusandae ipsa, quia velit
+                                                nulla adipisci? Consequuntur
+                                                aspernatur at, eaque hic
+                                                repellendus sit
+                                                dicta consequatur quae, ut harum
+                                                ipsam molestias maxime non nisi
+                                                reiciendis eligendi! Doloremque
+                                                quia pariatur harum ea amet
+                                                quibusdam quisquam, quae,
+                                                temporibus dolores porro
+                                                doloribus.
+                                            </p>
+                                        </li>
+                        
+                                        <li data-date="10/12/2014">
+                                            <h2>Event title here</h2>
+                                            <em>December 10th, 2014</em>
+                                            <p>
+                                                Lorem ipsum dolor sit amet,
+                                                consectetur adipisicing elit.
+                                                Illum praesentium officia, fugit
+                                                recusandae ipsa, quia velit
+                                                nulla adipisci? Consequuntur
+                                                aspernatur at, eaque hic
+                                                repellendus sit
+                                                dicta consequatur quae, ut harum
+                                                ipsam molestias maxime non nisi
+                                                reiciendis eligendi! Doloremque
+                                                quia pariatur harum ea amet
+                                                quibusdam quisquam, quae,
+                                                temporibus dolores porro
+                                                doloribus.
+                                            </p>
+                                        </li>
+                        
+                                        <li data-date="19/01/2015">
+                                            <h2>Event title here</h2>
+                                            <em>January 19th, 2015</em>
+                                            <p>
+                                                Lorem ipsum dolor sit amet,
+                                                consectetur adipisicing elit.
+                                                Illum praesentium officia, fugit
+                                                recusandae ipsa, quia velit
+                                                nulla adipisci? Consequuntur
+                                                aspernatur at, eaque hic
+                                                repellendus sit
+                                                dicta consequatur quae, ut harum
+                                                ipsam molestias maxime non nisi
+                                                reiciendis eligendi! Doloremque
+                                                quia pariatur harum ea amet
+                                                quibusdam quisquam, quae,
+                                                temporibus dolores porro
+                                                doloribus.
+                                            </p>
+                                        </li>
+                        
+                                        <li data-date="03/03/2015">
+                                            <h2>Event title here</h2>
+                                            <em>March 3rd, 2015</em>
+                                            <p>
+                                                Lorem ipsum dolor sit amet,
+                                                consectetur adipisicing elit.
+                                                Illum praesentium officia, fugit
+                                                recusandae ipsa, quia velit
+                                                nulla adipisci? Consequuntur
+                                                aspernatur at, eaque hic
+                                                repellendus sit
+                                                dicta consequatur quae, ut harum
+                                                ipsam molestias maxime non nisi
+                                                reiciendis eligendi! Doloremque
+                                                quia pariatur harum ea amet
+                                                quibusdam quisquam, quae,
+                                                temporibus dolores porro
+                                                doloribus.
+                                            </p>
+                                        </li>
+                                    </ol>
+                                    <!-- social -->
+                                    <div class="post-footer post-footer--rada">
+                                        <div class="d-flex flex-column">
+                                            <div class="d-flex">
+                                                <img class="mr-2" width="30" height="30" src="./assets/image/rada-animate.svg" alt="logo">
+                                                <div class="d-flex flex-column mt-1 mb-3">
+                                                    <span class="logo--text">RADA</span>
+                                                    <span class="post-footer--quote">
+                                                        The DAO-based Angellist for Blockchain
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="post-footer--social">
+                                                <a href="#" class="btn-social brand--telegram btn-default">
+                                                    <span><i class="fa-brands fa-telegram"></i></span>
+                                                    <span>Announcement</span>
+                                                </a>
+                                                <a href="#" class="btn-social brand--telegram btn-default">
+                                                    <span><i class="fa-brands fa-telegram"></i></span>
+                                                    <span>Global Community</span>
+                                                </a> <a href="#" class="btn-social brand--twitter btn-default">
+                                                    <span><i class="fa-brands fa-twitter"></i></span>
+                                                    <span>Twitter</span>
+                                                </a> <a href="#" class="btn-social brand--facebook btn-default">
+                                                    <span><i class="fa-brands fa-facebook"></i></span>
+                                                    <span>Fanpage</span>
+                                                </a> <a href="#" class="btn-social brand--facebook btn-default">
+                                                    <span><i class="fa-brands fa-facebook"></i></span>
+                                                    <span>Vietnam Community</span>
+                                                </a> <a href="#" class="btn-social brand--youtube btn-default">
+                                                    <span><i class="fa-brands fa-youtube"></i></span>
+                                                    <span>RADA TV</span>
+                                                </a><a href="#" class="btn-social brand--instagram btn-default">
+                                                    <span><i class="fa-brands fa-instagram"></i></span>
+                                                    <span>Instagram</span>
+                                                </a><a href="#" class="btn-social brand--tiktok btn-default">
+                                                    <span><i class="fa-brands fa-tiktok"></i></span>
+                                                    <span>tiktok</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- .events-content -->
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- login -->
+            <div class="login-container overlay">
+                <div class="login-content">
+                    <div class="login-banner">
+                        <a href="./index.html">
+                            <i class="fas fa-angle-left"></i>
+                            Back
+                        </a>
+                        <h2>Sign in</h2>
+                        <span>
+                            Signing in to <strong>vote</strong> and <strong>discuss</strong> your interest topics
+                        </span>
+                    </div>
+                    <div class="login-option">
+                        <div class="login-option--details">
+                            <div>
+                                <i class="fab fa-google"></i>
+                                Google
+                            </div>
+                            <i class="fa fa-arrow-right"></i>
+                        </div>
+                        <div class="login-option--details">
+                            <div>
+                                <i class="fab fa-facebook"></i>
+                                Facebook
+                            </div>
+                            <i class="fa fa-arrow-right"></i>
+                        </div>
+                        <div class="login-option--details">
+                            <div>
+                                <i class="fab fa-twitter"></i>
+                                Twitter
+                            </div>
+                            <i class="fa fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
 
 
