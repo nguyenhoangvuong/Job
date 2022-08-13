@@ -435,6 +435,7 @@ a {
     line-height: 1.75rem;
     line-height: 1rem;
     content: "\00B7";
+    color: #858a91;
 }
 
 .avatar-2xs, .avatar-sm, .avatar-xs {

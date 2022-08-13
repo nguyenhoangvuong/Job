@@ -476,7 +476,74 @@
                             <!-- social -->
 
                         </section>
+                        <div class="section section-comments">
+                            <div class="section-header d-flex justify-content-between">
+                                <div class="section-title">
+                                    <span class="mr-2">
+                                        <i class="fa-solid fa-comments"></i>
+                                    </span>
+                                    <span class="text-color-title">5 Bình luận</span>
+                                </div>
+                            </div>
+                            <div class="section-body">
+                                    <div class="comment-form d-flex">
+                                        <textarea class="comment-textarea" row="1" title="Để lại bình luận của bạn" placeholder="Đăng nhập để bình luận" readonly="" data-metatip="true"></textarea>
+                                        <button class="btn comment-btn ml-2">Gửi</button>
+                                    </div>
+                                    <div class="comment-list">
+                                        <div class="comments-list-item">
+                                            <div class="comment">
+                                                <div class="a">
+
+                                                </div>
+                                                <div class="avatar-sm">
+                                                    <img src="https://lh3.googleusercontent.com/a-/AOh14GhYb4Wh8Qol38z_o6S0km3CUVXD6rOIWIIJ6vQe=s96-c" alt="DUNG MAX">
+                                                </div>
+                                                <div class="comment-main">
+                                                    <div class="comment-header d-flex">
+                                                        <span class="metadata user-wallet--title">DUNG MAX</span>
+                                                        <span class="metadata metadata-date text-xs text-color-desc">
+                                                            <span class="metadate-value">8 months</span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="comment-text mt-1"><p class="comment-text-p">cái này ok</p></div>
+                                                    <div class="comment-footer">
+                                                        <div class="d-flex align-items-center">
+                                                            <button class="btn btn-post-vote disabled">
+                                                                <span>
+                                                                    <svg width="1em" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                                        <g><path fill="none" d="M0 0h24v24H0z"></path><path d="M2 9h3v12H2a1 1 0 0 1-1-1V10a1 1 0 0 1 1-1zm5.293-1.293l6.4-6.4a.5.5 0 0 1 .654-.047l.853.64a1.5 1.5 0 0 1 .553 1.57L14.6 8H21a2 2 0 0 1 2 2v2.104a2 2 0 0 1-.15.762l-3.095 7.515a1 1 0 0 1-.925.619H8a1 1 0 0 1-1-1V8.414a1 1 0 0 1 .293-.707z"></path></g>
+                                                                    </svg>
+                                                                </span>
+                                                                <span style="font-size: 12px; font-weight: unset">Like</span>
+                                                            </button>
+                                                            <a onclick="openReply();" class="btn py-1 hover:text-primary-700 rounded">
+                                                                <span class="mr-2" style="font-size: 12px; color: #858a91;">
+                                                                    <i class="fa fa-reply"></i>
+                                                                </span>
+                                                                <span style="font-size: 12px; color: #858a91;">Reply</span>
+                                                            </a></div>
+                                                            <!-- <button class="btn py-1 px-2 ml-2 hover:text-red-700 rounded opacity-0 group-hover:opacity-100">
+                                                                <span class="icon mr-2">
+                                                                    <i class="fas fa-exclamation"></i>
+                                                                </span>
+                                                                <span>Report</span>
+                                                            </button> -->
+                                                        </div>
+                                                </div>
+                                            </div>
+                                            <div class="comment-reply-form" id="Reply">
+                                                <div class="comment-trail"></div>
+                                                <textarea class="comment-textarea" row="1" title="Để lại bình luận của bạn" placeholder="Đăng nhập để bình luận" readonly="" style="height: 38px !important;"></textarea>
+                                                <button class="btn comment-btn ml-2">Trả lời</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                        
                     </div>
+                    
                 </div>
 
             </div>
@@ -772,6 +839,18 @@
                     }
                 });
             </script>
+
+            <script>
+                function openReply() {
+                     let a = document.querySelector('#Reply').style.display;
+                    if(a == 'none' || a == ''){
+                        document.querySelector('#Reply').style.display = 'flex';
+                    } else {
+                        document.querySelector('#Reply').style.display = 'none';
+                    }
+                }
+            </script>
+          
 </body>
 
 </html>
