@@ -1,40 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
-@font-face {
-    font-family: 'SF Pro Rounded';
-    src: url('/assets/font/SF-Pro-Rounded/SF-Pro-Rounded-Black.otf');
-}
-
-@font-face {
-    font-family: 'SF Pro Rounded';
-    src: url('/assets/font/SF-Pro-Rounded/SF-Pro-Rounded-Bold.otf');
-}
-
-:root {
-    /* font-family */
-    --font-Inter: 'Inter';
-    --font-SF-Pro-Rounded: 'SF Pro Rounded';
-
-    /* color */
-    --color-black: #000000;
-    --color-primary: #FBBF24;
-    --color-secondary: #000000B3;
-    --color-purple: #9333EA;
-
-    /* font-size */
-    --font-size-36: 36px;
-    --font-size-24: 24px;
-    --font-size-18: 18px;
-    --font-size-16: 16px;
-    --font-size-14: 14px;
-    --font-size-12: 12px;
-    --font-size-10: 10px;
-    --font-size-8: 8px;
-
-    /* width */
-    --paneleft-width: 8rem;
-}
-
+@import url('./common.css');
 
 
 /* reset css */
@@ -53,6 +19,7 @@
 body {
     line-height: 1.5;
     font-size: var(--font-size-16);
+    scroll-behavior: smooth;
 }
 
 img,

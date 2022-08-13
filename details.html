@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous" />
+
+    <!-- font icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- font family -->
+    <link rel="stylesheet" href="./assets/font/SF-Pro-Rounded/SF-Pro-Rounded-Bold.otf">
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/login.css" />
+    <link rel="stylesheet" href="./css/nghiencuu.css" />
+    <link rel="stylesheet" href="./css/nghiencuu_sub.css" />
+    <link rel="stylesheet" href="./css/swiper.css">
+    <link rel="stylesheet" href="./css/postDetails.css">
+</head>
+
+<body>
+    <div class="body-decor"></div>
+    <div class="main-layout--wrapper">
+        <div class="main-layout">
+            <div class="pane-left">
+                <div class="nav-bar">
+                    <div class="logo">
+                        <a href="./index.html" class="d-flex flex-column
+                                w-100
+                                justify-content-center align-items-center">
+                            <div class="logo-wrapper">
+                                <img src="./assets/image/rada-animate.svg" alt="">
+                            </div>
+                            <strong class="logo--text mt-1">
+                                <span>RADA</span>
+                            </strong>
+                            <div class="logo--badge">
+                                βETA
+                            </div>
+                        </a>
+                    </div>
+                    <div class="nav-main">
+                        <a href="./index.html" class="nav-item">
+                            <span class="icon">
+                                <i class="fas fa-rocket"></i>
+                            </span>
+                            <span class="nav-item--text">
+                                LaunchVerse
+                            </span>
+                        </a>
+                        <a href="./nghiencuu.html" class="nav-item
+                                nav-item-active">
+                            <span class="icon">
+                                <i class="fas fa-rocket"></i>
+                            </span>
+                            <span class="nav-item--text">
+                                Nghiên cứu
+                            </span>
+                        </a>
+                        <a href="#" class="nav-item">
+                            <span class="icon">
+                                <i class="fas fa-rocket"></i>
+                            </span>
+                            <span class="nav-item--text">
+                                Bài viết
+                            </span>
+                        </a>
+                        <a href="#" class="nav-item">
+                            <span class="icon">
+                                <i class="fas fa-rocket"></i>
+                            </span>
+                            <span class="nav-item--text">
+                                Về RADA
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="pane-left--bottom">
+                    <div class="btn-default btn-login">
+                        <span class="icon">
+                            <i class="fa-solid fa-user-circle"></i>
+                        </span>
+                        <span class="btn--text">Đăng nhập</span>
+                    </div>
+                    <div class="pane-left--bottom-section">
+                        <div class="relative">
+                            <button class="btn-default btn-switch-lang">
+                                <div>
+                                    <span class="icon"><i class="fa-solid
+                                                fa-user-circle
+                                                btn-switch-lange--name"></i></span>
+                                    <span class="btn--text
+                                            btn-switch-lange--name">VI</span>
+                                </div>
+                                <div class="btn-switch-lang--option">
+                                    <span>Tiếng Việt</span><span>English</span>
+                                </div>
+                            </button>
+                        </div>
+                        <button class="btn-default btn-switch-theme">
+                            <span class="icon icon-mode">
+                                <i class="fa-solid fa-moon"></i>
+                            </span>
+                            <span class="icon icon-mode icon-mode-active">
+                                <i class="fa-solid fa-sun"></i>
+                            </span>
+                            <span class="btn--text">
+                                Dark
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="pane-center scroll-bar">
+                <div class="pane-center scroll-bar">
+                    <div class="pane-content--main">
+                        <div class="pane-content--main--top">
+                            <div class="search-wrapper">
+                                <div class="navbar-search">
+                                    <span class="icon navbar-search--icon">
+                                        <i class="fa fa-search"></i>
+                                    </span>
+                                    <input type="text" class="navbar-search--input" placeholder="Bạn đang tìm gì?"
+                                        value="">
+                                </div>
+                            </div>
+                            <div class="cta-wrapper">
+                                <div class="btn-group btn-group-filter"><a class="btn btn-filter">
+                                        <span class="btn--text">Phổ biến</span></a>
+                                    <a class="btn btn-filter-active">
+                                        <span class="btn--text">Mới nhất</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Swiper -->
+                    <div class="swiper mySwiper">
+                        <section class="cd-horizontal-timeline">
+                            <div class="timeline">
+                                <div class="events-wrapper">
+                                    <div class="events">
+                                        <ol>
+                                            <li><a href="#0" data-date="16/01/2014" class="selected">16 Jan</a></li>
+                                            <li><a href="#0" data-date="28/02/2014">28
+                                                    Feb</a></li>
+                                            <li><a href="#0" data-date="20/04/2014">20
+                                                    Mar</a></li>
+                                            <li><a href="#0" data-date="20/05/2014">20
+                                                    May</a></li>
+                                            <li><a href="#0" data-date="09/07/2014">09
+                                                    Jul</a></li>
+                                            <li><a href="#0" data-date="30/08/2014">30
+                                                    Aug</a></li>
+                                            <li><a href="#0" data-date="15/09/2014">15
+                                                    Sep</a></li>
+                                            <li><a href="#0" data-date="01/11/2014">01
+                                                    Nov</a></li>
+                                            <li><a href="#0" data-date="10/12/2014">10
+                                                    Dec</a></li>
+                                            <li><a href="#0" data-date="19/01/2015">29
+                                                    Jan</a></li>
+                                            <li><a href="#0" data-date="03/03/2015">3
+                                                    Mar</a></li>
+                                        </ol>
+
+                                        <span class="filling-line" aria-hidden="true"></span>
+                                    </div> <!-- .events -->
+                                </div> <!-- .events-wrapper -->
+
+                                <ul class="cd-timeline-navigation">
+                                    <li><a href="#0" class="prev inactive">Prev</a></li>
+                                    <li><a href="#0" class="next">Next</a></li>
+                                </ul> <!-- .cd-timeline-navigation -->
+                            </div> <!-- .timeline -->
+
+                            <div class="events-content">
+                                <ol>
+                                    <li class="selected" data-date="16/01/2014">
+                                        <div class="post-content">
+                                            <h2 class="post-heading">Cuộc chiến giữa Gods và Demons, chiến lược xoay
+                                                vòng mới trong #play2earn</h2>
+                                            <span class="post-info">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="post-auth-img rounded-circle overflow-hidden mr-2">
+                                                        <img class="rounded-circle"
+                                                            src="./assets/image/93db9957-4223-44a6-baf4-69118baa918a.png"
+                                                            alt="avt">
+                                                    </div>
+                                                    <span class="post-auth mr-3">Ronni</span>
+                                                    <span>8 Month</span>
+                                                </div>
+                                                <button class="btn-post-vote">
+                                                    <i class="fa-solid fa-caret-up"></i>
+                                                    Upvote <span>2</span>
+                                                </button>
+                                            </span>
+                                            <div class="post-main">
+                                                <p>Nhìn về phía các vì sao, anh ta nhận ra cuối cùng ước mơ đi vào vũ
+                                                    trụ của mình đã trở thành sự thật… trong MetaVerse,
+                                                    nơi các thuyền trưởng có thể đạt được mong muốn sâu sắc nhất của
+                                                    mình về cuộc chiến tranh giữa các thiên hà.</p>
+                                                <p>Bài viết là ý kiến ​​của tác giả Ronni K. Gothard Christiansen - một
+                                                    thành viên của cộng đồng RADA.</p>
+                                                <img class="rounded-lg"
+                                                    src="./assets/image/56235f7b-0765-4739-b879-4e571acd6426.png"
+                                                    alt="">
+                                                <h4>1. Giới thiệu dự án</h4>
+                                                <p>
+                                                    Space Crypto là một Space Metaverse, nơi bất kỳ ai cũng có thể kiếm
+                                                    được token nhờ vai trò space guardian và chiến lược
+                                                    riêng khi thực hiện nhiệm vụ khắc phục những hành động xấu của những
+                                                    tên trùm độc ác và bảo vệ Space Metaverse.
+                                                </p>
+                                                <p>
+                                                    Với vũ trụ MetaVerse và hình thức #free2play, Space Crypto sẽ mang
+                                                    đến cho các thế hệ người hâm mộ Trekkies và Star Wars
+                                                    cơ hội khám phá không gian chiến tranh toàn diện và tuyệt vời. Bất
+                                                    kỳ ai cũng có thể sử dụng trình duyệt web của họ hoặc
+                                                    tải xuống các phiên bản IOS và Android để chơi mà không cần bỏ tiền
+                                                    để tham gia.
+                                                </p>
+                                                <p>Gameplay sẽ tập trung vào trải nghiệm dễ dàng và thú vị, nơi những
+                                                    người chơi bình thường có thể kiếm tiền trong thời
+                                                    gian rảnh. Điều này giúp cho việc những người hâm mộ trò chơi Chiến
+                                                    lược không gian truyền thống thích ứng với MetaVerse
+                                                    dễ dàng hơn vì game có cùng một cơ chế chơi.</p>
+                                                <h4>2. Đánh giá thị trường</h4>
+                                                <p>Trò chơi không gian và các nhánh phụ đã thu hút hàng triệu người trên
+                                                    toàn cầu - nhiều trong số đó là fan của những bộ
+                                                    phim truyền hình lớn nhất thế giới trong hơn 50 năm qua. Khoa học
+                                                    viễn tưởng và Không gian vẫn là đề tài nóng bỏng hơn
+                                                    bao giờ hết và sẽ vẫn giữ nguyên vị trí như “biên giới cuối cùng”
+                                                    như cách mà Star Trek đã gây dựng nên tên tuổi.</p>
+                                                <p>Nhân loại khao khát tìm hiểu và vượt ra bên ngoài không gian. Sứ mệnh
+                                                    này liên tục được thực hiện trong nhiều thế hệ và
+                                                    bất chấp các chuyến bay có người lái lên mặt trăng cùng nhiều thành
+                                                    tựu kỳ diệu khác, về cơ bản, hành trình tiến tới
+                                                    biên giới cuối cùng vẫn còn rất xa.</p>
+                                                <p>Điểm đến tiếp theo là MetaVerse. Thành thật mà nói, đây là nơi mà
+                                                    việc khám phá không gian sẽ diễn ra đầu tiên, có thể
+                                                    không phải trong thực tế, nhưng xét về bối cảnh xã hội, điều này
+                                                    giúp thiết lập sự cân bằng kinh tế - xã hội và đặt một
+                                                    nền tảng cho cuộc sống phi tập trung của con người.</p>
+                                                <img src="https://media.rada.network/assets/79e6fe1e-0269-446a-b0af-381d9fd4e38f?format=webp&width=1080"
+                                                    alt="">
+                                                <h4>Gamefi và MetaVerse</h4>
+                                                <p>Nhiều tựa #gamefi và #metaverse">#gamefi và #metaverse mới sắp ra mắt
+                                                    vào Quý 1 năm 2022, và một vài trong số chúng cũng
+                                                    lấy Không gian làm chủ đề. Những game thú vị cũng sẽ xuất hiện trên
+                                                    BSc nhưng Space Crypto nổi bật lên tất cả với hình
+                                                    thức Chiến tranh chiến lược không gian thay vì những tựa game chỉ
+                                                    tập trung chủ yếu vào việc sở hữu đất đai và farming.</p>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li data-date="28/02/2014">
+                                        <h2>Event title here</h2>
+                                        <em>February 28th, 2014</em>
+                                        <p>
+                                            Lorem ipsum dolor sit amet,
+                                            consectetur adipisicing elit.
+                                            Illum praesentium officia, fugit
+                                            recusandae ipsa, quia velit
+                                            nulla adipisci? Consequuntur
+                                            aspernatur at, eaque hic
+                                            repellendus sit
+                                            dicta consequatur quae, ut harum
+                                            ipsam molestias maxime non nisi
+                                            reiciendis eligendi! Doloremque
+                                            quia pariatur harum ea amet
+                                            quibusdam quisquam, quae,
+                                            temporibus dolores porro
+                                            doloribus.
+                                        </p>
+                                    </li>
+
+                                    <li data-date="20/04/2014">
+                                        <h2>Event title here</h2>
+                                        <em>March 20th, 2014</em>
+                                        <p>
+                                            Lorem ipsum dolor sit amet,
+                                            consectetur adipisicing elit.
+                                            Illum praesentium officia, fugit
+                                            recusandae ipsa, quia velit
+                                            nulla adipisci? Consequuntur
+                                            aspernatur at, eaque hic
+                                            repellendus sit
+                                            dicta consequatur quae, ut harum
+                                            ipsam molestias maxime non nisi
+                                            reiciendis eligendi! Doloremque
+                                            quia pariatur harum ea amet
+                                            quibusdam quisquam, quae,
+                                            temporibus dolores porro
+                                            doloribus.
+                                        </p>
+                                    </li>
+
+                                    <li data-date="20/05/2014">
+                                        <h2>Event title here</h2>
+                                        <em>May 20th, 2014</em>
+                                        <p>
+                                            Lorem ipsum dolor sit amet,
+                                            consectetur adipisicing elit.
+                                            Illum praesentium officia, fugit
+                                            recusandae ipsa, quia velit
+                                            nulla adipisci? Consequuntur
+                                            aspernatur at, eaque hic
+                                            repellendus sit
+                                            dicta consequatur quae, ut harum
+                                            ipsam molestias maxime non nisi
+                                            reiciendis eligendi! Doloremque
+                                            quia pariatur harum ea amet
+                                            quibusdam quisquam, quae,
+                                            temporibus dolores porro
+                                            doloribus.
+                                        </p>
+                                    </li>
+
+                                    <li data-date="09/07/2014">
+                                        <h2>Event title here</h2>
+                                        <em>July 9th, 2014</em>
+                                        <p>
+                                            Lorem ipsum dolor sit amet,
+                                            consectetur adipisicing elit.
+                                            Illum praesentium officia, fugit
+                                            recusandae ipsa, quia velit
+                                            nulla adipisci? Consequuntur
+                                            aspernatur at, eaque hic
+                                            repellendus sit
+                                            dicta consequatur quae, ut harum
+                                            ipsam molestias maxime non nisi
+                                            reiciendis eligendi! Doloremque
+                                            quia pariatur harum ea amet
+                                            quibusdam quisquam, quae,
+                                            temporibus dolores porro
+                                            doloribus.
+                                        </p>
+                                    </li>
+
+                                    <li data-date="30/08/2014">
+                                        <h2>Event title here</h2>
+                                        <em>August 30th, 2014</em>
+                                        <p>
+                                            Lorem ipsum dolor sit amet,
+                                            consectetur adipisicing elit.
+                                            Illum praesentium officia, fugit
+                                            recusandae ipsa, quia velit
+                                            nulla adipisci? Consequuntur
+                                            aspernatur at, eaque hic
+                                            repellendus sit
+                                            dicta consequatur quae, ut harum
+                                            ipsam molestias maxime non nisi
+                                            reiciendis eligendi! Doloremque
+                                            quia pariatur harum ea amet
+                                            quibusdam quisquam, quae,
+                                            temporibus dolores porro
+                                            doloribus.
+                                        </p>
+                                    </li>
+
+                                    <li data-date="15/09/2014">
+                                        <h2>Event title here</h2>
+                                        <em>September 15th, 2014</em>
+                                        <p>
+                                            Lorem ipsum dolor sit amet,
+                                            consectetur adipisicing elit.
+                                            Illum praesentium officia, fugit
+                                            recusandae ipsa, quia velit
+                                            nulla adipisci? Consequuntur
+                                            aspernatur at, eaque hic
+                                            repellendus sit
+                                            dicta consequatur quae, ut harum
+                                            ipsam molestias maxime non nisi
+                                            reiciendis eligendi! Doloremque
+                                            quia pariatur harum ea amet
+                                            quibusdam quisquam, quae,
+                                            temporibus dolores porro
+                                            doloribus.
+                                        </p>
+                                    </li>
+
+                                    <li data-date="01/11/2014">
+                                        <h2>Event title here</h2>
+                                        <em>November 1st, 2014</em>
+                                        <p>
+                                            Lorem ipsum dolor sit amet,
+                                            consectetur adipisicing elit.
+                                            Illum praesentium officia, fugit
+                                            recusandae ipsa, quia velit
+                                            nulla adipisci? Consequuntur
+                                            aspernatur at, eaque hic
+                                            repellendus sit
+                                            dicta consequatur quae, ut harum
+                                            ipsam molestias maxime non nisi
+                                            reiciendis eligendi! Doloremque
+                                            quia pariatur harum ea amet
+                                            quibusdam quisquam, quae,
+                                            temporibus dolores porro
+                                            doloribus.
+                                        </p>
+                                    </li>
+
+                                    <li data-date="10/12/2014">
+                                        <h2>Event title here</h2>
+                                        <em>December 10th, 2014</em>
+                                        <p>
+                                            Lorem ipsum dolor sit amet,
+                                            consectetur adipisicing elit.
+                                            Illum praesentium officia, fugit
+                                            recusandae ipsa, quia velit
+                                            nulla adipisci? Consequuntur
+                                            aspernatur at, eaque hic
+                                            repellendus sit
+                                            dicta consequatur quae, ut harum
+                                            ipsam molestias maxime non nisi
+                                            reiciendis eligendi! Doloremque
+                                            quia pariatur harum ea amet
+                                            quibusdam quisquam, quae,
+                                            temporibus dolores porro
+                                            doloribus.
+                                        </p>
+                                    </li>
+
+                                    <li data-date="19/01/2015">
+                                        <h2>Event title here</h2>
+                                        <em>January 19th, 2015</em>
+                                        <p>
+                                            Lorem ipsum dolor sit amet,
+                                            consectetur adipisicing elit.
+                                            Illum praesentium officia, fugit
+                                            recusandae ipsa, quia velit
+                                            nulla adipisci? Consequuntur
+                                            aspernatur at, eaque hic
+                                            repellendus sit
+                                            dicta consequatur quae, ut harum
+                                            ipsam molestias maxime non nisi
+                                            reiciendis eligendi! Doloremque
+                                            quia pariatur harum ea amet
+                                            quibusdam quisquam, quae,
+                                            temporibus dolores porro
+                                            doloribus.
+                                        </p>
+                                    </li>
+
+                                    <li data-date="03/03/2015">
+                                        <h2>Event title here</h2>
+                                        <em>March 3rd, 2015</em>
+                                        <p>
+                                            Lorem ipsum dolor sit amet,
+                                            consectetur adipisicing elit.
+                                            Illum praesentium officia, fugit
+                                            recusandae ipsa, quia velit
+                                            nulla adipisci? Consequuntur
+                                            aspernatur at, eaque hic
+                                            repellendus sit
+                                            dicta consequatur quae, ut harum
+                                            ipsam molestias maxime non nisi
+                                            reiciendis eligendi! Doloremque
+                                            quia pariatur harum ea amet
+                                            quibusdam quisquam, quae,
+                                            temporibus dolores porro
+                                            doloribus.
+                                        </p>
+                                    </li>
+                                </ol>
+                            </div> <!-- .events-content -->
+
+                            <!-- social -->
+
+                        </section>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- javascript -->
+            <script src="./js/index.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+                integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+                crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+                integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+                crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+                integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+                crossorigin="anonymous" referrerpolicy="no-referrer"></script>;
+            <script>
+                jQuery(document).ready(function ($) {
+                    var timelines = $('.cd-horizontal-timeline'),
+                        eventsMinDistance = 60;
+
+                    (timelines.length > 0) && initTimeline(timelines);
+
+                    function initTimeline(timelines) {
+                        timelines.each(function () {
+                            var timeline = $(this),
+                                timelineComponents = {};
+                            //cache timeline components 
+                            timelineComponents['timelineWrapper'] = timeline.find('.events-wrapper');
+                            timelineComponents['eventsWrapper'] = timelineComponents['timelineWrapper'].children('.events');
+                            timelineComponents['fillingLine'] = timelineComponents['eventsWrapper'].children('.filling-line');
+                            timelineComponents['timelineEvents'] = timelineComponents['eventsWrapper'].find('a');
+                            timelineComponents['timelineDates'] = parseDate(timelineComponents['timelineEvents']);
+                            timelineComponents['eventsMinLapse'] = minLapse(timelineComponents['timelineDates']);
+                            timelineComponents['timelineNavigation'] = timeline.find('.cd-timeline-navigation');
+                            timelineComponents['eventsContent'] = timeline.children('.events-content');
+
+                            //assign a left postion to the single events along the timeline
+                            setDatePosition(timelineComponents, eventsMinDistance);
+                            //assign a width to the timeline
+                            var timelineTotWidth = setTimelineWidth(timelineComponents, eventsMinDistance);
+                            //the timeline has been initialize - show it
+                            timeline.addClass('loaded');
+
+                            //detect click on the next arrow
+                            timelineComponents['timelineNavigation'].on('click', '.next', function (event) {
+                                event.preventDefault();
+                                updateSlide(timelineComponents, timelineTotWidth, 'next');
+                            });
+                            //detect click on the prev arrow
+                            timelineComponents['timelineNavigation'].on('click', '.prev', function (event) {
+                                event.preventDefault();
+                                updateSlide(timelineComponents, timelineTotWidth, 'prev');
+                            });
+                            //detect click on the a single event - show new event content
+                            timelineComponents['eventsWrapper'].on('click', 'a', function (event) {
+                                event.preventDefault();
+                                timelineComponents['timelineEvents'].removeClass('selected');
+                                $(this).addClass('selected');
+                                updateOlderEvents($(this));
+                                updateFilling($(this), timelineComponents['fillingLine'], timelineTotWidth);
+                                updateVisibleContent($(this), timelineComponents['eventsContent']);
+                            });
+
+                            //on swipe, show next/prev event content
+                            timelineComponents['eventsContent'].on('swipeleft', function () {
+                                var mq = checkMQ();
+                                (mq == 'mobile') && showNewContent(timelineComponents, timelineTotWidth, 'next');
+                            });
+                            timelineComponents['eventsContent'].on('swiperight', function () {
+                                var mq = checkMQ();
+                                (mq == 'mobile') && showNewContent(timelineComponents, timelineTotWidth, 'prev');
+                            });
+
+                            //keyboard navigation
+                            $(document).keyup(function (event) {
+                                if (event.which == '37' && elementInViewport(timeline.get(0))) {
+                                    showNewContent(timelineComponents, timelineTotWidth, 'prev');
+                                } else if (event.which == '39' && elementInViewport(timeline.get(0))) {
+                                    showNewContent(timelineComponents, timelineTotWidth, 'next');
+                                }
+                            });
+                        });
+                    }
+
+                    function updateSlide(timelineComponents, timelineTotWidth, string) {
+                        //retrieve translateX value of timelineComponents['eventsWrapper']
+                        var translateValue = getTranslateValue(timelineComponents['eventsWrapper']),
+                            wrapperWidth = Number(timelineComponents['timelineWrapper'].css('width').replace('px', ''));
+                        //translate the timeline to the left('next')/right('prev') 
+                        (string == 'next')
+                            ? translateTimeline(timelineComponents, translateValue - wrapperWidth + eventsMinDistance, wrapperWidth - timelineTotWidth)
+                            : translateTimeline(timelineComponents, translateValue + wrapperWidth - eventsMinDistance);
+                    }
+
+                    function showNewContent(timelineComponents, timelineTotWidth, string) {
+                        //go from one event to the next/previous one
+                        var visibleContent = timelineComponents['eventsContent'].find('.selected'),
+                            newContent = (string == 'next') ? visibleContent.next() : visibleContent.prev();
+
+                        if (newContent.length > 0) { //if there's a next/prev event - show it
+                            var selectedDate = timelineComponents['eventsWrapper'].find('.selected'),
+                                newEvent = (string == 'next') ? selectedDate.parent('li').next('li').children('a') : selectedDate.parent('li').prev('li').children('a');
+
+                            updateFilling(newEvent, timelineComponents['fillingLine'], timelineTotWidth);
+                            updateVisibleContent(newEvent, timelineComponents['eventsContent']);
+                            newEvent.addClass('selected');
+                            selectedDate.removeClass('selected');
+                            updateOlderEvents(newEvent);
+                            updateTimelinePosition(string, newEvent, timelineComponents, timelineTotWidth);
+                        }
+                    }
+
+                    function updateTimelinePosition(string, event, timelineComponents, timelineTotWidth) {
+                        //translate timeline to the left/right according to the position of the selected event
+                        var eventStyle = window.getComputedStyle(event.get(0), null),
+                            eventLeft = Number(eventStyle.getPropertyValue("left").replace('px', '')),
+                            timelineWidth = Number(timelineComponents['timelineWrapper'].css('width').replace('px', '')),
+                            timelineTotWidth = Number(timelineComponents['eventsWrapper'].css('width').replace('px', ''));
+                        var timelineTranslate = getTranslateValue(timelineComponents['eventsWrapper']);
+
+                        if ((string == 'next' && eventLeft > timelineWidth - timelineTranslate) || (string == 'prev' && eventLeft < - timelineTranslate)) {
+                            translateTimeline(timelineComponents, - eventLeft + timelineWidth / 2, timelineWidth - timelineTotWidth);
+                        }
+                    }
+
+                    function translateTimeline(timelineComponents, value, totWidth) {
+                        var eventsWrapper = timelineComponents['eventsWrapper'].get(0);
+                        value = (value > 0) ? 0 : value; //only negative translate value
+                        value = (!(typeof totWidth === 'undefined') && value < totWidth) ? totWidth : value; //do not translate more than timeline width
+                        setTransformValue(eventsWrapper, 'translateX', value + 'px');
+                        //update navigation arrows visibility
+                        (value == 0) ? timelineComponents['timelineNavigation'].find('.prev').addClass('inactive') : timelineComponents['timelineNavigation'].find('.prev').removeClass('inactive');
+                        (value == totWidth) ? timelineComponents['timelineNavigation'].find('.next').addClass('inactive') : timelineComponents['timelineNavigation'].find('.next').removeClass('inactive');
+                    }
+
+                    function updateFilling(selectedEvent, filling, totWidth) {
+                        //change .filling-line length according to the selected event
+                        var eventStyle = window.getComputedStyle(selectedEvent.get(0), null),
+                            eventLeft = eventStyle.getPropertyValue("left"),
+                            eventWidth = eventStyle.getPropertyValue("width");
+                        eventLeft = Number(eventLeft.replace('px', '')) + Number(eventWidth.replace('px', '')) / 2;
+                        var scaleValue = eventLeft / totWidth;
+                        setTransformValue(filling.get(0), 'scaleX', scaleValue);
+                    }
+
+                    function setDatePosition(timelineComponents, min) {
+                        for (i = 0; i < timelineComponents['timelineDates'].length; i++) {
+                            var distance = daydiff(timelineComponents['timelineDates'][0], timelineComponents['timelineDates'][i]),
+                                distanceNorm = Math.round(distance / timelineComponents['eventsMinLapse']) + 2;
+                            timelineComponents['timelineEvents'].eq(i).css('left', distanceNorm * min + 'px');
+                        }
+                    }
+
+                    function setTimelineWidth(timelineComponents, width) {
+                        var timeSpan = daydiff(timelineComponents['timelineDates'][0], timelineComponents['timelineDates'][timelineComponents['timelineDates'].length - 1]),
+                            timeSpanNorm = timeSpan / timelineComponents['eventsMinLapse'],
+                            timeSpanNorm = Math.round(timeSpanNorm) + 4,
+                            totalWidth = timeSpanNorm * width;
+                        timelineComponents['eventsWrapper'].css('width', totalWidth + 'px');
+                        updateFilling(timelineComponents['timelineEvents'].eq(0), timelineComponents['fillingLine'], totalWidth);
+
+                        return totalWidth;
+                    }
+
+                    function updateVisibleContent(event, eventsContent) {
+                        var eventDate = event.data('date'),
+                            visibleContent = eventsContent.find('.selected'),
+                            selectedContent = eventsContent.find('[data-date="' + eventDate + '"]'),
+                            selectedContentHeight = selectedContent.height();
+
+                        if (selectedContent.index() > visibleContent.index()) {
+                            var classEnetering = 'selected enter-right',
+                                classLeaving = 'leave-left';
+                        } else {
+                            var classEnetering = 'selected enter-left',
+                                classLeaving = 'leave-right';
+                        }
+
+                        selectedContent.attr('class', classEnetering);
+                        visibleContent.attr('class', classLeaving).one('webkitAnimationEnd oanimationend msAnimationEnd animationend', function () {
+                            visibleContent.removeClass('leave-right leave-left');
+                            selectedContent.removeClass('enter-left enter-right');
+                        });
+                        eventsContent.css('height', selectedContentHeight + 'px');
+                    }
+
+                    function updateOlderEvents(event) {
+                        event.parent('li').prevAll('li').children('a').addClass('older-event').end().end().nextAll('li').children('a').removeClass('older-event');
+                    }
+
+                    function getTranslateValue(timeline) {
+                        var timelineStyle = window.getComputedStyle(timeline.get(0), null),
+                            timelineTranslate = timelineStyle.getPropertyValue("-webkit-transform") ||
+                                timelineStyle.getPropertyValue("-moz-transform") ||
+                                timelineStyle.getPropertyValue("-ms-transform") ||
+                                timelineStyle.getPropertyValue("-o-transform") ||
+                                timelineStyle.getPropertyValue("transform");
+
+                        if (timelineTranslate.indexOf('(') >= 0) {
+                            var timelineTranslate = timelineTranslate.split('(')[1];
+                            timelineTranslate = timelineTranslate.split(')')[0];
+                            timelineTranslate = timelineTranslate.split(',');
+                            var translateValue = timelineTranslate[4];
+                        } else {
+                            var translateValue = 0;
+                        }
+
+                        return Number(translateValue);
+                    }
+
+                    function setTransformValue(element, property, value) {
+                        element.style["-webkit-transform"] = property + "(" + value + ")";
+                        element.style["-moz-transform"] = property + "(" + value + ")";
+                        element.style["-ms-transform"] = property + "(" + value + ")";
+                        element.style["-o-transform"] = property + "(" + value + ")";
+                        element.style["transform"] = property + "(" + value + ")";
+                    }
+
+                    //based on http://stackoverflow.com/questions/542938/how-do-i-get-the-number-of-days-between-two-dates-in-javascript
+                    function parseDate(events) {
+                        var dateArrays = [];
+                        events.each(function () {
+                            var dateComp = $(this).data('date').split('/'),
+                                newDate = new Date(dateComp[2], dateComp[1] - 1, dateComp[0]);
+                            dateArrays.push(newDate);
+                        });
+                        return dateArrays;
+                    }
+
+                    function parseDate2(events) {
+                        var dateArrays = [];
+                        events.each(function () {
+                            var singleDate = $(this),
+                                dateComp = singleDate.data('date').split('T');
+                            if (dateComp.length > 1) { //both DD/MM/YEAR and time are provided
+                                var dayComp = dateComp[0].split('/'),
+                                    timeComp = dateComp[1].split(':');
+                            } else if (dateComp[0].indexOf(':') >= 0) { //only time is provide
+                                var dayComp = ["2000", "0", "0"],
+                                    timeComp = dateComp[0].split(':');
+                            } else { //only DD/MM/YEAR
+                                var dayComp = dateComp[0].split('/'),
+                                    timeComp = ["0", "0"];
+                            }
+                            var newDate = new Date(dayComp[2], dayComp[1] - 1, dayComp[0], timeComp[0], timeComp[1]);
+                            dateArrays.push(newDate);
+                        });
+                        return dateArrays;
+                    }
+
+                    function daydiff(first, second) {
+                        return Math.round((second - first));
+                    }
+
+                    function minLapse(dates) {
+                        //determine the minimum distance among events
+                        var dateDistances = [];
+                        for (i = 1; i < dates.length; i++) {
+                            var distance = daydiff(dates[i - 1], dates[i]);
+                            dateDistances.push(distance);
+                        }
+                        return Math.min.apply(null, dateDistances);
+                    }
+
+                    /*
+                        How to tell if a DOM element is visible in the current viewport?
+                        http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
+                    */
+                    function elementInViewport(el) {
+                        var top = el.offsetTop;
+                        var left = el.offsetLeft;
+                        var width = el.offsetWidth;
+                        var height = el.offsetHeight;
+
+                        while (el.offsetParent) {
+                            el = el.offsetParent;
+                            top += el.offsetTop;
+                            left += el.offsetLeft;
+                        }
+
+                        return (
+                            top < (window.pageYOffset + window.innerHeight) &&
+                            left < (window.pageXOffset + window.innerWidth) &&
+                            (top + height) > window.pageYOffset &&
+                            (left + width) > window.pageXOffset
+                        );
+                    }
+
+                    function checkMQ() {
+                        //check if mobile or desktop device
+                        return window.getComputedStyle(document.querySelector('.cd-horizontal-timeline'), '::before').getPropertyValue('content').replace(/'/g, "").replace(/"/g, "");
+                    }
+                });
+            </script>
+</body>
+
+</html>

@@ -15,7 +15,7 @@
 .pane-content--main {
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 34%;
 }
 
 
@@ -23,6 +23,6 @@
 .pane-content--sec {
     display: flex;
     flex-direction: column;
-    width: calc(100% - 40%);
+    width: calc(100% - 34%);
     height: 100%;
 }
