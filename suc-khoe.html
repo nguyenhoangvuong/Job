@@ -23,14 +23,14 @@
         <div class="main-layout">
             <!-- pane left -->
             <div class="pane-left">
-                <div class="nav-bar">
+                <div class="nav-bar" id="navbar">
                     <div class="logo">
                         <a href="./index.html" class="d-flex flex-column w-100
                             justify-content-center align-items-center">
                             <div class="logo-wrapper">
                                 <img src="./assets/image/rada-animate.svg" alt="">
                             </div>
-                            <strong class="logo--text mt-1">
+                            <strong class="logo--text">
                                 <span>RADA</span>
                             </strong>
                             <div class="logo--badge">
@@ -658,6 +658,25 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
         integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
         crossorigin="anonymous"></script>
+        <script>
+            // When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+        </script>
 </body>
 
 </html>
