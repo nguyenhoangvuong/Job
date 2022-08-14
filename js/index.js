@@ -1,5 +1,5 @@
 
-const LOGIN = false;
+const LOGIN = true;
 
 // open modal login
 let $$ = document.querySelectorAll.bind(document);
@@ -24,7 +24,9 @@ if(LOGIN ==  true) {
             item.removeAttribute("readonly");
         })
     })
-    avatarLogin.style.display = 'block';
+    if (avatarLogin) {
+        avatarLogin.style.display = 'block';
+    }
 } else {
     inputComment.forEach(item => {
         item.addEventListener('click', () => {
@@ -32,10 +34,6 @@ if(LOGIN ==  true) {
         })
     })
 }
-
-inputLogin.addEventListener('click', () => {
-    overlay.classList.add('open');
-})
 
 btnSwitchLang.addEventListener('click', () => {
     optionSwitchLang.classList.toggle('open')
