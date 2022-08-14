@@ -331,3 +331,11 @@
     border-bottom: 2px solid #f3f4f6;
     border-bottom-left-radius: 20px;
 }
+
+.btn-reply-comment:hover i {
+    color: var(--color-purple) !important;
+}
+
+.btn-reply-comment:hover span {
+    color: var(--color-purple) !important;
+}

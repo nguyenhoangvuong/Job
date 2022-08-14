@@ -4,6 +4,7 @@
 @import url('./postDetails.css');
 @import url('./swiper.css');
 @import url('./login.css');
+@import url('./responsive.css');
 
 
 /* layout */
@@ -739,8 +740,7 @@ p {
     }
 }
 
-@media (min-width: 768px) {
-    .pane-left {
-        display: flex;
-    }
+
+.mobile {
+    display: none !important;
 }
