@@ -1,5 +1,5 @@
 .mySwiper {
-    background-color: #fff;
+    background-color: var(--color-white);
 }
 
 ol {
@@ -203,7 +203,6 @@ ol {
     -ms-transform: translateX(-50%) translateY(-50%);
     -o-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-    background: url(../img/cd-arrow.svg) no-repeat 0 0;
 }
 
 .cd-timeline-navigation a.prev {

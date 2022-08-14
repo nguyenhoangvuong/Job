@@ -86,7 +86,7 @@
 
 .btn-social{
     border-radius: 100rem;
-    font-family: Inter;
+    font-family: var(--font-Inter);
     padding: 0.4rem 0.8rem !important;
     display: flex;
     align-items: center;
@@ -103,32 +103,32 @@
 
 .brand--telegram{
     background: #1d98dc !important;
-    color: #fff !important;
+    color:var(--color-white) !important;
 }
 
 .brand--twitter{
     background: #1da1f2 !important;
-    color: #fff !important;
+    color: var(--color-white) !important;
 }
 
 .brand--facebook{
     background: #4267b2 !important;
-    color: #fff !important;
+    color: var(--color-white) !important;
 }
 
 .brand--youtube{
     background:#db4437 !important;
-    color: #fff !important;
+    color: var(--color-white) !important;
 }
 
 .brand--instagram{
     background:#c13584 !important;
-    color: #fff !important;
+    color: var(--color-white) !important;
 }
 
 .brand--tiktok{
     background:#000 !important;
-    color: #fff !important;
+    color: var(--color-white) !important;
 }
 
 

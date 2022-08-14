@@ -4,7 +4,6 @@
 :root {
     /* font-family */
     --font-Inter: 'Inter';
-    --font-SF-Pro-Rounded: 'SF Pro Rounded';
 
     /* color */
     --color-black: #000000;
@@ -12,6 +11,7 @@
     --color-secondary: #000000B3;
     --color-purple: #9333EA;
     --color-primary: #005978;
+    --color-white: #FFF;
 
     /* font-size */
     --font-size-36: 36px;
