@@ -3,7 +3,6 @@
         display: block;
     }
 
-
     .nav-bar {
         flex-direction: row !important;
         align-items: center;
@@ -76,4 +75,20 @@
         border-radius: 5px; 
     }
 
+    .logo-wrapper {
+        margin-left: 10px;
+    }
+
+    .logo--text {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    
 } 
+
+@media only screen and (max-width: 768px) {
+    .btn-login--text {
+        display: none !important;
+    }
+}
