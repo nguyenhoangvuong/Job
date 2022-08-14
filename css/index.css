@@ -4,6 +4,7 @@
 @import url('./postDetails.css');
 @import url('./swiper.css');
 @import url('./login.css');
+@import url('./responsive.css');
 
 
 /* layout */
@@ -711,9 +712,6 @@ p {
 }
 
 @media (max-width:1024px){
-    .pane-left{
-        display: none !important;
-    }
     .pane-content{
         padding-left: 1rem;
         padding-right: 1rem;
@@ -781,5 +779,11 @@ p {
         font-size: .75rem;
         line-height: 1rem;
         font-weight: 500;
+    }
+}
+
+@media (min-width: 768px) {
+    .pane-left {
+        display: flex;
     }
 }
