@@ -181,7 +181,6 @@
 
 .cards:hover {
     background-color: #fffdf4;
-    
 }
 
 .cards:hover .badge-coin {
@@ -356,17 +355,17 @@ a {
     -webkit-overflow-scrolling: touch;
 }
 
-#style-2::-webkit-scrollbar-track
+.style-2::-webkit-scrollbar-track
 {
 	background-color: #f4f4f4bc;
 }
 
-#style-2::-webkit-scrollbar
+.style-2::-webkit-scrollbar
 {
 	width: 6px;
 }
 
-#style-2::-webkit-scrollbar-thumb
+.style-2::-webkit-scrollbar-thumb
 {
 	border-radius: 10px;
     width: 6px;

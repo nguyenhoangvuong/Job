@@ -13,9 +13,6 @@
         integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- font family -->
-    <link rel="stylesheet" href="./assets/font/SF-Pro-Rounded/SF-Pro-Rounded-Bold.otf">
-
     <!-- css -->
     <link rel="stylesheet" href="./css/index.css" />
 </head>
@@ -87,7 +84,7 @@
                         <div class="relative">
                             <button class="btn-default btn-switch-lang">
                                 <div class="check-Open d-flex">
-                                    <span class="icon"><i class="fa-solid fa-globe"></i></span>
+                                    <span class="icon"><i class="fa-solid fa-globe check-Open"></i></span>
                                     <span class="btn--text check-Open">VI</span>
                                 </div>
                                 <div class="btn-switch-lang--option">
@@ -121,1049 +118,1037 @@
                             </div>
                         </div>
                         <div class="cta-wrapper">
-                            <div class="btn-group btn-group-filter"><a class="btn btn-filter">
-                                    <span class="btn--text">Phổ biến</span></a>
-                                <a class="btn btn-filter-active">
-                                    <span class="btn--text">Mới nhất</span></a>
+                            <div class="btn-group btn-group-filter tab ">
+                                <a onclick="openCity(event, 'Phobien')" class="btn btn-filter tablinks">
+                                    <span class="btn--text">Phổ biến</span>
+                                </a>
+                                <a onclick="openCity(event, 'Moinhat')" class="btn btn-filter tablinks active">
+                                    <span class="btn--text">Mới nhất</span>
+                                </a>
                             </div>
                         </div>
                     </div>
-                    <div class="pane-content--main--main scrollbar" id="style-2">
+                    <div class="pane-content--main--main scrollbar tabcontent style-2" style="display: none" id="Phobien">
                         <div class="cards-list">
-                            <div class="cards cards-post hasComment
-                                    hasVote">
+                            <div class="cards cards-post  hasComment hasVote">
                                 <div class="cards-media">
                                     <div class="cards-media-img">
                                         <a href="#">
-                                            <div style="display: block;
-                                                    overflow: hidden; position:
-                                                    absolute; inset: 0px;
-                                                    box-sizing: border-box;
-                                                    margin: 0px;">
-                                                <img alt="Cuộc chiến giữa
-                                                        Gods và Demons, chiến
-                                                        lược xoay vòng mới trong
-                                                        #play2earn" sizes="100vw"
+                                            <div
+                                                style="display: block; overflow: hidden; position: absolute; inset: 0px; box-sizing: border-box; margin: 0px;">
+                                                <img alt="Cuộc chiến giữa Gods và Demons, chiến lược xoay vòng mới trong #play2earn"
+                                                    sizes="100vw"
                                                     src="https://rada.network/_next/image?url=https%3A%2F%2Fmedia.rada.network%2Fassets%2Fd48edb1f-297c-4fae-b7e9-06ffef7e38a9%3Fformat%3Djpg%26width%3D500&w=1920&q=75"
-                                                    decoding="async" data-nimg="fill" class="cards-img" style="position:
-                                                        absolute; inset: 0px;
-                                                        box-sizing: border-box;
-                                                        padding: 0px; border:
-                                                        none; margin: auto;
-                                                        display: block; width:
-                                                        0px; height: 0px;
-                                                        min-width: 100%;
-                                                        max-width: 100%;
-                                                        min-height: 100%;
-                                                        max-height: 100%;">
+                                                    decoding="async" data-nimg="fill" class="cards-img"
+                                                    style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;">
                                             </div>
                                         </a>
                                     </div>
                                 </div>
                                 <div class="cards-body">
                                     <div class="cards-body-header">
-                                        <div class="cards-title"><a class="text-color-title"
-                                                href="./details.html?id=">Cuộc
-                                                chiến giữa Gods và Demons,
-                                                chiến lược xoay vòng mới
-                                                trong #play2earn</a>
+                                        <div class="cards-title"><a class="text-color-title" href="./details.html?id=">Cuộc
+                                                chiến giữa Gods và Demons, chiến lược xoay vòng mới trong #play2earn</a>
                                         </div>
-                                        <div class="cards-badges"><a href="#"><span class="badge
-                                                        badge-coin">TAUM</span></a></div>
+                                        <div class="cards-badges"><a href="#"><span class="badge badge-coin">TAUM</span></a></div>
                                     </div>
-                                    <div class="metadata-wrapper
-                                            justify-content-between">
+                                    <div class="metadata-wrapper justify-content-between">
                                         <div class="d-flex flex-shrink-0">
-                                            <div class="metadata
-                                                    metadata-source d-flex
-                                                    align-items-center">
+                                            <div class="metadata metadata-source d-flex align-items-center">
                                                 <span><svg width="1em" class="rada-svg" viewBox="4 4 32 32"
                                                         xmlns="http://www.w3.org/2000/svg">
-                                                        <path class="inline-rec" d="M18
-                                                                11.1547C19.2376
-                                                                10.4402 20.7624
-                                                                10.4402 22
-                                                                11.1547L26.6603
-                                                                13.8453C27.8979
-                                                                14.5598 28.6603
-                                                                15.8803 28.6603
-                                                                17.3094V22.6906C28.6603
-                                                                24.1197 27.8979
-                                                                25.4402 26.6603
-                                                                26.1547L22
-                                                                28.8453C20.7624
-                                                                29.5598 19.2376
-                                                                29.5598 18
-                                                                28.8453L13.3397
-                                                                26.1547C12.1021
-                                                                25.4402 11.3397
-                                                                24.1197 11.3397
-                                                                22.6906V17.3094C11.3397
-                                                                15.8803 12.1021
-                                                                14.5598 13.3397
-                                                                13.8453L18
-                                                                11.1547Z" fill="#9CA3AF"></path>
-                                                        <path class="inline-stroke" d="M20 2L20.8806
-                                                                15.1519C20.9757
-                                                                16.5717 22.4811
-                                                                17.4409 23.7582
-                                                                16.8133L35.5885
-                                                                11L24.6389
-                                                                18.3386C23.4568
-                                                                19.1308 23.4568
-                                                                20.8692 24.6389
-                                                                21.6614L35.5885
-                                                                29L23.7582
-                                                                23.1867C22.4811
-                                                                22.5591 20.9757
-                                                                23.4283 20.8806
-                                                                24.848L20
-                                                                38L19.1194
-                                                                24.8481C19.0243
-                                                                23.4283 17.5189
-                                                                22.5591 16.2418
-                                                                23.1867L4.41154
-                                                                29L15.3611
-                                                                21.6614C16.5432
-                                                                20.8692 16.5432
-                                                                19.1308 15.3611
-                                                                18.3386L4.41154
-                                                                11L16.2418
-                                                                16.8133C17.5189
-                                                                17.4409 19.0243
-                                                                16.5717 19.1194
-                                                                15.152L20 2Z" fill="#fff"></path>
-                                                        <circle class="inline-circle" cx="20" cy="7" r="3"
-                                                            fill="#374151"></circle>
-                                                        <circle class="inline-circle" cx="20" cy="33" r="3"
-                                                            fill="#374151"></circle>
+                                                        <path class="inline-rec"
+                                                            d="M18 11.1547C19.2376 10.4402 20.7624 10.4402 22 11.1547L26.6603 13.8453C27.8979 14.5598 28.6603 15.8803 28.6603 17.3094V22.6906C28.6603 24.1197 27.8979 25.4402 26.6603 26.1547L22 28.8453C20.7624 29.5598 19.2376 29.5598 18 28.8453L13.3397 26.1547C12.1021 25.4402 11.3397 24.1197 11.3397 22.6906V17.3094C11.3397 15.8803 12.1021 14.5598 13.3397 13.8453L18 11.1547Z"
+                                                            fill="#9CA3AF"></path>
+                                                        <path class="inline-stroke"
+                                                            d="M20 2L20.8806 15.1519C20.9757 16.5717 22.4811 17.4409 23.7582 16.8133L35.5885 11L24.6389 18.3386C23.4568 19.1308 23.4568 20.8692 24.6389 21.6614L35.5885 29L23.7582 23.1867C22.4811 22.5591 20.9757 23.4283 20.8806 24.848L20 38L19.1194 24.8481C19.0243 23.4283 17.5189 22.5591 16.2418 23.1867L4.41154 29L15.3611 21.6614C16.5432 20.8692 16.5432 19.1308 15.3611 18.3386L4.41154 11L16.2418 16.8133C17.5189 17.4409 19.0243 16.5717 19.1194 15.152L20 2Z"
+                                                            fill="#fff"></path>
+                                                        <circle class="inline-circle" cx="20" cy="7" r="3" fill="#374151"></circle>
+                                                        <circle class="inline-circle" cx="20" cy="33" r="3" fill="#374151"></circle>
                                                         <circle class="inline-circle" cx="31.2583" cy="13.5" r="3"
-                                                            transform="rotate(60
-                                                                31.2583 13.5)" fill="#374151"></circle>
+                                                            transform="rotate(60 31.2583 13.5)" fill="#374151"></circle>
                                                         <circle class="inline-circle" cx="8.74167" cy="26.5" r="3"
-                                                            transform="rotate(60
-                                                                8.74167 26.5)" fill="#374151"></circle>
+                                                            transform="rotate(60 8.74167 26.5)" fill="#374151"></circle>
                                                         <circle class="inline-circle" cx="8.74167" cy="13.5" r="3"
-                                                            transform="rotate(-60
-                                                                8.74167 13.5)" fill="#374151"></circle>
+                                                            transform="rotate(-60 8.74167 13.5)" fill="#374151">
+                                                        </circle>
                                                         <circle class="inline-circle" cx="31.2583" cy="26.5" r="3"
-                                                            transform="rotate(-60
-                                                                31.2583 26.5)" fill="#374151"></circle>
+                                                            transform="rotate(-60 31.2583 26.5)" fill="#374151">
+                                                        </circle>
                                                     </svg></span>
-                                                <span class="metadata-value
-                                                        ml-1 " title="Fiona">Fiona</span>
+                                                <span class="metadata-value ml-1 " title="Fiona">Fiona</span>
                                             </div>
-                                            <div class="metadata
-                                                    metadata-date">
-                                                <span class="metadata-value" title="2:34 PM - Dec 23,
-                                                        2021">8 months</span>
+                                            <div class="metadata metadata-date">
+                                                <span class="metadata-value" title="2:34 PM - Dec 23, 2021">8
+                                                    months</span>
                                             </div>
                                         </div>
-                                        <div class="d-flex flex-shrink-0
-                                                metadata-wrapper_nodivide">
-                                            <div class="metadata
-                                                    metadata-commentcount"><span class="icon mr-1.5"><i class="fa
-                                                            fa-comment"></i></span><span class="">1</span></div>
-                                            <div class="metadata
-                                                    metadata-votecount"><span class="icon mr-1.5"><i class="fa-solid
-                                                            fa-caret-up fa-lg"></i></span><span>4</span></div>
+                                        <div class="d-flex flex-shrink-0 metadata-wrapper_nodivide">
+                                            <div class="metadata metadata-commentcount"><span class="icon mr-1.5"><i
+                                                        class="fa fa-comment"></i></span><span class="">1</span></div>
+                                            <div class="metadata metadata-votecount"><span class="icon mr-1.5"><i
+                                                        class="fa-solid fa-caret-up fa-lg"></i></span><span>4</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <!-- <a class="cards-link--overlay"
-                                    href="./details.html?id=">
-                                    <div class="cards-link--overlay">
-
-                                    </div>
-                                </a> -->
+                                                                        href="./details.html?id=">
+                                                                        <div class="cards-link--overlay">
+                                                                        </div>
+                                                                    </a> -->
                             </div>
-                            <div class="cards cards-post hasComment
-                                    hasVote">
+                            <div class="cards cards-post  hasComment hasVote">
                                 <div class="cards-media">
                                     <div class="cards-media-img">
                                         <a href="#">
-                                            <div style="display: block;
-                                                    overflow: hidden; position:
-                                                    absolute; inset: 0px;
-                                                    box-sizing: border-box;
-                                                    margin: 0px;">
-                                                <img alt="Cuộc chiến giữa
-                                                        Gods và Demons, chiến
-                                                        lược xoay vòng mới trong
-                                                        #play2earn" sizes="100vw"
+                                            <div
+                                                style="display: block; overflow: hidden; position: absolute; inset: 0px; box-sizing: border-box; margin: 0px;">
+                                                <img alt="Cuộc chiến giữa Gods và Demons, chiến lược xoay vòng mới trong #play2earn"
+                                                    sizes="100vw"
                                                     src="https://rada.network/_next/image?url=https%3A%2F%2Fmedia.rada.network%2Fassets%2Fd48edb1f-297c-4fae-b7e9-06ffef7e38a9%3Fformat%3Djpg%26width%3D500&w=1920&q=75"
-                                                    decoding="async" data-nimg="fill" class="cards-img" style="position:
-                                                        absolute; inset: 0px;
-                                                        box-sizing: border-box;
-                                                        padding: 0px; border:
-                                                        none; margin: auto;
-                                                        display: block; width:
-                                                        0px; height: 0px;
-                                                        min-width: 100%;
-                                                        max-width: 100%;
-                                                        min-height: 100%;
-                                                        max-height: 100%;">
+                                                    decoding="async" data-nimg="fill" class="cards-img"
+                                                    style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;">
                                             </div>
                                         </a>
                                     </div>
                                 </div>
                                 <div class="cards-body">
                                     <div class="cards-body-header">
-                                        <div class="cards-title"><a class="text-color-title"
-                                                href="./details.html?id=">Cuộc
-                                                chiến giữa Gods và Demons,
-                                                chiến lược xoay vòng mới
-                                                trong #play2earn</a>
+                                        <div class="cards-title"><a class="text-color-title" href="./details.html?id=">Cuộc
+                                                chiến giữa Gods và Demons, chiến lược xoay vòng mới trong #play2earn</a>
                                         </div>
-                                        <div class="cards-badges"><a href="#"><span class="badge
-                                                        badge-coin">TAUM</span></a></div>
+                                        <div class="cards-badges"><a href="#"><span class="badge badge-coin">TAUM</span></a></div>
                                     </div>
-                                    <div class="metadata-wrapper
-                                            justify-content-between">
+                                    <div class="metadata-wrapper justify-content-between">
                                         <div class="d-flex flex-shrink-0">
-                                            <div class="metadata
-                                                    metadata-source d-flex
-                                                    align-items-center">
+                                            <div class="metadata metadata-source d-flex align-items-center">
                                                 <span class="avatar-2xs">
-                                                    <div style="overflow:
-                                                            hidden; box-sizing:
-                                                            border-box; display:
-                                                            inline-block;
-                                                            position: relative;
-                                                            width: 16px; height:
-                                                            16px;"><img alt="Ronni"
+                                                    <div
+                                                        style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 16px; height: 16px;">
+                                                        <img alt="Ronni"
                                                             src="https://rada.network/_next/image?url=https%3A%2F%2Fmedia.rada.network%2Fassets%2F93db9957-4223-44a6-baf4-69118baa918a%3Fformat%3Dwebp%26width%3D256&w=16&q=75"
-                                                            decoding="async" data-nimg="fixed" style="position:
-                                                                absolute; inset:
-                                                                0px; box-sizing:
-                                                                border-box;
-                                                                padding: 0px;
-                                                                border: none;
-                                                                margin: auto;
-                                                                display: block;
-                                                                width: 0px;
-                                                                height: 0px;
-                                                                min-width: 100%;
-                                                                max-width: 100%;
-                                                                min-height:
-                                                                100%;
-                                                                max-height:
-                                                                100%;"></div>
+                                                            decoding="async" data-nimg="fixed"
+                                                            style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;">
+                                                    </div>
                                                 </span>
-                                                <span class="metadata-value
-                                                        ml-1 " title="Fiona">Fiona</span>
+                                                <span class="metadata-value ml-1 " title="Fiona">Fiona</span>
                                             </div>
-                                            <div class="metadata
-                                                    metadata-date">
-                                                <span class="metadata-value" title="2:34 PM - Dec 23,
-                                                        2021">8 months</span>
+                                            <div class="metadata metadata-date">
+                                                <span class="metadata-value" title="2:34 PM - Dec 23, 2021">8
+                                                    months</span>
                                             </div>
                                         </div>
-                                        <div class="d-flex flex-shrink-0
-                                                metadata-wrapper_nodivide">
-                                            <div class="metadata
-                                                    metadata-commentcount"><span class="icon mr-1.5"><i class="fa
-                                                            fa-comment"></i></span><span class="">1</span></div>
-                                            <div class="metadata
-                                                    metadata-votecount"><span class="icon mr-1.5"><i class="fa-solid
-                                                            fa-caret-up fa-lg"></i></span><span>4</span></div>
+                                        <div class="d-flex flex-shrink-0 metadata-wrapper_nodivide">
+                                            <div class="metadata metadata-commentcount"><span class="icon mr-1.5"><i
+                                                        class="fa fa-comment"></i></span><span class="">1</span></div>
+                                            <div class="metadata metadata-votecount"><span class="icon mr-1.5"><i
+                                                        class="fa-solid fa-caret-up fa-lg"></i></span><span>4</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <!-- <a class="cards-link--overlay"
-                                    href="./details.html?id=">
-                                    <div class="cards-link--overlay">
-
-                                    </div>
-                                </a> -->
+                                                                        href="./details.html?id=">
+                                                                        <div class="cards-link--overlay">
+                                                                        </div>
+                                                                    </a> -->
                             </div>
-                            <div class="cards cards-post hasComment
-                                    hasVote">
+                            <div class="cards cards-post  hasComment hasVote">
                                 <div class="cards-media">
                                     <div class="cards-media-img">
                                         <a href="#">
-                                            <div style="display: block;
-                                                    overflow: hidden; position:
-                                                    absolute; inset: 0px;
-                                                    box-sizing: border-box;
-                                                    margin: 0px;">
-                                                <img alt="Cuộc chiến giữa
-                                                        Gods và Demons, chiến
-                                                        lược xoay vòng mới trong
-                                                        #play2earn" sizes="100vw"
+                                            <div
+                                                style="display: block; overflow: hidden; position: absolute; inset: 0px; box-sizing: border-box; margin: 0px;">
+                                                <img alt="Cuộc chiến giữa Gods và Demons, chiến lược xoay vòng mới trong #play2earn"
+                                                    sizes="100vw"
                                                     src="https://rada.network/_next/image?url=https%3A%2F%2Fmedia.rada.network%2Fassets%2Fd48edb1f-297c-4fae-b7e9-06ffef7e38a9%3Fformat%3Djpg%26width%3D500&w=1920&q=75"
-                                                    decoding="async" data-nimg="fill" class="cards-img" style="position:
-                                                        absolute; inset: 0px;
-                                                        box-sizing: border-box;
-                                                        padding: 0px; border:
-                                                        none; margin: auto;
-                                                        display: block; width:
-                                                        0px; height: 0px;
-                                                        min-width: 100%;
-                                                        max-width: 100%;
-                                                        min-height: 100%;
-                                                        max-height: 100%;">
+                                                    decoding="async" data-nimg="fill" class="cards-img"
+                                                    style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;">
                                             </div>
                                         </a>
                                     </div>
                                 </div>
                                 <div class="cards-body">
                                     <div class="cards-body-header">
-                                        <div class="cards-title"><a class="text-color-title"
-                                                href="./details.html?id=">Cuộc
-                                                chiến giữa Gods và Demons,
-                                                chiến lược xoay vòng mới
-                                                trong #play2earn</a>
+                                        <div class="cards-title"><a class="text-color-title" href="./details.html?id=">Cuộc
+                                                chiến giữa Gods và Demons, chiến lược xoay vòng mới trong #play2earn</a>
                                         </div>
-                                        <div class="cards-badges"><a href="#"><span class="badge
-                                                        badge-coin">TAUM</span></a></div>
+                                        <div class="cards-badges"><a href="#"><span class="badge badge-coin">TAUM</span></a></div>
                                     </div>
-                                    <div class="metadata-wrapper
-                                            justify-content-between">
+                                    <div class="metadata-wrapper justify-content-between">
                                         <div class="d-flex flex-shrink-0">
-                                            <div class="metadata
-                                                    metadata-source d-flex
-                                                    align-items-center">
+                                            <div class="metadata metadata-source d-flex align-items-center">
                                                 <span class="avatar-2xs">
-                                                    <div style="overflow:
-                                                            hidden; box-sizing:
-                                                            border-box; display:
-                                                            inline-block;
-                                                            position: relative;
-                                                            width: 16px; height:
-                                                            16px;"><img alt="Ronni"
+                                                    <div
+                                                        style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 16px; height: 16px;">
+                                                        <img alt="Ronni"
                                                             src="https://rada.network/_next/image?url=https%3A%2F%2Fmedia.rada.network%2Fassets%2F93db9957-4223-44a6-baf4-69118baa918a%3Fformat%3Dwebp%26width%3D256&w=16&q=75"
-                                                            decoding="async" data-nimg="fixed" style="position:
-                                                                absolute; inset:
-                                                                0px; box-sizing:
-                                                                border-box;
-                                                                padding: 0px;
-                                                                border: none;
-                                                                margin: auto;
-                                                                display: block;
-                                                                width: 0px;
-                                                                height: 0px;
-                                                                min-width: 100%;
-                                                                max-width: 100%;
-                                                                min-height:
-                                                                100%;
-                                                                max-height:
-                                                                100%;"></div>
+                                                            decoding="async" data-nimg="fixed"
+                                                            style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;">
+                                                    </div>
                                                 </span>
-                                                <span class="metadata-value
-                                                        ml-1 " title="Fiona">Fiona</span>
+                                                <span class="metadata-value ml-1 " title="Fiona">Fiona</span>
                                             </div>
-                                            <div class="metadata
-                                                    metadata-date">
-                                                <span class="metadata-value" title="2:34 PM - Dec 23,
-                                                        2021">8 months</span>
+                                            <div class="metadata metadata-date">
+                                                <span class="metadata-value" title="2:34 PM - Dec 23, 2021">8
+                                                    months</span>
                                             </div>
                                         </div>
-                                        <div class="d-flex flex-shrink-0
-                                                metadata-wrapper_nodivide">
-                                            <div class="metadata
-                                                    metadata-commentcount"><span class="icon mr-1.5"><i class="fa
-                                                            fa-comment"></i></span><span class="">1</span></div>
-                                            <div class="metadata
-                                                    metadata-votecount"><span class="icon mr-1.5"><i class="fa-solid
-                                                            fa-caret-up fa-lg"></i></span><span>4</span></div>
+                                        <div class="d-flex flex-shrink-0 metadata-wrapper_nodivide">
+                                            <div class="metadata metadata-commentcount"><span class="icon mr-1.5"><i
+                                                        class="fa fa-comment"></i></span><span class="">1</span></div>
+                                            <div class="metadata metadata-votecount"><span class="icon mr-1.5"><i
+                                                        class="fa-solid fa-caret-up fa-lg"></i></span><span>4</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <!-- <a class="cards-link--overlay"
-                                    href="./details.html?id=">
-                                    <div class="cards-link--overlay">
-
-                                    </div>
-                                </a> -->
+                                                                        href="./details.html?id=">
+                                                                        <div class="cards-link--overlay">
+                                                                        </div>
+                                                                    </a> -->
                             </div>
-                            <div class="cards cards-post hasComment
-                                    hasVote">
+                            <div class="cards cards-post  hasComment hasVote">
                                 <div class="cards-media">
                                     <div class="cards-media-img">
                                         <a href="#">
-                                            <div style="display: block;
-                                                    overflow: hidden; position:
-                                                    absolute; inset: 0px;
-                                                    box-sizing: border-box;
-                                                    margin: 0px;">
-                                                <img alt="Cuộc chiến giữa
-                                                        Gods và Demons, chiến
-                                                        lược xoay vòng mới trong
-                                                        #play2earn" sizes="100vw"
+                                            <div
+                                                style="display: block; overflow: hidden; position: absolute; inset: 0px; box-sizing: border-box; margin: 0px;">
+                                                <img alt="Cuộc chiến giữa Gods và Demons, chiến lược xoay vòng mới trong #play2earn"
+                                                    sizes="100vw"
                                                     src="https://rada.network/_next/image?url=https%3A%2F%2Fmedia.rada.network%2Fassets%2Fd48edb1f-297c-4fae-b7e9-06ffef7e38a9%3Fformat%3Djpg%26width%3D500&w=1920&q=75"
-                                                    decoding="async" data-nimg="fill" class="cards-img" style="position:
-                                                        absolute; inset: 0px;
-                                                        box-sizing: border-box;
-                                                        padding: 0px; border:
-                                                        none; margin: auto;
-                                                        display: block; width:
-                                                        0px; height: 0px;
-                                                        min-width: 100%;
-                                                        max-width: 100%;
-                                                        min-height: 100%;
-                                                        max-height: 100%;">
+                                                    decoding="async" data-nimg="fill" class="cards-img"
+                                                    style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;">
                                             </div>
                                         </a>
                                     </div>
                                 </div>
                                 <div class="cards-body">
                                     <div class="cards-body-header">
-                                        <div class="cards-title"><a class="text-color-title"
-                                                href="./details.html?id=">Cuộc
-                                                chiến giữa Gods và Demons,
-                                                chiến lược xoay vòng mới
-                                                trong #play2earn</a>
+                                        <div class="cards-title"><a class="text-color-title" href="./details.html?id=">Cuộc
+                                                chiến giữa Gods và Demons, chiến lược xoay vòng mới trong #play2earn</a>
                                         </div>
-                                        <div class="cards-badges"><a href="#"><span class="badge
-                                                        badge-coin">TAUM</span></a></div>
+                                        <div class="cards-badges"><a href="#"><span class="badge badge-coin">TAUM</span></a></div>
                                     </div>
-                                    <div class="metadata-wrapper
-                                            justify-content-between">
+                                    <div class="metadata-wrapper justify-content-between">
                                         <div class="d-flex flex-shrink-0">
-                                            <div class="metadata
-                                                    metadata-source d-flex
-                                                    align-items-center">
+                                            <div class="metadata metadata-source d-flex align-items-center">
                                                 <span class="avatar-2xs">
-                                                    <div style="overflow:
-                                                            hidden; box-sizing:
-                                                            border-box; display:
-                                                            inline-block;
-                                                            position: relative;
-                                                            width: 16px; height:
-                                                            16px;"><img alt="Ronni"
+                                                    <div
+                                                        style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 16px; height: 16px;">
+                                                        <img alt="Ronni"
                                                             src="https://rada.network/_next/image?url=https%3A%2F%2Fmedia.rada.network%2Fassets%2F93db9957-4223-44a6-baf4-69118baa918a%3Fformat%3Dwebp%26width%3D256&w=16&q=75"
-                                                            decoding="async" data-nimg="fixed" style="position:
-                                                                absolute; inset:
-                                                                0px; box-sizing:
-                                                                border-box;
-                                                                padding: 0px;
-                                                                border: none;
-                                                                margin: auto;
-                                                                display: block;
-                                                                width: 0px;
-                                                                height: 0px;
-                                                                min-width: 100%;
-                                                                max-width: 100%;
-                                                                min-height:
-                                                                100%;
-                                                                max-height:
-                                                                100%;"></div>
+                                                            decoding="async" data-nimg="fixed"
+                                                            style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;">
+                                                    </div>
                                                 </span>
-                                                <span class="metadata-value
-                                                        ml-1 " title="Fiona">Fiona</span>
+                                                <span class="metadata-value ml-1 " title="Fiona">Fiona</span>
                                             </div>
-                                            <div class="metadata
-                                                    metadata-date">
-                                                <span class="metadata-value" title="2:34 PM - Dec 23,
-                                                        2021">8 months</span>
+                                            <div class="metadata metadata-date">
+                                                <span class="metadata-value" title="2:34 PM - Dec 23, 2021">8
+                                                    months</span>
                                             </div>
                                         </div>
-                                        <div class="d-flex flex-shrink-0
-                                                metadata-wrapper_nodivide">
-                                            <div class="metadata
-                                                    metadata-commentcount"><span class="icon mr-1.5"><i class="fa
-                                                            fa-comment"></i></span><span class="">1</span></div>
-                                            <div class="metadata
-                                                    metadata-votecount"><span class="icon mr-1.5"><i class="fa-solid
-                                                            fa-caret-up fa-lg"></i></span><span>4</span></div>
+                                        <div class="d-flex flex-shrink-0 metadata-wrapper_nodivide">
+                                            <div class="metadata metadata-commentcount"><span class="icon mr-1.5"><i
+                                                        class="fa fa-comment"></i></span><span class="">1</span></div>
+                                            <div class="metadata metadata-votecount"><span class="icon mr-1.5"><i
+                                                        class="fa-solid fa-caret-up fa-lg"></i></span><span>4</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <!-- <a class="cards-link--overlay"
-                                    href="./details.html?id=">
-                                    <div class="cards-link--overlay">
-
-                                    </div>
-                                </a> -->
+                                                                        href="./details.html?id=">
+                                                                        <div class="cards-link--overlay">
+                                                                        </div>
+                                                                    </a> -->
                             </div>
-                            <div class="cards cards-post hasComment
-                                    hasVote">
+                            <div class="cards cards-post  hasComment hasVote">
                                 <div class="cards-media">
                                     <div class="cards-media-img">
                                         <a href="#">
-                                            <div style="display: block;
-                                                    overflow: hidden; position:
-                                                    absolute; inset: 0px;
-                                                    box-sizing: border-box;
-                                                    margin: 0px;">
-                                                <img alt="Cuộc chiến giữa
-                                                        Gods và Demons, chiến
-                                                        lược xoay vòng mới trong
-                                                        #play2earn" sizes="100vw"
+                                            <div
+                                                style="display: block; overflow: hidden; position: absolute; inset: 0px; box-sizing: border-box; margin: 0px;">
+                                                <img alt="Cuộc chiến giữa Gods và Demons, chiến lược xoay vòng mới trong #play2earn"
+                                                    sizes="100vw"
                                                     src="https://rada.network/_next/image?url=https%3A%2F%2Fmedia.rada.network%2Fassets%2Fd48edb1f-297c-4fae-b7e9-06ffef7e38a9%3Fformat%3Djpg%26width%3D500&w=1920&q=75"
-                                                    decoding="async" data-nimg="fill" class="cards-img" style="position:
-                                                        absolute; inset: 0px;
-                                                        box-sizing: border-box;
-                                                        padding: 0px; border:
-                                                        none; margin: auto;
-                                                        display: block; width:
-                                                        0px; height: 0px;
-                                                        min-width: 100%;
-                                                        max-width: 100%;
-                                                        min-height: 100%;
-                                                        max-height: 100%;">
+                                                    decoding="async" data-nimg="fill" class="cards-img"
+                                                    style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;">
                                             </div>
                                         </a>
                                     </div>
                                 </div>
                                 <div class="cards-body">
                                     <div class="cards-body-header">
-                                        <div class="cards-title"><a class="text-color-title"
-                                                href="./details.html?id=">Cuộc
-                                                chiến giữa Gods và Demons,
-                                                chiến lược xoay vòng mới
-                                                trong #play2earn</a>
+                                        <div class="cards-title"><a class="text-color-title" href="./details.html?id=">Cuộc
+                                                chiến giữa Gods và Demons, chiến lược xoay vòng mới trong #play2earn</a>
                                         </div>
-                                        <div class="cards-badges"><a href="#"><span class="badge
-                                                        badge-coin">TAUM</span></a></div>
+                                        <div class="cards-badges"><a href="#"><span class="badge badge-coin">TAUM</span></a></div>
                                     </div>
-                                    <div class="metadata-wrapper
-                                            justify-content-between">
+                                    <div class="metadata-wrapper justify-content-between">
                                         <div class="d-flex flex-shrink-0">
-                                            <div class="metadata
-                                                    metadata-source d-flex
-                                                    align-items-center">
+                                            <div class="metadata metadata-source d-flex align-items-center">
                                                 <span><svg width="1em" class="rada-svg" viewBox="4 4 32 32"
                                                         xmlns="http://www.w3.org/2000/svg">
-                                                        <path class="inline-rec" d="M18
-                                                                11.1547C19.2376
-                                                                10.4402 20.7624
-                                                                10.4402 22
-                                                                11.1547L26.6603
-                                                                13.8453C27.8979
-                                                                14.5598 28.6603
-                                                                15.8803 28.6603
-                                                                17.3094V22.6906C28.6603
-                                                                24.1197 27.8979
-                                                                25.4402 26.6603
-                                                                26.1547L22
-                                                                28.8453C20.7624
-                                                                29.5598 19.2376
-                                                                29.5598 18
-                                                                28.8453L13.3397
-                                                                26.1547C12.1021
-                                                                25.4402 11.3397
-                                                                24.1197 11.3397
-                                                                22.6906V17.3094C11.3397
-                                                                15.8803 12.1021
-                                                                14.5598 13.3397
-                                                                13.8453L18
-                                                                11.1547Z" fill="#9CA3AF"></path>
-                                                        <path class="inline-stroke" d="M20 2L20.8806
-                                                                15.1519C20.9757
-                                                                16.5717 22.4811
-                                                                17.4409 23.7582
-                                                                16.8133L35.5885
-                                                                11L24.6389
-                                                                18.3386C23.4568
-                                                                19.1308 23.4568
-                                                                20.8692 24.6389
-                                                                21.6614L35.5885
-                                                                29L23.7582
-                                                                23.1867C22.4811
-                                                                22.5591 20.9757
-                                                                23.4283 20.8806
-                                                                24.848L20
-                                                                38L19.1194
-                                                                24.8481C19.0243
-                                                                23.4283 17.5189
-                                                                22.5591 16.2418
-                                                                23.1867L4.41154
-                                                                29L15.3611
-                                                                21.6614C16.5432
-                                                                20.8692 16.5432
-                                                                19.1308 15.3611
-                                                                18.3386L4.41154
-                                                                11L16.2418
-                                                                16.8133C17.5189
-                                                                17.4409 19.0243
-                                                                16.5717 19.1194
-                                                                15.152L20 2Z" fill="#fff"></path>
-                                                        <circle class="inline-circle" cx="20" cy="7" r="3"
-                                                            fill="#374151"></circle>
-                                                        <circle class="inline-circle" cx="20" cy="33" r="3"
-                                                            fill="#374151"></circle>
+                                                        <path class="inline-rec"
+                                                            d="M18 11.1547C19.2376 10.4402 20.7624 10.4402 22 11.1547L26.6603 13.8453C27.8979 14.5598 28.6603 15.8803 28.6603 17.3094V22.6906C28.6603 24.1197 27.8979 25.4402 26.6603 26.1547L22 28.8453C20.7624 29.5598 19.2376 29.5598 18 28.8453L13.3397 26.1547C12.1021 25.4402 11.3397 24.1197 11.3397 22.6906V17.3094C11.3397 15.8803 12.1021 14.5598 13.3397 13.8453L18 11.1547Z"
+                                                            fill="#9CA3AF"></path>
+                                                        <path class="inline-stroke"
+                                                            d="M20 2L20.8806 15.1519C20.9757 16.5717 22.4811 17.4409 23.7582 16.8133L35.5885 11L24.6389 18.3386C23.4568 19.1308 23.4568 20.8692 24.6389 21.6614L35.5885 29L23.7582 23.1867C22.4811 22.5591 20.9757 23.4283 20.8806 24.848L20 38L19.1194 24.8481C19.0243 23.4283 17.5189 22.5591 16.2418 23.1867L4.41154 29L15.3611 21.6614C16.5432 20.8692 16.5432 19.1308 15.3611 18.3386L4.41154 11L16.2418 16.8133C17.5189 17.4409 19.0243 16.5717 19.1194 15.152L20 2Z"
+                                                            fill="#fff"></path>
+                                                        <circle class="inline-circle" cx="20" cy="7" r="3" fill="#374151"></circle>
+                                                        <circle class="inline-circle" cx="20" cy="33" r="3" fill="#374151"></circle>
                                                         <circle class="inline-circle" cx="31.2583" cy="13.5" r="3"
-                                                            transform="rotate(60
-                                                                31.2583 13.5)" fill="#374151"></circle>
+                                                            transform="rotate(60 31.2583 13.5)" fill="#374151"></circle>
                                                         <circle class="inline-circle" cx="8.74167" cy="26.5" r="3"
-                                                            transform="rotate(60
-                                                                8.74167 26.5)" fill="#374151"></circle>
+                                                            transform="rotate(60 8.74167 26.5)" fill="#374151"></circle>
                                                         <circle class="inline-circle" cx="8.74167" cy="13.5" r="3"
-                                                            transform="rotate(-60
-                                                                8.74167 13.5)" fill="#374151"></circle>
+                                                            transform="rotate(-60 8.74167 13.5)" fill="#374151">
+                                                        </circle>
                                                         <circle class="inline-circle" cx="31.2583" cy="26.5" r="3"
-                                                            transform="rotate(-60
-                                                                31.2583 26.5)" fill="#374151"></circle>
+                                                            transform="rotate(-60 31.2583 26.5)" fill="#374151">
+                                                        </circle>
                                                     </svg></span>
-                                                <span class="metadata-value
-                                                        ml-1 " title="Fiona">Fiona</span>
+                                                <span class="metadata-value ml-1 " title="Fiona">Fiona</span>
                                             </div>
-                                            <div class="metadata
-                                                    metadata-date">
-                                                <span class="metadata-value" title="2:34 PM - Dec 23,
-                                                        2021">8 months</span>
+                                            <div class="metadata metadata-date">
+                                                <span class="metadata-value" title="2:34 PM - Dec 23, 2021">8
+                                                    months</span>
                                             </div>
                                         </div>
-                                        <div class="d-flex flex-shrink-0
-                                                metadata-wrapper_nodivide">
-                                            <div class="metadata
-                                                    metadata-commentcount"><span class="icon mr-1.5"><i class="fa
-                                                            fa-comment"></i></span><span class="">1</span></div>
-                                            <div class="metadata
-                                                    metadata-votecount"><span class="icon mr-1.5"><i class="fa-solid
-                                                            fa-caret-up fa-lg"></i></span><span>4</span></div>
+                                        <div class="d-flex flex-shrink-0 metadata-wrapper_nodivide">
+                                            <div class="metadata metadata-commentcount"><span class="icon mr-1.5"><i
+                                                        class="fa fa-comment"></i></span><span class="">1</span></div>
+                                            <div class="metadata metadata-votecount"><span class="icon mr-1.5"><i
+                                                        class="fa-solid fa-caret-up fa-lg"></i></span><span>4</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <!-- <a class="cards-link--overlay"
-                                    href="./details.html?id=">
-                                    <div class="cards-link--overlay">
-
-                                    </div>
-                                </a> -->
+                                                                        href="./details.html?id=">
+                                                                        <div class="cards-link--overlay">
+                                                                        </div>
+                                                                    </a> -->
                             </div>
-                            <div class="cards cards-post hasComment
-                                    hasVote">
+                            <div class="cards cards-post  hasComment hasVote">
                                 <div class="cards-media">
                                     <div class="cards-media-img">
                                         <a href="#">
-                                            <div style="display: block;
-                                                    overflow: hidden; position:
-                                                    absolute; inset: 0px;
-                                                    box-sizing: border-box;
-                                                    margin: 0px;">
-                                                <img alt="Cuộc chiến giữa
-                                                        Gods và Demons, chiến
-                                                        lược xoay vòng mới trong
-                                                        #play2earn" sizes="100vw"
+                                            <div
+                                                style="display: block; overflow: hidden; position: absolute; inset: 0px; box-sizing: border-box; margin: 0px;">
+                                                <img alt="Cuộc chiến giữa Gods và Demons, chiến lược xoay vòng mới trong #play2earn"
+                                                    sizes="100vw"
                                                     src="https://rada.network/_next/image?url=https%3A%2F%2Fmedia.rada.network%2Fassets%2Fd48edb1f-297c-4fae-b7e9-06ffef7e38a9%3Fformat%3Djpg%26width%3D500&w=1920&q=75"
-                                                    decoding="async" data-nimg="fill" class="cards-img" style="position:
-                                                        absolute; inset: 0px;
-                                                        box-sizing: border-box;
-                                                        padding: 0px; border:
-                                                        none; margin: auto;
-                                                        display: block; width:
-                                                        0px; height: 0px;
-                                                        min-width: 100%;
-                                                        max-width: 100%;
-                                                        min-height: 100%;
-                                                        max-height: 100%;">
+                                                    decoding="async" data-nimg="fill" class="cards-img"
+                                                    style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;">
                                             </div>
                                         </a>
                                     </div>
                                 </div>
                                 <div class="cards-body">
                                     <div class="cards-body-header">
-                                        <div class="cards-title"><a class="text-color-title"
-                                                href="./details.html?id=">Cuộc
-                                                chiến giữa Gods và Demons,
-                                                chiến lược xoay vòng mới
-                                                trong #play2earn</a>
+                                        <div class="cards-title"><a class="text-color-title" href="./details.html?id=">Cuộc
+                                                chiến giữa Gods và Demons, chiến lược xoay vòng mới trong #play2earn</a>
                                         </div>
-                                        <div class="cards-badges"><a href="#"><span class="badge
-                                                        badge-coin">TAUM</span></a></div>
+                                        <div class="cards-badges"><a href="#"><span class="badge badge-coin">TAUM</span></a></div>
                                     </div>
-                                    <div class="metadata-wrapper
-                                            justify-content-between">
+                                    <div class="metadata-wrapper justify-content-between">
                                         <div class="d-flex flex-shrink-0">
-                                            <div class="metadata
-                                                    metadata-source d-flex
-                                                    align-items-center">
+                                            <div class="metadata metadata-source d-flex align-items-center">
                                                 <span><svg width="1em" class="rada-svg" viewBox="4 4 32 32"
                                                         xmlns="http://www.w3.org/2000/svg">
-                                                        <path class="inline-rec" d="M18
-                                                                11.1547C19.2376
-                                                                10.4402 20.7624
-                                                                10.4402 22
-                                                                11.1547L26.6603
-                                                                13.8453C27.8979
-                                                                14.5598 28.6603
-                                                                15.8803 28.6603
-                                                                17.3094V22.6906C28.6603
-                                                                24.1197 27.8979
-                                                                25.4402 26.6603
-                                                                26.1547L22
-                                                                28.8453C20.7624
-                                                                29.5598 19.2376
-                                                                29.5598 18
-                                                                28.8453L13.3397
-                                                                26.1547C12.1021
-                                                                25.4402 11.3397
-                                                                24.1197 11.3397
-                                                                22.6906V17.3094C11.3397
-                                                                15.8803 12.1021
-                                                                14.5598 13.3397
-                                                                13.8453L18
-                                                                11.1547Z" fill="#9CA3AF"></path>
-                                                        <path class="inline-stroke" d="M20 2L20.8806
-                                                                15.1519C20.9757
-                                                                16.5717 22.4811
-                                                                17.4409 23.7582
-                                                                16.8133L35.5885
-                                                                11L24.6389
-                                                                18.3386C23.4568
-                                                                19.1308 23.4568
-                                                                20.8692 24.6389
-                                                                21.6614L35.5885
-                                                                29L23.7582
-                                                                23.1867C22.4811
-                                                                22.5591 20.9757
-                                                                23.4283 20.8806
-                                                                24.848L20
-                                                                38L19.1194
-                                                                24.8481C19.0243
-                                                                23.4283 17.5189
-                                                                22.5591 16.2418
-                                                                23.1867L4.41154
-                                                                29L15.3611
-                                                                21.6614C16.5432
-                                                                20.8692 16.5432
-                                                                19.1308 15.3611
-                                                                18.3386L4.41154
-                                                                11L16.2418
-                                                                16.8133C17.5189
-                                                                17.4409 19.0243
-                                                                16.5717 19.1194
-                                                                15.152L20 2Z" fill="#fff"></path>
-                                                        <circle class="inline-circle" cx="20" cy="7" r="3"
-                                                            fill="#374151"></circle>
-                                                        <circle class="inline-circle" cx="20" cy="33" r="3"
-                                                            fill="#374151"></circle>
+                                                        <path class="inline-rec"
+                                                            d="M18 11.1547C19.2376 10.4402 20.7624 10.4402 22 11.1547L26.6603 13.8453C27.8979 14.5598 28.6603 15.8803 28.6603 17.3094V22.6906C28.6603 24.1197 27.8979 25.4402 26.6603 26.1547L22 28.8453C20.7624 29.5598 19.2376 29.5598 18 28.8453L13.3397 26.1547C12.1021 25.4402 11.3397 24.1197 11.3397 22.6906V17.3094C11.3397 15.8803 12.1021 14.5598 13.3397 13.8453L18 11.1547Z"
+                                                            fill="#9CA3AF"></path>
+                                                        <path class="inline-stroke"
+                                                            d="M20 2L20.8806 15.1519C20.9757 16.5717 22.4811 17.4409 23.7582 16.8133L35.5885 11L24.6389 18.3386C23.4568 19.1308 23.4568 20.8692 24.6389 21.6614L35.5885 29L23.7582 23.1867C22.4811 22.5591 20.9757 23.4283 20.8806 24.848L20 38L19.1194 24.8481C19.0243 23.4283 17.5189 22.5591 16.2418 23.1867L4.41154 29L15.3611 21.6614C16.5432 20.8692 16.5432 19.1308 15.3611 18.3386L4.41154 11L16.2418 16.8133C17.5189 17.4409 19.0243 16.5717 19.1194 15.152L20 2Z"
+                                                            fill="#fff"></path>
+                                                        <circle class="inline-circle" cx="20" cy="7" r="3" fill="#374151"></circle>
+                                                        <circle class="inline-circle" cx="20" cy="33" r="3" fill="#374151"></circle>
                                                         <circle class="inline-circle" cx="31.2583" cy="13.5" r="3"
-                                                            transform="rotate(60
-                                                                31.2583 13.5)" fill="#374151"></circle>
+                                                            transform="rotate(60 31.2583 13.5)" fill="#374151"></circle>
                                                         <circle class="inline-circle" cx="8.74167" cy="26.5" r="3"
-                                                            transform="rotate(60
-                                                                8.74167 26.5)" fill="#374151"></circle>
+                                                            transform="rotate(60 8.74167 26.5)" fill="#374151"></circle>
                                                         <circle class="inline-circle" cx="8.74167" cy="13.5" r="3"
-                                                            transform="rotate(-60
-                                                                8.74167 13.5)" fill="#374151"></circle>
+                                                            transform="rotate(-60 8.74167 13.5)" fill="#374151">
+                                                        </circle>
                                                         <circle class="inline-circle" cx="31.2583" cy="26.5" r="3"
-                                                            transform="rotate(-60
-                                                                31.2583 26.5)" fill="#374151"></circle>
+                                                            transform="rotate(-60 31.2583 26.5)" fill="#374151">
+                                                        </circle>
                                                     </svg></span>
-                                                <span class="metadata-value
-                                                        ml-1 " title="Fiona">Fiona</span>
+                                                <span class="metadata-value ml-1 " title="Fiona">Fiona</span>
                                             </div>
-                                            <div class="metadata
-                                                    metadata-date">
-                                                <span class="metadata-value" title="2:34 PM - Dec 23,
-                                                        2021">8 months</span>
+                                            <div class="metadata metadata-date">
+                                                <span class="metadata-value" title="2:34 PM - Dec 23, 2021">8
+                                                    months</span>
                                             </div>
                                         </div>
-                                        <div class="d-flex flex-shrink-0
-                                                metadata-wrapper_nodivide">
-                                            <div class="metadata
-                                                    metadata-commentcount"><span class="icon mr-1.5"><i class="fa
-                                                            fa-comment"></i></span><span class="">1</span></div>
-                                            <div class="metadata
-                                                    metadata-votecount"><span class="icon mr-1.5"><i class="fa-solid
-                                                            fa-caret-up fa-lg"></i></span><span>4</span></div>
+                                        <div class="d-flex flex-shrink-0 metadata-wrapper_nodivide">
+                                            <div class="metadata metadata-commentcount"><span class="icon mr-1.5"><i
+                                                        class="fa fa-comment"></i></span><span class="">1</span></div>
+                                            <div class="metadata metadata-votecount"><span class="icon mr-1.5"><i
+                                                        class="fa-solid fa-caret-up fa-lg"></i></span><span>4</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <!-- <a class="cards-link--overlay"
-                                    href="./details.html?id=">
-                                    <div class="cards-link--overlay">
-
-                                    </div>
-                                </a> -->
+                                                                        href="./details.html?id=">
+                                                                        <div class="cards-link--overlay">
+                                                                        </div>
+                                                                    </a> -->
                             </div>
-                            <div class="cards cards-post hasComment
-                                    hasVote">
+                            <div class="cards cards-post  hasComment hasVote">
                                 <div class="cards-media">
                                     <div class="cards-media-img">
                                         <a href="#">
-                                            <div style="display: block;
-                                                    overflow: hidden; position:
-                                                    absolute; inset: 0px;
-                                                    box-sizing: border-box;
-                                                    margin: 0px;">
-                                                <img alt="Cuộc chiến giữa
-                                                        Gods và Demons, chiến
-                                                        lược xoay vòng mới trong
-                                                        #play2earn" sizes="100vw"
+                                            <div
+                                                style="display: block; overflow: hidden; position: absolute; inset: 0px; box-sizing: border-box; margin: 0px;">
+                                                <img alt="Cuộc chiến giữa Gods và Demons, chiến lược xoay vòng mới trong #play2earn"
+                                                    sizes="100vw"
                                                     src="https://rada.network/_next/image?url=https%3A%2F%2Fmedia.rada.network%2Fassets%2Fd48edb1f-297c-4fae-b7e9-06ffef7e38a9%3Fformat%3Djpg%26width%3D500&w=1920&q=75"
-                                                    decoding="async" data-nimg="fill" class="cards-img" style="position:
-                                                        absolute; inset: 0px;
-                                                        box-sizing: border-box;
-                                                        padding: 0px; border:
-                                                        none; margin: auto;
-                                                        display: block; width:
-                                                        0px; height: 0px;
-                                                        min-width: 100%;
-                                                        max-width: 100%;
-                                                        min-height: 100%;
-                                                        max-height: 100%;">
+                                                    decoding="async" data-nimg="fill" class="cards-img"
+                                                    style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;">
                                             </div>
                                         </a>
                                     </div>
                                 </div>
                                 <div class="cards-body">
                                     <div class="cards-body-header">
-                                        <div class="cards-title"><a class="text-color-title"
-                                                href="./details.html?id=">Cuộc
-                                                chiến giữa Gods và Demons,
-                                                chiến lược xoay vòng mới
-                                                trong #play2earn</a>
+                                        <div class="cards-title"><a class="text-color-title" href="./details.html?id=">Cuộc
+                                                chiến giữa Gods và Demons, chiến lược xoay vòng mới trong #play2earn</a>
                                         </div>
-                                        <div class="cards-badges"><a href="#"><span class="badge
-                                                        badge-coin">TAUM</span></a></div>
+                                        <div class="cards-badges"><a href="#"><span class="badge badge-coin">TAUM</span></a></div>
                                     </div>
-                                    <div class="metadata-wrapper
-                                            justify-content-between">
+                                    <div class="metadata-wrapper justify-content-between">
                                         <div class="d-flex flex-shrink-0">
-                                            <div class="metadata
-                                                    metadata-source d-flex
-                                                    align-items-center">
+                                            <div class="metadata metadata-source d-flex align-items-center">
                                                 <span><svg width="1em" class="rada-svg" viewBox="4 4 32 32"
                                                         xmlns="http://www.w3.org/2000/svg">
-                                                        <path class="inline-rec" d="M18
-                                                                11.1547C19.2376
-                                                                10.4402 20.7624
-                                                                10.4402 22
-                                                                11.1547L26.6603
-                                                                13.8453C27.8979
-                                                                14.5598 28.6603
-                                                                15.8803 28.6603
-                                                                17.3094V22.6906C28.6603
-                                                                24.1197 27.8979
-                                                                25.4402 26.6603
-                                                                26.1547L22
-                                                                28.8453C20.7624
-                                                                29.5598 19.2376
-                                                                29.5598 18
-                                                                28.8453L13.3397
-                                                                26.1547C12.1021
-                                                                25.4402 11.3397
-                                                                24.1197 11.3397
-                                                                22.6906V17.3094C11.3397
-                                                                15.8803 12.1021
-                                                                14.5598 13.3397
-                                                                13.8453L18
-                                                                11.1547Z" fill="#9CA3AF"></path>
-                                                        <path class="inline-stroke" d="M20 2L20.8806
-                                                                15.1519C20.9757
-                                                                16.5717 22.4811
-                                                                17.4409 23.7582
-                                                                16.8133L35.5885
-                                                                11L24.6389
-                                                                18.3386C23.4568
-                                                                19.1308 23.4568
-                                                                20.8692 24.6389
-                                                                21.6614L35.5885
-                                                                29L23.7582
-                                                                23.1867C22.4811
-                                                                22.5591 20.9757
-                                                                23.4283 20.8806
-                                                                24.848L20
-                                                                38L19.1194
-                                                                24.8481C19.0243
-                                                                23.4283 17.5189
-                                                                22.5591 16.2418
-                                                                23.1867L4.41154
-                                                                29L15.3611
-                                                                21.6614C16.5432
-                                                                20.8692 16.5432
-                                                                19.1308 15.3611
-                                                                18.3386L4.41154
-                                                                11L16.2418
-                                                                16.8133C17.5189
-                                                                17.4409 19.0243
-                                                                16.5717 19.1194
-                                                                15.152L20 2Z" fill="#fff"></path>
-                                                        <circle class="inline-circle" cx="20" cy="7" r="3"
-                                                            fill="#374151"></circle>
-                                                        <circle class="inline-circle" cx="20" cy="33" r="3"
-                                                            fill="#374151"></circle>
+                                                        <path class="inline-rec"
+                                                            d="M18 11.1547C19.2376 10.4402 20.7624 10.4402 22 11.1547L26.6603 13.8453C27.8979 14.5598 28.6603 15.8803 28.6603 17.3094V22.6906C28.6603 24.1197 27.8979 25.4402 26.6603 26.1547L22 28.8453C20.7624 29.5598 19.2376 29.5598 18 28.8453L13.3397 26.1547C12.1021 25.4402 11.3397 24.1197 11.3397 22.6906V17.3094C11.3397 15.8803 12.1021 14.5598 13.3397 13.8453L18 11.1547Z"
+                                                            fill="#9CA3AF"></path>
+                                                        <path class="inline-stroke"
+                                                            d="M20 2L20.8806 15.1519C20.9757 16.5717 22.4811 17.4409 23.7582 16.8133L35.5885 11L24.6389 18.3386C23.4568 19.1308 23.4568 20.8692 24.6389 21.6614L35.5885 29L23.7582 23.1867C22.4811 22.5591 20.9757 23.4283 20.8806 24.848L20 38L19.1194 24.8481C19.0243 23.4283 17.5189 22.5591 16.2418 23.1867L4.41154 29L15.3611 21.6614C16.5432 20.8692 16.5432 19.1308 15.3611 18.3386L4.41154 11L16.2418 16.8133C17.5189 17.4409 19.0243 16.5717 19.1194 15.152L20 2Z"
+                                                            fill="#fff"></path>
+                                                        <circle class="inline-circle" cx="20" cy="7" r="3" fill="#374151"></circle>
+                                                        <circle class="inline-circle" cx="20" cy="33" r="3" fill="#374151"></circle>
                                                         <circle class="inline-circle" cx="31.2583" cy="13.5" r="3"
-                                                            transform="rotate(60
-                                                                31.2583 13.5)" fill="#374151"></circle>
+                                                            transform="rotate(60 31.2583 13.5)" fill="#374151"></circle>
                                                         <circle class="inline-circle" cx="8.74167" cy="26.5" r="3"
-                                                            transform="rotate(60
-                                                                8.74167 26.5)" fill="#374151"></circle>
+                                                            transform="rotate(60 8.74167 26.5)" fill="#374151"></circle>
                                                         <circle class="inline-circle" cx="8.74167" cy="13.5" r="3"
-                                                            transform="rotate(-60
-                                                                8.74167 13.5)" fill="#374151"></circle>
+                                                            transform="rotate(-60 8.74167 13.5)" fill="#374151">
+                                                        </circle>
                                                         <circle class="inline-circle" cx="31.2583" cy="26.5" r="3"
-                                                            transform="rotate(-60
-                                                                31.2583 26.5)" fill="#374151"></circle>
+                                                            transform="rotate(-60 31.2583 26.5)" fill="#374151">
+                                                        </circle>
                                                     </svg></span>
-                                                <span class="metadata-value
-                                                        ml-1 " title="Fiona">Fiona</span>
+                                                <span class="metadata-value ml-1 " title="Fiona">Fiona</span>
                                             </div>
-                                            <div class="metadata
-                                                    metadata-date">
-                                                <span class="metadata-value" title="2:34 PM - Dec 23,
-                                                        2021">8 months</span>
+                                            <div class="metadata metadata-date">
+                                                <span class="metadata-value" title="2:34 PM - Dec 23, 2021">8
+                                                    months</span>
                                             </div>
                                         </div>
-                                        <div class="d-flex flex-shrink-0
-                                                metadata-wrapper_nodivide">
-                                            <div class="metadata
-                                                    metadata-commentcount"><span class="icon mr-1.5"><i class="fa
-                                                            fa-comment"></i></span><span class="">1</span></div>
-                                            <div class="metadata
-                                                    metadata-votecount"><span class="icon mr-1.5"><i class="fa-solid
-                                                            fa-caret-up fa-lg"></i></span><span>4</span></div>
+                                        <div class="d-flex flex-shrink-0 metadata-wrapper_nodivide">
+                                            <div class="metadata metadata-commentcount"><span class="icon mr-1.5"><i
+                                                        class="fa fa-comment"></i></span><span class="">1</span></div>
+                                            <div class="metadata metadata-votecount"><span class="icon mr-1.5"><i
+                                                        class="fa-solid fa-caret-up fa-lg"></i></span><span>4</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <!-- <a class="cards-link--overlay"
-                                    href="./details.html?id=">
-                                    <div class="cards-link--overlay">
-
-                                    </div>
-                                </a> -->
+                                                                        href="./details.html?id=">
+                                                                        <div class="cards-link--overlay">
+                                                                        </div>
+                                                                    </a> -->
                             </div>
-                            <div class="cards cards-post hasComment
-                                    hasVote">
+                            <div class="cards cards-post  hasComment hasVote">
                                 <div class="cards-media">
                                     <div class="cards-media-img">
                                         <a href="#">
-                                            <div style="display: block;
-                                                    overflow: hidden; position:
-                                                    absolute; inset: 0px;
-                                                    box-sizing: border-box;
-                                                    margin: 0px;">
-                                                <img alt="Cuộc chiến giữa
-                                                        Gods và Demons, chiến
-                                                        lược xoay vòng mới trong
-                                                        #play2earn" sizes="100vw"
+                                            <div
+                                                style="display: block; overflow: hidden; position: absolute; inset: 0px; box-sizing: border-box; margin: 0px;">
+                                                <img alt="Cuộc chiến giữa Gods và Demons, chiến lược xoay vòng mới trong #play2earn"
+                                                    sizes="100vw"
                                                     src="https://rada.network/_next/image?url=https%3A%2F%2Fmedia.rada.network%2Fassets%2Fd48edb1f-297c-4fae-b7e9-06ffef7e38a9%3Fformat%3Djpg%26width%3D500&w=1920&q=75"
-                                                    decoding="async" data-nimg="fill" class="cards-img" style="position:
-                                                        absolute; inset: 0px;
-                                                        box-sizing: border-box;
-                                                        padding: 0px; border:
-                                                        none; margin: auto;
-                                                        display: block; width:
-                                                        0px; height: 0px;
-                                                        min-width: 100%;
-                                                        max-width: 100%;
-                                                        min-height: 100%;
-                                                        max-height: 100%;">
+                                                    decoding="async" data-nimg="fill" class="cards-img"
+                                                    style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;">
                                             </div>
                                         </a>
                                     </div>
                                 </div>
                                 <div class="cards-body">
                                     <div class="cards-body-header">
-                                        <div class="cards-title"><a class="text-color-title"
-                                                href="./details.html?id=">Cuộc
-                                                chiến giữa Gods và Demons,
-                                                chiến lược xoay vòng mới
-                                                trong #play2earn</a>
+                                        <div class="cards-title"><a class="text-color-title" href="./details.html?id=">Cuộc
+                                                chiến giữa Gods và Demons, chiến lược xoay vòng mới trong #play2earn</a>
                                         </div>
-                                        <div class="cards-badges"><a href="#"><span class="badge
-                                                        badge-coin">TAUM</span></a></div>
+                                        <div class="cards-badges"><a href="#"><span class="badge badge-coin">TAUM</span></a></div>
                                     </div>
-                                    <div class="metadata-wrapper
-                                            justify-content-between">
+                                    <div class="metadata-wrapper justify-content-between">
                                         <div class="d-flex flex-shrink-0">
-                                            <div class="metadata
-                                                    metadata-source d-flex
-                                                    align-items-center">
+                                            <div class="metadata metadata-source d-flex align-items-center">
                                                 <span><svg width="1em" class="rada-svg" viewBox="4 4 32 32"
                                                         xmlns="http://www.w3.org/2000/svg">
-                                                        <path class="inline-rec" d="M18
-                                                                11.1547C19.2376
-                                                                10.4402 20.7624
-                                                                10.4402 22
-                                                                11.1547L26.6603
-                                                                13.8453C27.8979
-                                                                14.5598 28.6603
-                                                                15.8803 28.6603
-                                                                17.3094V22.6906C28.6603
-                                                                24.1197 27.8979
-                                                                25.4402 26.6603
-                                                                26.1547L22
-                                                                28.8453C20.7624
-                                                                29.5598 19.2376
-                                                                29.5598 18
-                                                                28.8453L13.3397
-                                                                26.1547C12.1021
-                                                                25.4402 11.3397
-                                                                24.1197 11.3397
-                                                                22.6906V17.3094C11.3397
-                                                                15.8803 12.1021
-                                                                14.5598 13.3397
-                                                                13.8453L18
-                                                                11.1547Z" fill="#9CA3AF"></path>
-                                                        <path class="inline-stroke" d="M20 2L20.8806
-                                                                15.1519C20.9757
-                                                                16.5717 22.4811
-                                                                17.4409 23.7582
-                                                                16.8133L35.5885
-                                                                11L24.6389
-                                                                18.3386C23.4568
-                                                                19.1308 23.4568
-                                                                20.8692 24.6389
-                                                                21.6614L35.5885
-                                                                29L23.7582
-                                                                23.1867C22.4811
-                                                                22.5591 20.9757
-                                                                23.4283 20.8806
-                                                                24.848L20
-                                                                38L19.1194
-                                                                24.8481C19.0243
-                                                                23.4283 17.5189
-                                                                22.5591 16.2418
-                                                                23.1867L4.41154
-                                                                29L15.3611
-                                                                21.6614C16.5432
-                                                                20.8692 16.5432
-                                                                19.1308 15.3611
-                                                                18.3386L4.41154
-                                                                11L16.2418
-                                                                16.8133C17.5189
-                                                                17.4409 19.0243
-                                                                16.5717 19.1194
-                                                                15.152L20 2Z" fill="#fff"></path>
-                                                        <circle class="inline-circle" cx="20" cy="7" r="3"
-                                                            fill="#374151"></circle>
-                                                        <circle class="inline-circle" cx="20" cy="33" r="3"
-                                                            fill="#374151"></circle>
+                                                        <path class="inline-rec"
+                                                            d="M18 11.1547C19.2376 10.4402 20.7624 10.4402 22 11.1547L26.6603 13.8453C27.8979 14.5598 28.6603 15.8803 28.6603 17.3094V22.6906C28.6603 24.1197 27.8979 25.4402 26.6603 26.1547L22 28.8453C20.7624 29.5598 19.2376 29.5598 18 28.8453L13.3397 26.1547C12.1021 25.4402 11.3397 24.1197 11.3397 22.6906V17.3094C11.3397 15.8803 12.1021 14.5598 13.3397 13.8453L18 11.1547Z"
+                                                            fill="#9CA3AF"></path>
+                                                        <path class="inline-stroke"
+                                                            d="M20 2L20.8806 15.1519C20.9757 16.5717 22.4811 17.4409 23.7582 16.8133L35.5885 11L24.6389 18.3386C23.4568 19.1308 23.4568 20.8692 24.6389 21.6614L35.5885 29L23.7582 23.1867C22.4811 22.5591 20.9757 23.4283 20.8806 24.848L20 38L19.1194 24.8481C19.0243 23.4283 17.5189 22.5591 16.2418 23.1867L4.41154 29L15.3611 21.6614C16.5432 20.8692 16.5432 19.1308 15.3611 18.3386L4.41154 11L16.2418 16.8133C17.5189 17.4409 19.0243 16.5717 19.1194 15.152L20 2Z"
+                                                            fill="#fff"></path>
+                                                        <circle class="inline-circle" cx="20" cy="7" r="3" fill="#374151"></circle>
+                                                        <circle class="inline-circle" cx="20" cy="33" r="3" fill="#374151"></circle>
                                                         <circle class="inline-circle" cx="31.2583" cy="13.5" r="3"
-                                                            transform="rotate(60
-                                                                31.2583 13.5)" fill="#374151"></circle>
+                                                            transform="rotate(60 31.2583 13.5)" fill="#374151"></circle>
                                                         <circle class="inline-circle" cx="8.74167" cy="26.5" r="3"
-                                                            transform="rotate(60
-                                                                8.74167 26.5)" fill="#374151"></circle>
+                                                            transform="rotate(60 8.74167 26.5)" fill="#374151"></circle>
                                                         <circle class="inline-circle" cx="8.74167" cy="13.5" r="3"
-                                                            transform="rotate(-60
-                                                                8.74167 13.5)" fill="#374151"></circle>
+                                                            transform="rotate(-60 8.74167 13.5)" fill="#374151">
+                                                        </circle>
                                                         <circle class="inline-circle" cx="31.2583" cy="26.5" r="3"
-                                                            transform="rotate(-60
-                                                                31.2583 26.5)" fill="#374151"></circle>
+                                                            transform="rotate(-60 31.2583 26.5)" fill="#374151">
+                                                        </circle>
                                                     </svg></span>
-                                                <span class="metadata-value
-                                                        ml-1 " title="Fiona">Fiona</span>
+                                                <span class="metadata-value ml-1 " title="Fiona">Fiona</span>
                                             </div>
-                                            <div class="metadata
-                                                    metadata-date">
-                                                <span class="metadata-value" title="2:34 PM - Dec 23,
-                                                        2021">8 months</span>
+                                            <div class="metadata metadata-date">
+                                                <span class="metadata-value" title="2:34 PM - Dec 23, 2021">8
+                                                    months</span>
                                             </div>
                                         </div>
-                                        <div class="d-flex flex-shrink-0
-                                                metadata-wrapper_nodivide">
-                                            <div class="metadata
-                                                    metadata-commentcount"><span class="icon mr-1.5"><i class="fa
-                                                            fa-comment"></i></span><span class="">1</span></div>
-                                            <div class="metadata
-                                                    metadata-votecount"><span class="icon mr-1.5"><i class="fa-solid
-                                                            fa-caret-up fa-lg"></i></span><span>4</span></div>
+                                        <div class="d-flex flex-shrink-0 metadata-wrapper_nodivide">
+                                            <div class="metadata metadata-commentcount"><span class="icon mr-1.5"><i
+                                                        class="fa fa-comment"></i></span><span class="">1</span></div>
+                                            <div class="metadata metadata-votecount"><span class="icon mr-1.5"><i
+                                                        class="fa-solid fa-caret-up fa-lg"></i></span><span>4</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <!-- <a class="cards-link--overlay"
-                                    href="./details.html?id=">
-                                    <div class="cards-link--overlay">
-
+                                                                        href="./details.html?id=">
+                                                                        <div class="cards-link--overlay">
+                                                                        </div>
+                                                                    </a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pane-content--main--main scrollbar tabcontent style-2" id="Moinhat">
+                        <div class="cards-list">
+                            <div class="cards cards-post  hasComment hasVote">
+                                <div class="cards-media">
+                                    <div class="cards-media-img">
+                                        <a href="#">
+                                            <div
+                                                style="display: block; overflow: hidden; position: absolute; inset: 0px; box-sizing: border-box; margin: 0px;">
+                                                <img alt="Cuộc chiến giữa Gods và Demons, chiến lược xoay vòng mới trong #play2earn"
+                                                    sizes="100vw"
+                                                    src="https://rada.network/_next/image?url=https%3A%2F%2Fmedia.rada.network%2Fassets%2Fd48edb1f-297c-4fae-b7e9-06ffef7e38a9%3Fformat%3Djpg%26width%3D500&w=1920&q=75"
+                                                    decoding="async" data-nimg="fill" class="cards-img"
+                                                    style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;">
+                                            </div>
+                                        </a>
                                     </div>
-                                </a> -->
+                                </div>
+                                <div class="cards-body">
+                                    <div class="cards-body-header">
+                                        <div class="cards-title"><a class="text-color-title" href="./details.html?id=">Cuộc
+                                                chiến giữa Gods và Demons, chiến lược xoay vòng mới trong #play2earn</a>
+                                        </div>
+                                        <div class="cards-badges"><a href="#"><span class="badge badge-coin">TAUM</span></a></div>
+                                    </div>
+                                    <div class="metadata-wrapper justify-content-between">
+                                        <div class="d-flex flex-shrink-0">
+                                            <div class="metadata metadata-source d-flex align-items-center">
+                                                <span><svg width="1em" class="rada-svg" viewBox="4 4 32 32"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path class="inline-rec"
+                                                            d="M18 11.1547C19.2376 10.4402 20.7624 10.4402 22 11.1547L26.6603 13.8453C27.8979 14.5598 28.6603 15.8803 28.6603 17.3094V22.6906C28.6603 24.1197 27.8979 25.4402 26.6603 26.1547L22 28.8453C20.7624 29.5598 19.2376 29.5598 18 28.8453L13.3397 26.1547C12.1021 25.4402 11.3397 24.1197 11.3397 22.6906V17.3094C11.3397 15.8803 12.1021 14.5598 13.3397 13.8453L18 11.1547Z"
+                                                            fill="#9CA3AF"></path>
+                                                        <path class="inline-stroke"
+                                                            d="M20 2L20.8806 15.1519C20.9757 16.5717 22.4811 17.4409 23.7582 16.8133L35.5885 11L24.6389 18.3386C23.4568 19.1308 23.4568 20.8692 24.6389 21.6614L35.5885 29L23.7582 23.1867C22.4811 22.5591 20.9757 23.4283 20.8806 24.848L20 38L19.1194 24.8481C19.0243 23.4283 17.5189 22.5591 16.2418 23.1867L4.41154 29L15.3611 21.6614C16.5432 20.8692 16.5432 19.1308 15.3611 18.3386L4.41154 11L16.2418 16.8133C17.5189 17.4409 19.0243 16.5717 19.1194 15.152L20 2Z"
+                                                            fill="#fff"></path>
+                                                        <circle class="inline-circle" cx="20" cy="7" r="3" fill="#374151"></circle>
+                                                        <circle class="inline-circle" cx="20" cy="33" r="3" fill="#374151"></circle>
+                                                        <circle class="inline-circle" cx="31.2583" cy="13.5" r="3"
+                                                            transform="rotate(60 31.2583 13.5)" fill="#374151"></circle>
+                                                        <circle class="inline-circle" cx="8.74167" cy="26.5" r="3"
+                                                            transform="rotate(60 8.74167 26.5)" fill="#374151"></circle>
+                                                        <circle class="inline-circle" cx="8.74167" cy="13.5" r="3"
+                                                            transform="rotate(-60 8.74167 13.5)" fill="#374151">
+                                                        </circle>
+                                                        <circle class="inline-circle" cx="31.2583" cy="26.5" r="3"
+                                                            transform="rotate(-60 31.2583 26.5)" fill="#374151">
+                                                        </circle>
+                                                    </svg></span>
+                                                <span class="metadata-value ml-1 " title="Fiona">Fiona</span>
+                                            </div>
+                                            <div class="metadata metadata-date">
+                                                <span class="metadata-value" title="2:34 PM - Dec 23, 2021">8
+                                                    months</span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-shrink-0 metadata-wrapper_nodivide">
+                                            <div class="metadata metadata-commentcount"><span class="icon mr-1.5"><i
+                                                        class="fa fa-comment"></i></span><span class="">1</span></div>
+                                            <div class="metadata metadata-votecount"><span class="icon mr-1.5"><i
+                                                        class="fa-solid fa-caret-up fa-lg"></i></span><span>4</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <a class="cards-link--overlay"
+                                                                        href="./details.html?id=">
+                                                                        <div class="cards-link--overlay">
+                                                                        </div>
+                                                                    </a> -->
+                            </div>
+                            <div class="cards cards-post  hasComment hasVote">
+                                <div class="cards-media">
+                                    <div class="cards-media-img">
+                                        <a href="#">
+                                            <div
+                                                style="display: block; overflow: hidden; position: absolute; inset: 0px; box-sizing: border-box; margin: 0px;">
+                                                <img alt="Cuộc chiến giữa Gods và Demons, chiến lược xoay vòng mới trong #play2earn"
+                                                    sizes="100vw"
+                                                    src="https://rada.network/_next/image?url=https%3A%2F%2Fmedia.rada.network%2Fassets%2Fd48edb1f-297c-4fae-b7e9-06ffef7e38a9%3Fformat%3Djpg%26width%3D500&w=1920&q=75"
+                                                    decoding="async" data-nimg="fill" class="cards-img"
+                                                    style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="cards-body">
+                                    <div class="cards-body-header">
+                                        <div class="cards-title"><a class="text-color-title" href="./details.html?id=">Cuộc
+                                                chiến giữa Gods và Demons, chiến lược xoay vòng mới trong #play2earn</a>
+                                        </div>
+                                        <div class="cards-badges"><a href="#"><span class="badge badge-coin">TAUM</span></a></div>
+                                    </div>
+                                    <div class="metadata-wrapper justify-content-between">
+                                        <div class="d-flex flex-shrink-0">
+                                            <div class="metadata metadata-source d-flex align-items-center">
+                                                <span class="avatar-2xs">
+                                                    <div
+                                                        style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 16px; height: 16px;">
+                                                        <img alt="Ronni"
+                                                            src="https://rada.network/_next/image?url=https%3A%2F%2Fmedia.rada.network%2Fassets%2F93db9957-4223-44a6-baf4-69118baa918a%3Fformat%3Dwebp%26width%3D256&w=16&q=75"
+                                                            decoding="async" data-nimg="fixed"
+                                                            style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;">
+                                                    </div>
+                                                </span>
+                                                <span class="metadata-value ml-1 " title="Fiona">Fiona</span>
+                                            </div>
+                                            <div class="metadata metadata-date">
+                                                <span class="metadata-value" title="2:34 PM - Dec 23, 2021">8
+                                                    months</span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-shrink-0 metadata-wrapper_nodivide">
+                                            <div class="metadata metadata-commentcount"><span class="icon mr-1.5"><i
+                                                        class="fa fa-comment"></i></span><span class="">1</span></div>
+                                            <div class="metadata metadata-votecount"><span class="icon mr-1.5"><i
+                                                        class="fa-solid fa-caret-up fa-lg"></i></span><span>4</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <a class="cards-link--overlay"
+                                                                        href="./details.html?id=">
+                                                                        <div class="cards-link--overlay">
+                                                                        </div>
+                                                                    </a> -->
+                            </div>
+                            <div class="cards cards-post  hasComment hasVote">
+                                <div class="cards-media">
+                                    <div class="cards-media-img">
+                                        <a href="#">
+                                            <div
+                                                style="display: block; overflow: hidden; position: absolute; inset: 0px; box-sizing: border-box; margin: 0px;">
+                                                <img alt="Cuộc chiến giữa Gods và Demons, chiến lược xoay vòng mới trong #play2earn"
+                                                    sizes="100vw"
+                                                    src="https://rada.network/_next/image?url=https%3A%2F%2Fmedia.rada.network%2Fassets%2Fd48edb1f-297c-4fae-b7e9-06ffef7e38a9%3Fformat%3Djpg%26width%3D500&w=1920&q=75"
+                                                    decoding="async" data-nimg="fill" class="cards-img"
+                                                    style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="cards-body">
+                                    <div class="cards-body-header">
+                                        <div class="cards-title"><a class="text-color-title" href="./details.html?id=">Cuộc
+                                                chiến giữa Gods và Demons, chiến lược xoay vòng mới trong #play2earn</a>
+                                        </div>
+                                        <div class="cards-badges"><a href="#"><span class="badge badge-coin">TAUM</span></a></div>
+                                    </div>
+                                    <div class="metadata-wrapper justify-content-between">
+                                        <div class="d-flex flex-shrink-0">
+                                            <div class="metadata metadata-source d-flex align-items-center">
+                                                <span class="avatar-2xs">
+                                                    <div
+                                                        style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 16px; height: 16px;">
+                                                        <img alt="Ronni"
+                                                            src="https://rada.network/_next/image?url=https%3A%2F%2Fmedia.rada.network%2Fassets%2F93db9957-4223-44a6-baf4-69118baa918a%3Fformat%3Dwebp%26width%3D256&w=16&q=75"
+                                                            decoding="async" data-nimg="fixed"
+                                                            style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;">
+                                                    </div>
+                                                </span>
+                                                <span class="metadata-value ml-1 " title="Fiona">Fiona</span>
+                                            </div>
+                                            <div class="metadata metadata-date">
+                                                <span class="metadata-value" title="2:34 PM - Dec 23, 2021">8
+                                                    months</span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-shrink-0 metadata-wrapper_nodivide">
+                                            <div class="metadata metadata-commentcount"><span class="icon mr-1.5"><i
+                                                        class="fa fa-comment"></i></span><span class="">1</span></div>
+                                            <div class="metadata metadata-votecount"><span class="icon mr-1.5"><i
+                                                        class="fa-solid fa-caret-up fa-lg"></i></span><span>4</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <a class="cards-link--overlay"
+                                                                        href="./details.html?id=">
+                                                                        <div class="cards-link--overlay">
+                                                                        </div>
+                                                                    </a> -->
+                            </div>
+                            <div class="cards cards-post  hasComment hasVote">
+                                <div class="cards-media">
+                                    <div class="cards-media-img">
+                                        <a href="#">
+                                            <div
+                                                style="display: block; overflow: hidden; position: absolute; inset: 0px; box-sizing: border-box; margin: 0px;">
+                                                <img alt="Cuộc chiến giữa Gods và Demons, chiến lược xoay vòng mới trong #play2earn"
+                                                    sizes="100vw"
+                                                    src="https://rada.network/_next/image?url=https%3A%2F%2Fmedia.rada.network%2Fassets%2Fd48edb1f-297c-4fae-b7e9-06ffef7e38a9%3Fformat%3Djpg%26width%3D500&w=1920&q=75"
+                                                    decoding="async" data-nimg="fill" class="cards-img"
+                                                    style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="cards-body">
+                                    <div class="cards-body-header">
+                                        <div class="cards-title"><a class="text-color-title" href="./details.html?id=">Cuộc
+                                                chiến giữa Gods và Demons, chiến lược xoay vòng mới trong #play2earn</a>
+                                        </div>
+                                        <div class="cards-badges"><a href="#"><span class="badge badge-coin">TAUM</span></a></div>
+                                    </div>
+                                    <div class="metadata-wrapper justify-content-between">
+                                        <div class="d-flex flex-shrink-0">
+                                            <div class="metadata metadata-source d-flex align-items-center">
+                                                <span class="avatar-2xs">
+                                                    <div
+                                                        style="overflow: hidden; box-sizing: border-box; display: inline-block; position: relative; width: 16px; height: 16px;">
+                                                        <img alt="Ronni"
+                                                            src="https://rada.network/_next/image?url=https%3A%2F%2Fmedia.rada.network%2Fassets%2F93db9957-4223-44a6-baf4-69118baa918a%3Fformat%3Dwebp%26width%3D256&w=16&q=75"
+                                                            decoding="async" data-nimg="fixed"
+                                                            style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;">
+                                                    </div>
+                                                </span>
+                                                <span class="metadata-value ml-1 " title="Fiona">Fiona</span>
+                                            </div>
+                                            <div class="metadata metadata-date">
+                                                <span class="metadata-value" title="2:34 PM - Dec 23, 2021">8
+                                                    months</span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-shrink-0 metadata-wrapper_nodivide">
+                                            <div class="metadata metadata-commentcount"><span class="icon mr-1.5"><i
+                                                        class="fa fa-comment"></i></span><span class="">1</span></div>
+                                            <div class="metadata metadata-votecount"><span class="icon mr-1.5"><i
+                                                        class="fa-solid fa-caret-up fa-lg"></i></span><span>4</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <a class="cards-link--overlay"
+                                                                        href="./details.html?id=">
+                                                                        <div class="cards-link--overlay">
+                                                                        </div>
+                                                                    </a> -->
+                            </div>
+                            <div class="cards cards-post  hasComment hasVote">
+                                <div class="cards-media">
+                                    <div class="cards-media-img">
+                                        <a href="#">
+                                            <div
+                                                style="display: block; overflow: hidden; position: absolute; inset: 0px; box-sizing: border-box; margin: 0px;">
+                                                <img alt="Cuộc chiến giữa Gods và Demons, chiến lược xoay vòng mới trong #play2earn"
+                                                    sizes="100vw"
+                                                    src="https://rada.network/_next/image?url=https%3A%2F%2Fmedia.rada.network%2Fassets%2Fd48edb1f-297c-4fae-b7e9-06ffef7e38a9%3Fformat%3Djpg%26width%3D500&w=1920&q=75"
+                                                    decoding="async" data-nimg="fill" class="cards-img"
+                                                    style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="cards-body">
+                                    <div class="cards-body-header">
+                                        <div class="cards-title"><a class="text-color-title" href="./details.html?id=">Space
+                                                Crypto, ranh giới tiếp theo của Free2Play và Play2Earn</a>
+                                        </div>
+                                        <div class="cards-badges"><a href="#"><span class="badge badge-coin">TAUM</span></a></div>
+                                    </div>
+                                    <div class="metadata-wrapper justify-content-between">
+                                        <div class="d-flex flex-shrink-0">
+                                            <div class="metadata metadata-source d-flex align-items-center">
+                                                <span><svg width="1em" class="rada-svg" viewBox="4 4 32 32"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path class="inline-rec"
+                                                            d="M18 11.1547C19.2376 10.4402 20.7624 10.4402 22 11.1547L26.6603 13.8453C27.8979 14.5598 28.6603 15.8803 28.6603 17.3094V22.6906C28.6603 24.1197 27.8979 25.4402 26.6603 26.1547L22 28.8453C20.7624 29.5598 19.2376 29.5598 18 28.8453L13.3397 26.1547C12.1021 25.4402 11.3397 24.1197 11.3397 22.6906V17.3094C11.3397 15.8803 12.1021 14.5598 13.3397 13.8453L18 11.1547Z"
+                                                            fill="#9CA3AF"></path>
+                                                        <path class="inline-stroke"
+                                                            d="M20 2L20.8806 15.1519C20.9757 16.5717 22.4811 17.4409 23.7582 16.8133L35.5885 11L24.6389 18.3386C23.4568 19.1308 23.4568 20.8692 24.6389 21.6614L35.5885 29L23.7582 23.1867C22.4811 22.5591 20.9757 23.4283 20.8806 24.848L20 38L19.1194 24.8481C19.0243 23.4283 17.5189 22.5591 16.2418 23.1867L4.41154 29L15.3611 21.6614C16.5432 20.8692 16.5432 19.1308 15.3611 18.3386L4.41154 11L16.2418 16.8133C17.5189 17.4409 19.0243 16.5717 19.1194 15.152L20 2Z"
+                                                            fill="#fff"></path>
+                                                        <circle class="inline-circle" cx="20" cy="7" r="3" fill="#374151"></circle>
+                                                        <circle class="inline-circle" cx="20" cy="33" r="3" fill="#374151"></circle>
+                                                        <circle class="inline-circle" cx="31.2583" cy="13.5" r="3"
+                                                            transform="rotate(60 31.2583 13.5)" fill="#374151"></circle>
+                                                        <circle class="inline-circle" cx="8.74167" cy="26.5" r="3"
+                                                            transform="rotate(60 8.74167 26.5)" fill="#374151"></circle>
+                                                        <circle class="inline-circle" cx="8.74167" cy="13.5" r="3"
+                                                            transform="rotate(-60 8.74167 13.5)" fill="#374151">
+                                                        </circle>
+                                                        <circle class="inline-circle" cx="31.2583" cy="26.5" r="3"
+                                                            transform="rotate(-60 31.2583 26.5)" fill="#374151">
+                                                        </circle>
+                                                    </svg></span>
+                                                <span class="metadata-value ml-1 " title="Fiona">Fiona</span>
+                                            </div>
+                                            <div class="metadata metadata-date">
+                                                <span class="metadata-value" title="2:34 PM - Dec 23, 2021">8
+                                                    months</span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-shrink-0 metadata-wrapper_nodivide">
+                                            <div class="metadata metadata-commentcount"><span class="icon mr-1.5"><i
+                                                        class="fa fa-comment"></i></span><span class="">1</span></div>
+                                            <div class="metadata metadata-votecount"><span class="icon mr-1.5"><i
+                                                        class="fa-solid fa-caret-up fa-lg"></i></span><span>4</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <a class="cards-link--overlay"
+                                                                        href="./details.html?id=">
+                                                                        <div class="cards-link--overlay">
+                                                                        </div>
+                                                                    </a> -->
+                            </div>
+                            <div class="cards cards-post  hasComment hasVote">
+                                <div class="cards-media">
+                                    <div class="cards-media-img">
+                                        <a href="#">
+                                            <div
+                                                style="display: block; overflow: hidden; position: absolute; inset: 0px; box-sizing: border-box; margin: 0px;">
+                                                <img alt="Cuộc chiến giữa Gods và Demons, chiến lược xoay vòng mới trong #play2earn"
+                                                    sizes="100vw"
+                                                    src="https://rada.network/_next/image?url=https%3A%2F%2Fmedia.rada.network%2Fassets%2Fd48edb1f-297c-4fae-b7e9-06ffef7e38a9%3Fformat%3Djpg%26width%3D500&w=1920&q=75"
+                                                    decoding="async" data-nimg="fill" class="cards-img"
+                                                    style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="cards-body">
+                                    <div class="cards-body-header">
+                                        <div class="cards-title"><a class="text-color-title" href="./details.html?id=">Cuộc
+                                                chiến giữa Gods và Demons, chiến lược xoay vòng mới trong #play2earn</a>
+                                        </div>
+                                        <div class="cards-badges"><a href="#"><span class="badge badge-coin">TAUM</span></a></div>
+                                    </div>
+                                    <div class="metadata-wrapper justify-content-between">
+                                        <div class="d-flex flex-shrink-0">
+                                            <div class="metadata metadata-source d-flex align-items-center">
+                                                <span><svg width="1em" class="rada-svg" viewBox="4 4 32 32"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path class="inline-rec"
+                                                            d="M18 11.1547C19.2376 10.4402 20.7624 10.4402 22 11.1547L26.6603 13.8453C27.8979 14.5598 28.6603 15.8803 28.6603 17.3094V22.6906C28.6603 24.1197 27.8979 25.4402 26.6603 26.1547L22 28.8453C20.7624 29.5598 19.2376 29.5598 18 28.8453L13.3397 26.1547C12.1021 25.4402 11.3397 24.1197 11.3397 22.6906V17.3094C11.3397 15.8803 12.1021 14.5598 13.3397 13.8453L18 11.1547Z"
+                                                            fill="#9CA3AF"></path>
+                                                        <path class="inline-stroke"
+                                                            d="M20 2L20.8806 15.1519C20.9757 16.5717 22.4811 17.4409 23.7582 16.8133L35.5885 11L24.6389 18.3386C23.4568 19.1308 23.4568 20.8692 24.6389 21.6614L35.5885 29L23.7582 23.1867C22.4811 22.5591 20.9757 23.4283 20.8806 24.848L20 38L19.1194 24.8481C19.0243 23.4283 17.5189 22.5591 16.2418 23.1867L4.41154 29L15.3611 21.6614C16.5432 20.8692 16.5432 19.1308 15.3611 18.3386L4.41154 11L16.2418 16.8133C17.5189 17.4409 19.0243 16.5717 19.1194 15.152L20 2Z"
+                                                            fill="#fff"></path>
+                                                        <circle class="inline-circle" cx="20" cy="7" r="3" fill="#374151"></circle>
+                                                        <circle class="inline-circle" cx="20" cy="33" r="3" fill="#374151"></circle>
+                                                        <circle class="inline-circle" cx="31.2583" cy="13.5" r="3"
+                                                            transform="rotate(60 31.2583 13.5)" fill="#374151"></circle>
+                                                        <circle class="inline-circle" cx="8.74167" cy="26.5" r="3"
+                                                            transform="rotate(60 8.74167 26.5)" fill="#374151"></circle>
+                                                        <circle class="inline-circle" cx="8.74167" cy="13.5" r="3"
+                                                            transform="rotate(-60 8.74167 13.5)" fill="#374151">
+                                                        </circle>
+                                                        <circle class="inline-circle" cx="31.2583" cy="26.5" r="3"
+                                                            transform="rotate(-60 31.2583 26.5)" fill="#374151">
+                                                        </circle>
+                                                    </svg></span>
+                                                <span class="metadata-value ml-1 " title="Fiona">Fiona</span>
+                                            </div>
+                                            <div class="metadata metadata-date">
+                                                <span class="metadata-value" title="2:34 PM - Dec 23, 2021">8
+                                                    months</span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-shrink-0 metadata-wrapper_nodivide">
+                                            <div class="metadata metadata-commentcount"><span class="icon mr-1.5"><i
+                                                        class="fa fa-comment"></i></span><span class="">1</span></div>
+                                            <div class="metadata metadata-votecount"><span class="icon mr-1.5"><i
+                                                        class="fa-solid fa-caret-up fa-lg"></i></span><span>4</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <a class="cards-link--overlay"
+                                                                        href="./details.html?id=">
+                                                                        <div class="cards-link--overlay">
+                                                                        </div>
+                                                                    </a> -->
+                            </div>
+                            <div class="cards cards-post  hasComment hasVote">
+                                <div class="cards-media">
+                                    <div class="cards-media-img">
+                                        <a href="#">
+                                            <div
+                                                style="display: block; overflow: hidden; position: absolute; inset: 0px; box-sizing: border-box; margin: 0px;">
+                                                <img alt="Cuộc chiến giữa Gods và Demons, chiến lược xoay vòng mới trong #play2earn"
+                                                    sizes="100vw"
+                                                    src="https://rada.network/_next/image?url=https%3A%2F%2Fmedia.rada.network%2Fassets%2Fd48edb1f-297c-4fae-b7e9-06ffef7e38a9%3Fformat%3Djpg%26width%3D500&w=1920&q=75"
+                                                    decoding="async" data-nimg="fill" class="cards-img"
+                                                    style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="cards-body">
+                                    <div class="cards-body-header">
+                                        <div class="cards-title"><a class="text-color-title" href="./details.html?id=">Cuộc
+                                                chiến giữa Gods và Demons, chiến lược xoay vòng mới trong #play2earn</a>
+                                        </div>
+                                        <div class="cards-badges"><a href="#"><span class="badge badge-coin">TAUM</span></a></div>
+                                    </div>
+                                    <div class="metadata-wrapper justify-content-between">
+                                        <div class="d-flex flex-shrink-0">
+                                            <div class="metadata metadata-source d-flex align-items-center">
+                                                <span><svg width="1em" class="rada-svg" viewBox="4 4 32 32"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path class="inline-rec"
+                                                            d="M18 11.1547C19.2376 10.4402 20.7624 10.4402 22 11.1547L26.6603 13.8453C27.8979 14.5598 28.6603 15.8803 28.6603 17.3094V22.6906C28.6603 24.1197 27.8979 25.4402 26.6603 26.1547L22 28.8453C20.7624 29.5598 19.2376 29.5598 18 28.8453L13.3397 26.1547C12.1021 25.4402 11.3397 24.1197 11.3397 22.6906V17.3094C11.3397 15.8803 12.1021 14.5598 13.3397 13.8453L18 11.1547Z"
+                                                            fill="#9CA3AF"></path>
+                                                        <path class="inline-stroke"
+                                                            d="M20 2L20.8806 15.1519C20.9757 16.5717 22.4811 17.4409 23.7582 16.8133L35.5885 11L24.6389 18.3386C23.4568 19.1308 23.4568 20.8692 24.6389 21.6614L35.5885 29L23.7582 23.1867C22.4811 22.5591 20.9757 23.4283 20.8806 24.848L20 38L19.1194 24.8481C19.0243 23.4283 17.5189 22.5591 16.2418 23.1867L4.41154 29L15.3611 21.6614C16.5432 20.8692 16.5432 19.1308 15.3611 18.3386L4.41154 11L16.2418 16.8133C17.5189 17.4409 19.0243 16.5717 19.1194 15.152L20 2Z"
+                                                            fill="#fff"></path>
+                                                        <circle class="inline-circle" cx="20" cy="7" r="3" fill="#374151"></circle>
+                                                        <circle class="inline-circle" cx="20" cy="33" r="3" fill="#374151"></circle>
+                                                        <circle class="inline-circle" cx="31.2583" cy="13.5" r="3"
+                                                            transform="rotate(60 31.2583 13.5)" fill="#374151"></circle>
+                                                        <circle class="inline-circle" cx="8.74167" cy="26.5" r="3"
+                                                            transform="rotate(60 8.74167 26.5)" fill="#374151"></circle>
+                                                        <circle class="inline-circle" cx="8.74167" cy="13.5" r="3"
+                                                            transform="rotate(-60 8.74167 13.5)" fill="#374151">
+                                                        </circle>
+                                                        <circle class="inline-circle" cx="31.2583" cy="26.5" r="3"
+                                                            transform="rotate(-60 31.2583 26.5)" fill="#374151">
+                                                        </circle>
+                                                    </svg></span>
+                                                <span class="metadata-value ml-1 " title="Fiona">Fiona</span>
+                                            </div>
+                                            <div class="metadata metadata-date">
+                                                <span class="metadata-value" title="2:34 PM - Dec 23, 2021">8
+                                                    months</span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-shrink-0 metadata-wrapper_nodivide">
+                                            <div class="metadata metadata-commentcount"><span class="icon mr-1.5"><i
+                                                        class="fa fa-comment"></i></span><span class="">1</span></div>
+                                            <div class="metadata metadata-votecount"><span class="icon mr-1.5"><i
+                                                        class="fa-solid fa-caret-up fa-lg"></i></span><span>4</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <a class="cards-link--overlay"
+                                                                        href="./details.html?id=">
+                                                                        <div class="cards-link--overlay">
+                                                                        </div>
+                                                                    </a> -->
+                            </div>
+                            <div class="cards cards-post  hasComment hasVote">
+                                <div class="cards-media">
+                                    <div class="cards-media-img">
+                                        <a href="#">
+                                            <div
+                                                style="display: block; overflow: hidden; position: absolute; inset: 0px; box-sizing: border-box; margin: 0px;">
+                                                <img alt="Cuộc chiến giữa Gods và Demons, chiến lược xoay vòng mới trong #play2earn"
+                                                    sizes="100vw"
+                                                    src="https://rada.network/_next/image?url=https%3A%2F%2Fmedia.rada.network%2Fassets%2Fd48edb1f-297c-4fae-b7e9-06ffef7e38a9%3Fformat%3Djpg%26width%3D500&w=1920&q=75"
+                                                    decoding="async" data-nimg="fill" class="cards-img"
+                                                    style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="cards-body">
+                                    <div class="cards-body-header">
+                                        <div class="cards-title"><a class="text-color-title" href="./details.html?id=">Space
+                                                Crypto, ranh giới tiếp theo của Free2Play và Play2Earn</a>
+                                        </div>
+                                        <div class="cards-badges"><a href="#"><span class="badge badge-coin">TAUM</span></a></div>
+                                    </div>
+                                    <div class="metadata-wrapper justify-content-between">
+                                        <div class="d-flex flex-shrink-0">
+                                            <div class="metadata metadata-source d-flex align-items-center">
+                                                <span><svg width="1em" class="rada-svg" viewBox="4 4 32 32"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path class="inline-rec"
+                                                            d="M18 11.1547C19.2376 10.4402 20.7624 10.4402 22 11.1547L26.6603 13.8453C27.8979 14.5598 28.6603 15.8803 28.6603 17.3094V22.6906C28.6603 24.1197 27.8979 25.4402 26.6603 26.1547L22 28.8453C20.7624 29.5598 19.2376 29.5598 18 28.8453L13.3397 26.1547C12.1021 25.4402 11.3397 24.1197 11.3397 22.6906V17.3094C11.3397 15.8803 12.1021 14.5598 13.3397 13.8453L18 11.1547Z"
+                                                            fill="#9CA3AF"></path>
+                                                        <path class="inline-stroke"
+                                                            d="M20 2L20.8806 15.1519C20.9757 16.5717 22.4811 17.4409 23.7582 16.8133L35.5885 11L24.6389 18.3386C23.4568 19.1308 23.4568 20.8692 24.6389 21.6614L35.5885 29L23.7582 23.1867C22.4811 22.5591 20.9757 23.4283 20.8806 24.848L20 38L19.1194 24.8481C19.0243 23.4283 17.5189 22.5591 16.2418 23.1867L4.41154 29L15.3611 21.6614C16.5432 20.8692 16.5432 19.1308 15.3611 18.3386L4.41154 11L16.2418 16.8133C17.5189 17.4409 19.0243 16.5717 19.1194 15.152L20 2Z"
+                                                            fill="#fff"></path>
+                                                        <circle class="inline-circle" cx="20" cy="7" r="3" fill="#374151"></circle>
+                                                        <circle class="inline-circle" cx="20" cy="33" r="3" fill="#374151"></circle>
+                                                        <circle class="inline-circle" cx="31.2583" cy="13.5" r="3"
+                                                            transform="rotate(60 31.2583 13.5)" fill="#374151"></circle>
+                                                        <circle class="inline-circle" cx="8.74167" cy="26.5" r="3"
+                                                            transform="rotate(60 8.74167 26.5)" fill="#374151"></circle>
+                                                        <circle class="inline-circle" cx="8.74167" cy="13.5" r="3"
+                                                            transform="rotate(-60 8.74167 13.5)" fill="#374151">
+                                                        </circle>
+                                                        <circle class="inline-circle" cx="31.2583" cy="26.5" r="3"
+                                                            transform="rotate(-60 31.2583 26.5)" fill="#374151">
+                                                        </circle>
+                                                    </svg></span>
+                                                <span class="metadata-value ml-1 " title="Fiona">Fiona</span>
+                                            </div>
+                                            <div class="metadata metadata-date">
+                                                <span class="metadata-value" title="2:34 PM - Dec 23, 2021">8
+                                                    months</span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-shrink-0 metadata-wrapper_nodivide">
+                                            <div class="metadata metadata-commentcount"><span class="icon mr-1.5"><i
+                                                        class="fa fa-comment"></i></span><span class="">1</span></div>
+                                            <div class="metadata metadata-votecount"><span class="icon mr-1.5"><i
+                                                        class="fa-solid fa-caret-up fa-lg"></i></span><span>4</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <a class="cards-link--overlay"
+                                                                        href="./details.html?id=">
+                                                                        <div class="cards-link--overlay">
+                                                                        </div>
+                                                                    </a> -->
                             </div>
                         </div>
                     </div>
@@ -1284,57 +1269,14 @@
 
     <!-- javascript -->
     <script src="./js/index.js"></script>
+    <script src="./js/tab.js"></script>
+    <script src="./js/drag.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
         integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
         crossorigin="anonymous"></script>
-    <script>
-
-        // A function is used for dragging and moving
-        function dragElement(element, direction) {
-            var md; // remember mouse down info
-            const first = document.getElementById("first");
-            const second = document.getElementById("second");
-
-            element.onmousedown = onMouseDown;
-
-            function onMouseDown(e) {
-                //console.log("mouse down: " + e.clientX);
-                md = {
-                    e,
-                    offsetLeft: element.offsetLeft,
-                    offsetTop: element.offsetTop,
-                    firstWidth: first.offsetWidth,
-                    secondWidth: second.offsetWidth
-                };
-
-                document.onmousemove = onMouseMove;
-                document.onmouseup = () => {
-                    document.onmousemove = document.onmouseup = null;
-                }
-            }
-
-            function onMouseMove(e) {
-                var delta = {
-                    x: e.clientX - md.e.clientX,
-                    y: e.clientY - md.e.clientY
-                };
-                if (direction === "H") // Horizontal
-                {
-                    // Prevent negative-sized elements
-                    delta.x = Math.min(Math.max(delta.x, -md.firstWidth),
-                        md.secondWidth);
-
-                    element.style.left = md.offsetLeft + delta.x + "px";
-                    first.style.width = (md.firstWidth + delta.x) + "px";
-                    second.style.width = (md.secondWidth - delta.x) + "px";
-                }
-            }
-        }
-        dragElement(document.getElementById("separator"), "H");
-    </script>
 </body>
 
 </html>

@@ -43,7 +43,7 @@
 }
 
 .login-banner a {
-    color: #fff;
+    color: var(--color-white);
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -67,7 +67,7 @@
     margin-top: 0.75rem;
     margin-bottom: 1rem;
     font-size: 1.3rem;
-    color: #fff;
+    color: var(--color-white);
 }
 
 .login-banner span {
@@ -76,7 +76,7 @@
 }
 
 .login-banner span>strong {
-    color: #fff;
+    color: var(--color-white);
 }
 
 .login-option {
@@ -91,7 +91,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #fff;
+    background: var(--color-white);
     padding: 1rem 2rem;
     border-radius: 0.25rem;
 }

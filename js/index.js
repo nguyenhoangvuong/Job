@@ -1,3 +1,4 @@
+
 const LOGIN = false;
 
 // open modal login
@@ -56,5 +57,12 @@ window.addEventListener('click', (e) => {
     }
 })
 
-
-
+// open reply
+function openReply() {
+    let a = document.querySelector('#Reply').style.display;
+    if (a == 'none' || a == '') {
+        document.querySelector('#Reply').style.display = 'flex';
+    } else {
+        document.querySelector('#Reply').style.display = 'none';
+    }
+}
