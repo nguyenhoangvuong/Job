@@ -287,9 +287,7 @@ a {
 .cards {
     border-bottom: 1px solid rgba(156,163,175,0.2);
 }
-.cards-post .metadata-wrapper {
-    margin-top: 0.375rem;
-}
+
 .metadata-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -378,9 +376,7 @@ a {
 .cards {
     border-bottom: 1px solid rgba(156,163,175,0.2);
 }
-.cards-post .metadata-wrapper {
-    margin-top: 0.375rem;
-}
+
 .metadata-wrapper {
     display: flex;
     flex-wrap: wrap;
