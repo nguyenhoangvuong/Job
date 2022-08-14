@@ -1,11 +1,13 @@
-.mySwiper{
-    background-color:#fff;
+.mySwiper {
+    background-color: #fff;
 }
-ol{
+
+ol {
     list-style: none !important;
     margin: 0;
     padding: 0;
 }
+
 .cd-horizontal-timeline {
     opacity: 0;
     -webkit-transition: opacity 0.2s;
@@ -104,8 +106,8 @@ ol{
     font-family: var(--font-Inter);
 }
 
-.cd-horizontal-timeline .events a:hover:after{
-    background-color:#005978;
+.cd-horizontal-timeline .events a:hover:after {
+    background-color: #005978;
 }
 
 .cd-horizontal-timeline .events a::after {
@@ -150,7 +152,8 @@ ol{
 .cd-horizontal-timeline .events a.older-event::after {
     border-color: #005978;
 }
-.post-content p{
+
+.post-content p {
     color: var(--color-black);
 }
 
@@ -174,7 +177,7 @@ ol{
     transform: translateY(-50%);
     height: 34px;
     width: 34px;
-    background:#005978;
+    background: #005978;
     /* replace text with an icon */
     overflow: hidden;
     color: transparent;
@@ -205,7 +208,7 @@ ol{
 
 .cd-timeline-navigation a.prev {
     left: 0;
-    background:#005978;
+    background: #005978;
 }
 
 .cd-timeline-navigation a.next {
@@ -232,15 +235,15 @@ ol{
     position: relative;
     width: 100%;
     padding-left: 4rem;
-        padding-right: 4rem;
-        padding-bottom: 2rem;
+    padding-right: 4rem;
+    padding-bottom: 2rem;
     overflow: hidden;
     -webkit-transition: height 0.4s;
     -moz-transition: height 0.4s;
     transition: height 0.4s;
     height: calc(100vh - 100px) !important;
     overflow-x: hidden;
-    overflow-y:auto;
+    overflow-y: auto;
 }
 
 .cd-horizontal-timeline .events-content li {

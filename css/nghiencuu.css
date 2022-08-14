@@ -152,9 +152,9 @@
     -webkit-appearance: none;
 }
 
-.btn-filter-active {
+.btn-filter.active {
     padding: 0.25rem 0.5rem;
-    border-radius: 0.375rem;
+    border-radius: 0.375rem !important;
     pointer-events: none;
     cursor: pointer;
     justify-content: center;
