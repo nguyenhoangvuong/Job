@@ -297,6 +297,20 @@ a {
     --tw-text-opacity: 0.6;
 }
 
+.badge-tag{
+    background-color:#1da1f2;
+    border-radius: 1rem;
+    padding: 0rem 0.3rem 0.07rem;
+    color:var(--color-white);
+    display: flex;justify-content: center;
+    align-items: center;
+    font-size: 0.7rem;
+}
+
+.badge-tag:hover{
+    opacity: 0.8;
+}
+
 .text-color-title {
     --tw-text-opacity: 1;
     color: rgba(31,41,55,var(--tw-text-opacity));
@@ -410,6 +424,8 @@ a {
     display: inline-flex;
     align-items: center;
     justify-items: center;
+    display: flex;
+    gap:0.2rem;
 }
 
 .metadata+.metadata-date:before {
