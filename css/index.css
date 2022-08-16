@@ -795,6 +795,10 @@ p {
     .card-item--des {
         font-size: 0.875rem;
     }
+        .nav-bar .logo{
+            padding-bottom: 0;
+            padding-top: 0;
+        }
 }
 
 @media (min-width: 1025px) {

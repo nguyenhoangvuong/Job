@@ -386,3 +386,23 @@ ol {
         transform: translateX(0%);
     }
 }
+
+
+@media (max-width:1024px) {
+    .cd-timeline-navigation a {
+        width: 25px;
+        height: 25px;
+    }
+
+    .cd-horizontal-timeline .events a::after {
+        width: 15px;
+        height: 15px;
+        bottom: -7.5px;
+    }
+
+    .cd-horizontal-timeline .events a.selected::after {
+        width: 20px;
+        height: 20px;
+        bottom: -10px;
+    }
+}
