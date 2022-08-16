@@ -1357,7 +1357,7 @@
             if(!queryString){
                 block.innerHTML =  " <div class='pane-left--bottom'> <div class='btn-default btn-login'> <span class='icon'> <i class='fa-solid fa-user-circle'></i> </span> <span class='btn--text btn-login--text'>Đăng nhập</span> </div> <div class='pane-left--bottom-section'> <div class='relative'> <button class='btn-default btn-switch-lang'> <div class='check-Open d-flex'> <span class='icon'><i class='fa-solid fa-globe check-Open'></i></span> <span class='btn--text check-Open'>VI</span> </div> <div class='btn-switch-lang--option'> <span>Tiếng Việt</span><span>English</span> </div> </button> </div> <button class='btn-default btn-switch-theme d-flex'> <span class='icon icon-mode'> <i class='fa-solid fa-moon'></i> </span> <span class='icon icon-mode icon-mode-active'> <i class='fa-solid fa-sun'></i> </span> <span class='btn--text'> Dark </span> </button> </div> </div>" ;
             } else {
-                block.outerHTML = "<div class='page-back' style='margin-right: 10px;line-height: 44px;color: #a9adb3;'><a href='giai-tri.html'><i class='fa-solid fa-chevron-left'></i></a></div>";
+                block.outerHTML = "<div class='page-back' style='margin-right: 10px;line-height: 44px;color: #a9adb3;'><a onclick='history.back()'><i class='fa-solid fa-chevron-left'></i></a></div>";
             }
         </script>
 </body>
